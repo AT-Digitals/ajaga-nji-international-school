@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Lexend"; /* Name of the font */
+  src: url("./Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
+
+@font-face {
+  font-family: "RedHatDisplay"; /* Name of the font */
+  src: url("./Red_Hat_Display//RedHatDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  gap: 15px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+  font-family: "Lexend";
+  font-size: 24px;
+}
+
+.tabs span {
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.tabs .active {
+  border-bottom: 3px solid #4c4cd1;
+  color: #4c4cd1;
+  font-weight: bold;
+}
+
+.groups {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.group-card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.group-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.group-card-content {
+  padding: 15px;
+}
+
+.group-title {
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  color: #4c4cd1;
+}
+
+.group-meta {
+  font-size: 0.9em;
+  color: #777;
+  margin: 5px 0 15px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.join-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(45deg, rgb(15 15 226), rgb(0 53 247 / 20%));
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 30px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.join-button:hover {
+  background-color: #4c4cd1;
+}
+.banner {
+  background: url("https://images.pexels.com/photos/7972653/pexels-photo-7972653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
+    no-repeat center center/cover;
+  height: 330px;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0 0 0 / 40%); /* dark overlay */
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 50px;
+}
+
+.banner h1 {
+  font-size: 48px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.breadcrumb .active {
+  color: #4747d7;
+  font-weight: bold;
+}
+
+.breadcrumb .separator {
+  margin: 0 10px;
+  color: #4747d7;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Groups</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="GroupPage.css" />
+  </head>
+  <header>
+    <div class="header" id="mainHeader">
+      <div class="header_inner">
+        <div class="logo">
+          <img src="../test123.png" alt="Champion School Logo" />
+        </div>
+        <nav class="nav web">
+          <div class="dropdown">
+            <a href="#" class="active dropdown-toggle"
+              >Our School <i class="fas fa-caret-down"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="#" class="history">History </a>
+              <a href="#">Board of Directors</a>
+              <a href="#">Staff</a>
+              <a href="#">Groups</a>
+            </div>
+          </div>
+          <a href="./Accademic.html">Academics</a>
+          <a href="#">Admissions</a>
+          <a href="./EventNews.html">News & Events</a>
+          <a href="#">Media Gallery</a>
+          <a href="./GroupPage.html">Support Us</a>
+          <a href="./ContactPage.html">Contact Us</a>
+        </nav>
+
+        <div class="social-icons web">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+
+        <!-- Mobile Slide Menu -->
+        <div class="menu-content" id="menuContent">
+          <div class="close-btn-div">
+            <button class="close-btn" id="menuClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="nav">
+            <div class="mobile-dropdown">
+              <a href="#" class="active mobile-dropdown-toggle">
+                Our School
+                <i class="fas fa-chevron-down arrow"></i>
+              </a>
+              <div class="mobile-dropdown-menu">
+                <a href="#" class="history"
+                  >History <span class="history-desc">(About founder)</span></a
+                >
+                <a href="#">Board of Directors</a>
+                <a href="#">Staff</a>
+                <a href="#">Groups</a>
+              </div>
+            </div>
+            <a href="#">Academics</a>
+            <a href="#">Admissions</a>
+            <a href="#">News & Events</a>
+            <a href="#">Media Gallery</a>
+            <a href="#">Support Us</a>
+            <a href="#">Contact Us</a>
+          </nav>
+
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <section class="banner">
+      <div class="banner-content">
+        <h1>Groups</h1>
+        <div class="breadcrumb">
+          <span class="active">School</span>
+          <span class="separator">—</span>
+          <span>Groups</span>
+        </div>
+      </div>
+    </section>
+    <div class="filters">
+      <label for="sort">Sort by:</label>
+      <select id="sort">
+        <option selected>Recent Activity</option>
+      </select>
+      <input type="search" placeholder="Search..." />
+    </div>
+
+    <div class="tabs">
+      <span class="active">All (3)</span>
+      <span>My Groups</span>
+      <span>Suggested Groups</span>
+    </div>
+
+    <div class="groups">
+      <a href="GroupSection.html" class="card-link">
+        <div class="group-card">
+          <img
+            src="https://images.pexels.com/photos/2781814/pexels-photo-2781814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="After School Activities"
+          />
+          <div class="group-card-content">
+            <div class="group-title">After School Activities</div>
+            <div class="group-meta">Public · 1 member</div>
+            <button class="join-button">Join</button>
+          </div>
+        </div>
+      </a>
+      <a href="GroupSection1.html" class="card-link">
+      <div class="group-card">
+        <img
+          src="https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Parent Teacher Association"
+        />
+        <div class="group-card-content">
+          <div class="group-title">Parent Teacher Association</div>
+          <div class="group-meta">Public · 1 member</div>
+          <button class="join-button">Join</button>
+        </div>
+    </a>  
+    </div>
+
+      <div class="group-card">
+        <img
+          src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+          alt="Ngumys School Band"
+        />
+        <div class="group-card-content">
+          <div class="group-title">Ngumys School Band</div>
+          <div class="group-meta">Public · 1 member</div>
+          <button class="join-button">Join</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const tabs = document.querySelectorAll(".tabs span");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active from all tabs
+          tabs.forEach((t) => t.classList.remove("active"));
+          // Add active to the clicked tab
+          tab.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>

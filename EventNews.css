@@ -1,5 +1,16 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+@font-face {
+  font-family: "Lexend"; /* Name of the font */
+  src: url("./Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
+
+@font-face {
+  font-family: "RedHatDisplay"; /* Name of the font */
+  src: url("./Red_Hat_Display//RedHatDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
 }
 
 .card,
@@ -71,21 +82,25 @@ body {
   justify-content: center;
   font-weight: bold;
   margin-right: 10px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .meta {
   color: gray;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .meta1 {
   color: gray;
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
   padding-top: 5px;
 }
 
 .title {
   font-size: 24px;
+  font-family: "Lexend";
   font-weight: bold;
   color: #2d3250;
   margin: 10px 0;
@@ -94,6 +109,8 @@ body {
 .description {
   color: #444;
   line-height: 1.5;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .card_footer {
@@ -108,6 +125,8 @@ body {
 
 .card_footer span {
   margin-right: 10px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .heart {
@@ -122,13 +141,17 @@ body {
   background: linear-gradient(-45deg, #d3d8dc, #1e90ff, #1e90ff, #1e90ff);
 }
 .news_title {
-  font-size: 50px;
+  font-family: "Lexend";
+  font-size: 42px;
+
   text-align: center;
   color: white;
 }
 .news_post {
   color: black;
-  font-size: 30px;
+  font-family: "Lexend";
+  font-size: 42px;
+
   padding-top: 20px;
   padding-left: 60px;
   font-weight: 600;
@@ -136,6 +159,11 @@ body {
 .card-link {
   text-decoration: none;
   color: inherit;
+}
+.line_quote {
+  border: 2px solid #4747d7;
+  width: 8%;
+  margin-left: 58px;
 }
 .card-options {
   position: absolute;
@@ -145,36 +173,7 @@ body {
   color: #2d3250;
   cursor: pointer;
 }
-.search-container {
-  display: flex;
-  align-items: baseline;
-  justify-content: end;
-  padding-left: 60px;
-  margin-top: 20px;
-  position: relative;
-  width: 100%;
-  max-width: 1030px;
-}
 
-.search-toggle {
-  margin-left: 10px;
-  font-size: 18px;
-  color: gray;
-  cursor: pointer;
-}
-
-.search-input {
-  display: none;
-  margin-left: 10px;
-  padding: 6px 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.whole_search {
-  display: flex;
-  align-items: baseline;
-}
 .banner {
   background: url("https://images.pexels.com/photos/32292148/pexels-photo-32292148/free-photo-of-graduating-class-group-photo-with-pinwheels.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")
     no-repeat center center/cover;
@@ -203,7 +202,8 @@ body {
 }
 
 .banner h1 {
-  font-size: 48px;
+  font-family: "Lexend";
+  font-size: 42px;
   margin: 0;
   font-weight: bold;
 }
@@ -216,9 +216,20 @@ body {
 .breadcrumb .active {
   color: #4747d7;
   font-weight: bold;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.breadcrumb .event {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .breadcrumb .separator {
   margin: 0 10px;
   color: #4747d7;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
 }
