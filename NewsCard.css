@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  padding: 40px;
+  background-color: #f2f2f2;
+}
+
+.news_container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.news_card {
+  width: 280px;
+  height: 350px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news_card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+.news_card:hover .bg-image {
+  transform: scale(1.1);
+}
+
+.news_card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.5s ease;
+  z-index: 1;
+}
+
+.news_card:hover::before {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  padding: 20px;
+  z-index: 2;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  top: 10px;
+}
+
+.overlay .meta {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+.news_card:hover .overlay p {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover meta section (appears only on hover) */
+.hover-meta {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+  font-size: 14px;
+  flex-direction: column;
+}
+
+.hover-meta .read_more {
+  text-decoration: underline;
+  font-size: 16px;
+  padding-top: 10px;
+  color: #4747d7;
+}
+
+.news_card:hover .hover-meta {
+  opacity: 1;
+}
