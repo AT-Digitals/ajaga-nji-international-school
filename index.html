@@ -1,1 +1,473 @@
-/*    /index.html   200
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champion School Header</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="OurSchool.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header" id="mainHeader">
+        <div class="header_inner">
+          <div class="logo">
+            <img src="../test123.png" alt="Champion School Logo" />
+          </div>
+          <nav class="nav web">
+            <div class="dropdown">
+              <a href="#" class="active dropdown-toggle"
+                >Our School <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="dropdown-menu">
+                <a href="#" class="history">History </a>
+                <a href="#">Board of Directors</a>
+                <a href="#">Staff</a>
+                <a href="#">Groups</a>
+              </div>
+            </div>
+            <a href="./Accademic.html">Academics</a>
+            <a href="#">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
+            <a href="#">Media Gallery</a>
+            <a href="#">Support Us</a>
+            <a href="#">Contact Us</a>
+          </nav>
+
+          <div class="social-icons web">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+
+          <!-- Mobile Slide Menu -->
+          <div class="menu-content" id="menuContent">
+            <div class="close-btn-div">
+              <button class="close-btn" id="menuClose">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <nav class="nav">
+              <div class="mobile-dropdown">
+                <a href="#" class="active mobile-dropdown-toggle">
+                  Our School
+                  <i class="fas fa-chevron-down arrow"></i>
+                </a>
+                <div class="mobile-dropdown-menu">
+                  <a href="#" class="history"
+                    >History
+                    <span class="history-desc">(About founder)</span></a
+                  >
+                  <a href="#">Board of Directors</a>
+                  <a href="#">Staff</a>
+                  <a href="#">Groups</a>
+                </div>
+              </div>
+              <a href="#">Academics</a>
+              <a href="#">Admissions</a>
+              <a href="#">News & Events</a>
+              <a href="#">Media Gallery</a>
+              <a href="#">Support Us</a>
+              <a href="#">Contact Us</a>
+            </nav>
+
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <!-- Hamburger Menu Button -->
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <body>
+      <!-- Banner Section -->
+      <section class="banner">
+        <div class="banner-content">
+          <div class="divider no_left_banner"></div>
+
+          <h1>The Champion<br />School Texas</h1>
+          <p>
+            This is where we teach students skills they need to transform
+            themselves, others, and our global communities.
+          </p>
+          <a href="#">Our Academies</a>
+        </div>
+      </section>
+
+      <!-- Second Section -->
+      <section class="learning_section">
+        <h2>
+          Learning Begins<br />
+          With Us
+        </h2>
+        <div class="divider"></div>
+
+        <div class="learning_section-content">
+          <p>
+            We, at Champion School offer supportive and inspirational
+            environments for young enquiring minds to learn and grow with us.
+            Our passion for learning means we achieve more than outstanding
+            results. We strive to build confident and creative thinkers and aim
+            at delivering an education that is truly relevant to their future.
+          </p>
+          <div>
+            <p>
+              We are an early learning academy focused on social-emotional
+              development and early literacy and numeracy. Our students walk out
+              with the character and confidence to make their mark in the world,
+              equipped with the knowledge and real-world skills that take them
+              way ahead in the industry they may serve.
+            </p>
+            <a class="know-more" href="#">→ Know More About Us</a>
+          </div>
+        </div>
+      </section>
+      <!-- 3 -->
+      <section class="school-stats">
+        <h2>Champion School at a Glance</h2>
+        <div class="stats-container">
+          <div class="stat-box">
+            <span class="count" data-target="2">0</span
+            ><span class="plus">K</span>
+            <p>Current Enrollments</p>
+          </div>
+          <div class="stat-box">
+            <span class="count" data-target="90">0</span
+            ><span class="plus">+</span>
+            <p>Qualified Staff</p>
+          </div>
+          <div class="stat-box">
+            <span class="count" data-target="80">0</span
+            ><span class="plus">+</span>
+            <p>Clubs & Activities</p>
+          </div>
+          <div class="stat-box">
+            <span class="count" data-target="100">0</span
+            ><span class="plus">+</span>
+            <p>Active PTFA Members</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="testimonial-section">
+        <div class="testimonial-container">
+          <div class="testimonial-image">
+            <img
+              src="https://static.wixstatic.com/media/2e5f27_86cf3eef8b4b468e8f34bc79b36135a9~mv2.jpg/v1/fill/w_499,h_361,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/143a9472_edited_edited_edited_edited.jpg"
+              alt="Headmaster"
+            />
+          </div>
+          <div class="testimonial-text">
+            <span class="quote-mark">❝</span>
+            <p class="quote">
+              <em>
+                Everyday at the Campions School is like a blessing with the
+                active students and talented staff members around.
+              </em>
+            </p>
+            <p class="author">Ndipen Kelly Pride Forkeng — Headmaster</p>
+          </div>
+        </div>
+      </section>
+      <!-- 5 -->
+
+      <section class="learning_section">
+        <div class="row_section">
+          <div class="half_section">
+            <h2>
+              Curriculum
+              <br />
+              Overview
+            </h2>
+          </div>
+          <div class="half_section">
+            <div class="divider no_left"></div>
+
+            <p>
+              The Champion School aims at offering all our students a broad and
+              balanced curriculum that provides rewarding and stimulating
+              activities to prepare them for the best social and cultural life.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="academics-grid">
+        <div class="academic-card">
+          <img
+            src="https://media.istockphoto.com/id/1470160123/photo/female-teacher-reads-to-multi-cultural-elementary-school-pupils-sitting-on-floor-in-class-at.jpg?s=612x612&w=0&k=20&c=NZKN3_mYkdNqdNJYYcN4auHJsyuyvep1QD31I5tlGIA="
+            class="academic-image"
+            alt="Literacy"
+          />
+          <div class="academic-content">
+            <div class="academic-title">Literacy</div>
+            <div class="academic-description">
+              We offer classes in English and French. We also offer civics,
+              literature, and writing to improve literacy.
+            </div>
+          </div>
+        </div>
+
+        <div class="academic-card">
+          <img
+            src="https://kaderacademy.co.uk/wp-content/uploads/2024/09/01-Year-3Kader_Academy-289-1024x683.jpg"
+            class="academic-image"
+            alt="Science"
+          />
+          <div class="academic-content">
+            <div class="academic-title">Science</div>
+            <div class="academic-description">
+              Science is fundamental to society. We touch on various areas of
+              science and introduce information technology.
+            </div>
+          </div>
+        </div>
+
+        <div class="academic-card">
+          <img
+            src="https://www.shutterstock.com/image-photo/boy-student-leaning-over-notebook-600nw-2622948673.jpg"
+            class="academic-image"
+            alt="Writing"
+          />
+          <div class="academic-content">
+            <div class="academic-title">Writing</div>
+            <div class="academic-description">
+              All our classes include writing components, with a strong emphasis
+              on developing good writing skills.
+            </div>
+          </div>
+        </div>
+
+        <div class="academic-card">
+          <img
+            src="https://thumbs.dreamstime.com/b/teacher-teaching-geography-cheerful-elementary-school-globe-32597103.jpg"
+            class="academic-image"
+            alt="Geography"
+          />
+          <div class="academic-content">
+            <div class="academic-title">Geography</div>
+            <div class="academic-description">
+              Geography helps students understand how the earth works. It is
+              taught in all our classes.
+            </div>
+          </div>
+        </div>
+
+        <div class="academic-card">
+          <img
+            src="https://media.istockphoto.com/id/950609102/photo/girl-solving-mathematical-addition.jpg?s=612x612&w=0&k=20&c=hIOWKbDapOX0leF6wwRkSYeqJggAuEYTLdY-KHf1je4="
+            class="academic-image"
+            alt="Mathematics"
+          />
+          <div class="academic-content">
+            <div class="academic-title">Mathematics</div>
+            <div class="academic-description">
+              Mathematics is essential. We teach arithmetic and mathematical
+              logic in all classes.
+            </div>
+          </div>
+        </div>
+
+        <div class="academic-card">
+          <img
+            src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/04/school-having-physical-education-in-india.jpg"
+            class="academic-image"
+            alt="Physical Education"
+          />
+          <div class="academic-content">
+            <div class="academic-title">Physical Education</div>
+            <div class="academic-description">
+              We ensure our students stay active and understand the value of
+              physical fitness in all our classes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="activities-section">
+        <img
+          src="https://websitedemos.net/school-02/wp-content/uploads/sites/858/2021/05/school-template-activities-img.jpg"
+          alt="Basketball"
+        />
+        <div class="activities-content">
+          <h2>
+            Our Co-curricular <br />
+            Activities
+          </h2>
+
+          <div class="activity-item">
+            <h4><span class="bullet">●</span>Athletics</h4>
+            <p>
+              Our students are passionate about sports and athletics and have
+              the freedom to choose the one they like and wish to take up.
+            </p>
+          </div>
+
+          <div class="activity-item">
+            <h4><span class="bullet">●</span>In-house Publications</h4>
+            <p>
+              We have several writers who are encouraged to come up with
+              creations that are regularly published in our in-house magazines.
+            </p>
+          </div>
+
+          <div class="activity-item">
+            <h4><span class="bullet">●</span>Performing Arts & Music</h4>
+            <p>
+              With professionals on board, we take pride in training our
+              students in art forms like dance, drama, painting and more.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Subscribe Section -->
+      <section>
+        <div class="subscribe-section">
+          <div style="display: flex; justify-content: center">
+            <div class="divider no_left_banner"></div>
+          </div>
+          <h3>
+            Wish to know more about admissions and updates? <br />
+            Subscribe now!
+          </h3>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Email address" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </body>
+    <footer>
+      <div class="footer">
+        <div class="footer-top">
+          <div class="footer-column">
+            <h3>Ngumys Fantastic International School</h3>
+            <p>
+              P.O Box 138 Dschang, Cameroon <br />
+              W. Africa
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Links</h3>
+            <nav class="footer-nav">
+              <a href="#">Our School</a>
+              <a href="#">Academics</a>
+              <a href="#">Admissions</a>
+            </nav>
+          </div>
+          <div class="footer-column">
+            <h3>Resources</h3>
+            <nav class="footer-nav">
+              <a href="#">News & Events</a>
+              <a href="#">Media Gallery</a>
+              <a href="#">Support Us</a>
+              <a href="#">Contact Us</a>
+            </nav>
+          </div>
+
+          <div class="footer-column">
+            <h3>Contact Us</h3>
+            <div class="footer_cta">
+              <p>Tel:</p>
+              <p>
+                <a href="tel:+237679259202">+237-679259202</a> /
+                <a href="tel:+237691512550">+237-691512550</a>
+              </p>
+            </div>
+            <div class="footer_cta">
+              <p>Email:</p>
+              <p>
+                <a href="mailto:ngumysnpschool@gmail.com"
+                  >ngumysnpschool@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-middle">
+          <div class="logo">
+            <img src="../test123.png" alt="Champion School Logo" />
+            <span> Ngumys Fantastic International School </span>
+          </div>
+
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>Copyright © 2025 School | Powered by School.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("mainHeader");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+      $(document).ready(function () {
+        $("#menuToggle").on("click", function () {
+          $("#menuContent").addClass("open");
+        });
+
+        $("#menuClose").on("click", function () {
+          $("#menuContent").removeClass("open");
+        });
+
+        // Mobile dropdown accordion toggle
+        $(".mobile-dropdown-toggle").on("click", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $(this).next(".mobile-dropdown-menu").slideToggle(200);
+          $(this).find(".arrow").toggleClass("rotate");
+        });
+      });
+      $(document).ready(function () {
+        $(".count").each(function () {
+          var $this = $(this);
+          var target = +$this.attr("data-target");
+          $({ countNum: $this.text() }).animate(
+            { countNum: target },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function () {
+                $this.text(Math.ceil(this.countNum));
+              },
+              complete: function () {
+                $this.text(target);
+              },
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
