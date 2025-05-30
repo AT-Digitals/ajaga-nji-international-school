@@ -48,16 +48,6 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-.title {
-  font-family: "Lexend";
-  font-size: 42px;
-
-  font-weight: bold;
-  color: #2d3250;
-  margin: 10px 0;
-  padding-top: 10px;
-}
-
 .card_image {
   width: 800px;
   height: auto;

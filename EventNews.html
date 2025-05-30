@@ -131,7 +131,7 @@
             </div>
           </div>
 
-          <div class="title">
+          <div class="card_title">
             Ngumys Fantastic ends a rough year in with a bang
           </div>
 
@@ -170,7 +170,7 @@
             </div>
           </div>
 
-          <div class="title">Work completed on the Intellexi Bridge</div>
+          <div class="card_title">Work completed on the Intellexi Bridge</div>
 
           <div class="description">
             Work has completed on the bridge connecting the town to the suburb
@@ -206,7 +206,7 @@
             </div>
           </div>
 
-          <div class="title">Work continues on the Intellexi Bridge</div>
+          <div class="card_title">Work continues on the Intellexi Bridge</div>
 
           <div class="description">
             The main bridge connection the suburb of Tchale collapsed several
@@ -243,7 +243,9 @@
             </div>
           </div>
 
-          <div class="title">Mourning the recent passing of our founder</div>
+          <div class="card_title">
+            Mourning the recent passing of our founder
+          </div>
 
           <div class="description">
             Mourning the recent passing of an icon, the founding father of
@@ -280,7 +282,7 @@
             </div>
           </div>
 
-          <div class="title">The pupils in class 1 enjoy more room</div>
+          <div class="card_title">The pupils in class 1 enjoy more room</div>
 
           <div class="description">
             Class 1 has been expanded to allow the students more room and
@@ -317,7 +319,7 @@
             </div>
           </div>
 
-          <div class="title">Gearing up for the school year 2022</div>
+          <div class="card_title">Gearing up for the school year 2022</div>
 
           <div class="description">
             The pupils at Ngumy's could not wait to restart the 2022 school year
@@ -354,7 +356,7 @@
             </div>
           </div>
 
-          <div class="title">
+          <div class="card_title">
             Recently renovated Afor Information and Communication Technology
             Center
           </div>
@@ -376,14 +378,50 @@
       </div>
     </a>
     <script>
-      document
-        .querySelector(".search-toggle")
-        .addEventListener("click", function () {
-          const input = document.getElementById("searchField");
-          input.style.display =
-            input.style.display === "inline-block" ? "none" : "inline-block";
-          input.focus(); // auto-focus input when shown
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("mainHeader");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+      $(document).ready(function () {
+        $("#menuToggle").on("click", function () {
+          $("#menuContent").addClass("open");
         });
+
+        $("#menuClose").on("click", function () {
+          $("#menuContent").removeClass("open");
+        });
+
+        // Mobile dropdown accordion toggle
+        $(".mobile-dropdown-toggle").on("click", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $(this).next(".mobile-dropdown-menu").slideToggle(200);
+          $(this).find(".arrow").toggleClass("rotate");
+        });
+      });
+      $(document).ready(function () {
+        $(".count").each(function () {
+          var $this = $(this);
+          var target = +$this.attr("data-target");
+          $({ countNum: $this.text() }).animate(
+            { countNum: target },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function () {
+                $this.text(Math.ceil(this.countNum));
+              },
+              complete: function () {
+                $this.text(target);
+              },
+            }
+          );
+        });
+      });
     </script>
     <script>
       window.addEventListener("scroll", function () {
