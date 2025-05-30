@@ -1,18 +1,3 @@
-@font-face {
-  font-family: "Lexend"; /* Name of the font */
-  src: url("./Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
-  font-weight: normal; /* Optional: Set the weight */
-  font-style: normal; /* Optional: Set the style */
-}
-
-@font-face {
-  font-family: "RedHatDisplay"; /* Name of the font */
-  src: url("./Red_Hat_Display//RedHatDisplay-VariableFont_wght.ttf")
-    format("truetype");
-  font-weight: normal; /* Optional: Set the weight */
-  font-style: normal; /* Optional: Set the style */
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -20,6 +5,7 @@
 }
 
 body {
+  font-family: "Montserrat", sans-serif;
   color: #2c2c2c;
   line-height: 1.6;
 }
@@ -53,15 +39,13 @@ body {
 }
 
 .banner h1 {
+  font-size: 3rem;
   margin-bottom: 1rem;
-  font-family: "Lexend";
-  font-size: 42px;
 }
 
 .banner p {
+  font-size: 1rem;
   margin-bottom: 1rem;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .banner a {
@@ -72,30 +56,27 @@ body {
   font-weight: 700;
   border-radius: 5px;
   display: inline-block;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .learning_section {
   max-width: 1240px;
-  margin: 80px auto;
-  background-color: #fff;
-  padding: 0 20px;
+  margin: 20px auto;
+  /* background-color: #fff; */
 }
 
 .learning_section h2 {
+  font-size: 3rem;
   font-weight: 400;
   line-height: 1.3;
   margin-bottom: 1rem;
   color: #1a1a1a;
-  font-family: "Lexend";
-  font-size: 42px;
+  font-family: Georgia, Times, serif;
 }
 
 .divider {
   width: 84px;
   height: 3px;
-  background-color: #4b50e6; /* blue color */
+  background-color: #ff6600; /* blue color */
   margin-left: 570px; /* pushes it to the right */
   margin-bottom: 3rem;
 }
@@ -110,8 +91,7 @@ body {
 .learning_section-content p {
   flex: 1;
   max-width: 520px;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.05rem;
   line-height: 1.8;
 }
 
@@ -122,8 +102,7 @@ body {
   font-weight: 700;
   text-decoration: none;
   border-bottom: 1px solid rgba(74, 72, 72, 0.215);
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
+  font-size: 1rem;
 }
 .know-more:hover {
   border-bottom: 1px solid black;
@@ -152,11 +131,11 @@ body {
   background-color: #f8f9ff;
   padding: 50px 20px;
   text-align: center;
+  font-family: "Segoe UI", sans-serif;
 }
 
 .school-stats h2 {
-  font-family: "Lexend";
-  font-size: 42px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 40px;
 }
@@ -171,20 +150,18 @@ body {
 .stat-box {
   font-size: 69px;
   font-weight: bold;
-  color: #4a4cf0;
-  font-family: "Lexend";
+  color: #ff6600;
 }
 
 .stat-box p {
   font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
   font-weight: normal;
   color: #555;
 }
 
 .plus {
   font-size: 69px;
-  color: #4a4cf0;
+  color: #ff6600;
 }
 
 .testimonial-section {
@@ -219,24 +196,35 @@ body {
 
 .quote-mark {
   font-size: 69px;
-  color: #4a4cf0;
+  color: #ff6600;
   display: block;
+  height: 80px;
 }
 
 .quote {
   font-size: 26px;
-  font-family: "Nunito Sans", sans-serif;
-  color: #555;
+  color: black !important;
   font-style: italic;
   margin: 20px 0;
   line-height: 1.6;
 }
+.quote_text {
+  font-size: 18px;
+  color: black !important;
+  font-style: italic;
+  margin: 0 !important;
+  line-height: 1.6;
+}
+.bg_clr {
+  background: linear-gradient(180deg, #d4e7ff 0%, #e8ffff 100%);
+  padding: 40px 0;
+}
 
 .author {
   font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
   color: #222;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .circular_section {
@@ -247,8 +235,6 @@ body {
 
 .half_section {
   width: 50%;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
 }
 .row_section {
   display: flex;
@@ -280,12 +266,13 @@ body {
 }
 
 .academic-card {
-  background: linear-gradient(90deg, #3f3dc8 0%, #5f6ef8 100%);
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: start;
   transition: transform 0.3s;
+  padding: 30px;
 }
 
 .academic-card:hover {
@@ -294,26 +281,21 @@ body {
 
 .academic-image {
   width: 100%;
+  border-radius: 15px;
   object-fit: cover;
 }
 
-.academic-content {
-  padding: 20px;
-}
-
 .academic-title {
-  font-family: "Lexend";
-  font-size: 32px;
-
-  font-weight: 700;
-  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
   color: white;
 }
 
 .academic-description {
   font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
   color: white;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -341,10 +323,16 @@ body {
   flex: 1;
   min-width: 300px;
 }
+.academic-content {
+  background: #0f313a;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
 
 .activities-content h2 {
-  font-family: "Lexend";
-  font-size: 42px;
+  font-size: 56px;
+  font-family: Georgia, Times, serif;
   margin-bottom: 20px;
   font-weight: 400;
 }
@@ -358,14 +346,12 @@ body {
   font-size: 24px;
   font-weight: 400;
   color: #3f3dc8;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: Georgia, Times, serif;
 }
 
 .activity-item p {
   margin: 4px 0 0;
   color: #555;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .bullet {
@@ -385,57 +371,15 @@ body {
 }
 
 .subscribe-section h3 {
-  font-family: "Lexend";
-  font-size: 42px;
-
+  font-size: 40px;
+  font-family: Georgia, serif;
   margin: 30px 0;
-}
-
-.subscribe-box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.subscribe-box input[type="email"] {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  width: 250px;
-}
-
-.subscribe-box button {
-  padding: 10px 20px;
-  background-color: white;
-  color: #3f3dc8;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
-}
-
-.subscribe-box button:hover {
-  background-color: #e5e5ff;
 }
 
 @media (max-width: 768px) {
   .activities-section {
     flex-direction: column;
     padding: 40px 20px;
-  }
-
-  .subscribe-box {
-    flex-direction: column;
-  }
-
-  .subscribe-box input,
-  .subscribe-box button {
-    width: 100%;
-    max-width: 300px;
   }
 }
 
@@ -465,15 +409,12 @@ body {
 
 .content h2 {
   font-size: 28px;
-  font-family: "Lexend";
-
   margin-bottom: 16px;
   color: #1a1a1a;
 }
 
 .content p {
   font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
   color: #555;
   line-height: 1.6;
 }
@@ -511,7 +452,18 @@ body {
 }
 
 h2 {
-  font-size: 42px;
-  font-family: "Lexend";
+  font-size: 69px;
+  font-family: Georgia, Times, serif;
   font-weight: 400;
+}
+
+.btn i {
+  margin-left: 10px;
+}
+.accadamic_btn i {
+  margin-left: 10px;
+}
+
+.accadamic_btn:hover {
+  color: #ff6600;
 }
