@@ -348,6 +348,7 @@ footer {
 }
 .logo img {
   margin-right: 10px;
+  max-width: 100px;
 }
 .footer-nav {
   display: flex;
