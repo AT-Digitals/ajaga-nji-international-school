@@ -1,4 +1,19 @@
 /* Base Reset */
+
+@font-face {
+  font-family: "Lexend"; /* Name of the font */
+  src: url("./Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
+
+@font-face {
+  font-family: "RedHatDisplay"; /* Name of the font */
+  src: url("./Red_Hat_Display//RedHatDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
 * {
   margin: 0;
   padding: 0;
@@ -330,6 +345,7 @@ header {
   line-height: 1.6;
   margin-bottom: 15px;
   color: #b9b9b9;
+  font-family: "Lexend";
 }
 
 .icon-row i {
@@ -352,6 +368,7 @@ header {
   color: white;
   margin-bottom: 20px;
   font-size: 24px;
+  font-family: "Lexend";
 }
 
 .item-row {
@@ -371,6 +388,7 @@ header {
   color: white;
   font-weight: bold;
   margin-bottom: 4px;
+  font-family: "Lexend";
 }
 
 .input-row {
