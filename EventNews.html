@@ -385,6 +385,52 @@
           input.focus(); // auto-focus input when shown
         });
     </script>
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("mainHeader");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+      $(document).ready(function () {
+        $("#menuToggle").on("click", function () {
+          $("#menuContent").addClass("open");
+        });
+
+        $("#menuClose").on("click", function () {
+          $("#menuContent").removeClass("open");
+        });
+
+        // Mobile dropdown accordion toggle
+        $(".mobile-dropdown-toggle").on("click", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $(this).next(".mobile-dropdown-menu").slideToggle(200);
+          $(this).find(".arrow").toggleClass("rotate");
+        });
+      });
+      $(document).ready(function () {
+        $(".count").each(function () {
+          var $this = $(this);
+          var target = +$this.attr("data-target");
+          $({ countNum: $this.text() }).animate(
+            { countNum: target },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function () {
+                $this.text(Math.ceil(this.countNum));
+              },
+              complete: function () {
+                $this.text(target);
+              },
+            }
+          );
+        });
+      });
+    </script>
   </body>
   <footer class="footer">
     <div class="container flex-wrap space-between">
