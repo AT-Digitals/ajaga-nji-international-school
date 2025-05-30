@@ -60,9 +60,8 @@ body {
 
 .learning_section {
   max-width: 1240px;
-  margin: 80px auto;
-  background-color: #fff;
-  padding: 0 20px;
+  margin: 20px auto;
+  /* background-color: #fff; */
 }
 
 .learning_section h2 {
@@ -77,7 +76,7 @@ body {
 .divider {
   width: 84px;
   height: 3px;
-  background-color: #4b50e6; /* blue color */
+  background-color: #ff6600; /* blue color */
   margin-left: 570px; /* pushes it to the right */
   margin-bottom: 3rem;
 }
@@ -151,7 +150,7 @@ body {
 .stat-box {
   font-size: 69px;
   font-weight: bold;
-  color: #4a4cf0;
+  color: #ff6600;
 }
 
 .stat-box p {
@@ -162,7 +161,7 @@ body {
 
 .plus {
   font-size: 69px;
-  color: #4a4cf0;
+  color: #ff6600;
 }
 
 .testimonial-section {
@@ -197,22 +196,35 @@ body {
 
 .quote-mark {
   font-size: 69px;
-  color: #4a4cf0;
+  color: #ff6600;
   display: block;
+  height: 80px;
 }
 
 .quote {
   font-size: 26px;
-  color: #555;
+  color: black !important;
   font-style: italic;
   margin: 20px 0;
   line-height: 1.6;
+}
+.quote_text {
+  font-size: 18px;
+  color: black !important;
+  font-style: italic;
+  margin: 0 !important;
+  line-height: 1.6;
+}
+.bg_clr {
+  background: linear-gradient(180deg, #d4e7ff 0%, #e8ffff 100%);
+  padding: 40px 0;
 }
 
 .author {
   font-size: 16px;
   color: #222;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .circular_section {
@@ -254,12 +266,13 @@ body {
 }
 
 .academic-card {
-  background: linear-gradient(90deg, #3f3dc8 0%, #5f6ef8 100%);
+  background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   text-align: start;
   transition: transform 0.3s;
+  padding: 30px;
 }
 
 .academic-card:hover {
@@ -268,23 +281,21 @@ body {
 
 .academic-image {
   width: 100%;
+  border-radius: 15px;
   object-fit: cover;
 }
 
-.academic-content {
-  padding: 20px;
-}
-
 .academic-title {
-  font-size: 32px;
-  font-weight: 700;
-  margin: 10px 0;
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 0;
   color: white;
 }
 
 .academic-description {
   font-size: 16px;
   color: white;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 600px) {
@@ -311,6 +322,12 @@ body {
 .activities-content {
   flex: 1;
   min-width: 300px;
+}
+.academic-content {
+  background: #0f313a;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
 }
 
 .activities-content h2 {
@@ -359,49 +376,10 @@ body {
   margin: 30px 0;
 }
 
-.subscribe-box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.subscribe-box input[type="email"] {
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 4px;
-  width: 250px;
-}
-
-.subscribe-box button {
-  padding: 10px 20px;
-  background-color: white;
-  color: #3f3dc8;
-  font-weight: 600;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.subscribe-box button:hover {
-  background-color: #e5e5ff;
-}
-
 @media (max-width: 768px) {
   .activities-section {
     flex-direction: column;
     padding: 40px 20px;
-  }
-
-  .subscribe-box {
-    flex-direction: column;
-  }
-
-  .subscribe-box input,
-  .subscribe-box button {
-    width: 100%;
-    max-width: 300px;
   }
 }
 
@@ -477,4 +455,15 @@ h2 {
   font-size: 69px;
   font-family: Georgia, Times, serif;
   font-weight: 400;
+}
+
+.btn i {
+  margin-left: 10px;
+}
+.accadamic_btn i {
+  margin-left: 10px;
+}
+
+.accadamic_btn:hover {
+  color: #ff6600;
 }
