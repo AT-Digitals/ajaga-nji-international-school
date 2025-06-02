@@ -24,6 +24,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+:root {
+  --main-bg: #0f313a;
+  --main-text: #ff6600;
+}
 /* Header Container */
 header {
   background-color: white;
@@ -105,7 +109,7 @@ header {
   font-family: "Lexend";
 }
 .nav a:hover {
-  color: #ff6600;
+  color: var(--main-text);
 }
 /* Dropdown container */
 .dropdown {
@@ -123,11 +127,11 @@ header {
   transition: color 0.3s;
 }
 
-.dropdown-toggle:hover,
+/* .dropdown-toggle:hover,
 .dropdown a.active {
-  color: #ff6600;
+  color: var(--main-text);
   font-weight: 700;
-}
+} */
 
 .dropdown-menu {
   position: absolute;
@@ -219,6 +223,7 @@ header {
 .menu-content.open {
   right: 0;
   display: none;
+  background-color: #0f313a;
 }
 
 /* Close Button */
@@ -405,12 +410,17 @@ header {
 }
 
 .btn {
-  background-color: #ff6600;
-  border: none;
+  background-color: var(--main-text);
+  border: 1px solid var(--main-text);
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   cursor: pointer;
+}
+.btn:hover {
+  background: none;
+  border: 1px solid var(--main-text);
+  color: var(--main-text);
 }
 
 .checkbox-group {
@@ -438,11 +448,11 @@ header {
 }
 
 .highlight {
-  color: #ff6600;
+  color: var(--main-text);
 }
 
 .footer-bottom a {
-  color: #ff6600;
+  color: var(--main-text);
   text-decoration: none;
 }
 
