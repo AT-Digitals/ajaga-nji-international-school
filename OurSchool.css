@@ -392,13 +392,41 @@ body {
   }
 }
 
+.acc_section_box {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+  justify-content: center;
+}
+
 .acc_section {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 60px;
-  justify-content: space-between;
-  gap: 40px;
-  margin: 40px 0;
+  overflow: hidden;
+
+  background: #0f313a;
+  gap: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 380px;
+  flex: 1 1 calc(33.333% - 20px); /* 3 cards on large screens */
+}
+
+/* Medium screens (tablets): 2 cards per row */
+@media (max-width: 992px) {
+  .acc_section {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+/* Small screens (mobiles): 1 card per row */
+@media (max-width: 600px) {
+  .acc_section {
+    flex: 1 1 100%;
+  }
 }
 
 .acc_section.reverse {
@@ -409,33 +437,48 @@ body {
   max-width: 600px;
   width: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  transition: transform 0.4s ease-in-out;
 }
 
-.content {
-  max-width: 600px;
+.acc_section:hover img {
+  transform: scale(1.1);
 }
 
-.content h2 {
+.acc_section .content {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
+
+.acc_section .content h2 {
   font-size: 28px;
   margin-bottom: 16px;
-  color: #1a1a1a;
+  color: white;
 }
 
-.content p {
+.acc_section .content p {
   font-size: 16px;
-  color: #555;
+  color: white;
+  margin-bottom: 20px;
   line-height: 1.6;
+}
+.acc_section .content .read_more {
+  color: #ff6600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .acc_section {
     flex-direction: column;
-    text-align: center;
   }
 
-  .acc_section.reverse {
-    flex-direction: column;
+  .acc_section_box {
+    padding: 20px;
   }
 
   .acc_section img {
@@ -456,7 +499,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: blue;
+  color: white;
   text-align: center;
 }
 
@@ -475,4 +518,14 @@ h2 {
 
 .accadamic_btn:hover {
   color: #ff6600;
+}
+.our_cc_p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 2rem auto;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
 }
