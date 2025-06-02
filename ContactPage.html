@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="header.css" />
+    <title>Contact Form</title>
     <link rel="stylesheet" href="ContactPage.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <header>
     <div class="header" id="mainHeader">
@@ -24,7 +28,7 @@
         </div>
         <nav class="nav web">
           <div class="dropdown">
-            <a href="#" class="active dropdown-toggle"
+            <a href="./index.html" class="active dropdown-toggle"
               >Our School <i class="fas fa-caret-down"></i
             ></a>
             <div class="dropdown-menu">
@@ -97,85 +101,72 @@
     </div>
   </header>
   <body>
-    <section class="banner">
-      <div class="banner-content">
+    <div class="banner">
+      <img
+        src="https://images.pexels.com/photos/5212326/pexels-photo-5212326.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+        alt="Banner Image"
+      />
+      <div class="banner-text">
         <h1>Contact Us</h1>
-        <div class="breadcrumb">
-          <span class="active">School</span>
-          <span class="separator">—</span>
-          <span class="contact">Contact Us</span>
-        </div>
       </div>
-    </section>
-
-    <section class="contact-section">
-      <div class="contact_container">
-        <div class="contact-details">
-          <h2>Our contact detail</h2>
+    </div>
+    <section class="find-us">
+      <h3>Have any queries?</h3>
+      <h2>We're here to help.</h2>
+      <p class="outline"></p>
+      <div class="info-cards">
+        <div class="card">
+          <h3>Reach Out</h3>
           <p>
-            Wish to enquire about admissions, syllabus, or anything else? You
-            can walk in during office hours, give us a call or simply submit the
-            form here.
+            Email: ngumysnpschool@gmail.com
+          </br>
+            Tel: 679259202 / 6 91 51 25 50
           </p>
-          <div class="contact-box">
-            <div class="contact-item">
-              <div class="label">
-                <i class="fas fa-map-marker-alt"></i>Address:
-              </div>
-              <div class="value">
-                1234 Demo Ave, Austin, TX 56789,<br />United States.
-              </div>
-            </div>
-            <div class="contact-item">
-              <div class="label"><i class="fas fa-phone"></i>Phone:</div>
-              <div class="value">+01 - 123 456 7890</div>
-            </div>
-            <div class="contact-item">
-              <div class="label"><i class="fas fa-envelope"></i>Email:</div>
-              <div class="value">mail@example.com</div>
-            </div>
+        </div>
+        <div class="card">
+          <h3>Address</h3>
+          <p> Tchouale, Hotel escalier, Behind intellexi
+           </p>
+        </div>
+        <div class="card">
+          <h3>Follow us</h3>
+          <div class="social-icons_card">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
           </div>
         </div>
-        <div class="form-box">
-          <h4>Send us a message</h4>
-          <form>
-            <div class="form-row">
-              <input
-                class="form_input"
-                type="text"
-                placeholder="Your Full Name"
-                required
-              />
-              <input
-                class="form_input"
-                type="email"
-                placeholder="Your Email"
-                required
-              />
-              <input
-                class="form_input"
-                type="email"
-                placeholder="Subject"
-                required
-              />
-            </div>
-
-            <textarea
-              class="form_textarea"
-              placeholder="Message"
-              rows="4"
-            ></textarea>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
       </div>
     </section>
+    <div class="container">
+      <div class="left">
+        <h1>Let's Build<br />Something<br />Awesome!</h1>
+        <p>
+          I'm a paragraph. Click here to add your own text and edit me. Let your
+          users get to know you.
+        </p>
+      </div>
+      <div class="right">
+        <form>
+          <label>Your Name <span>*</span></label>
+          <input type="text" required />
+
+          <label>Your Email <span>*</span></label>
+          <input type="email" required />
+
+          <label>Subject <span>*</span></label>
+          <input type="subject" required />
+
+          <label>Message</label>
+          <textarea rows="5"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
     <section class="map-section">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110485.08458142736!2d-95.46938238978744!3d29.817178899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c10e6c5a69ed%3A0xdea9c3f8c3bff72e!2sHouston%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1687611494524!5m2!1sen!2sin"
-        width="100%"
-        height="400"
-        style="border: 0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3105.001089395142!2d-77.03687068464858!3d38.90719227957025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b9dcdf088e47%3A0x4c53112dc2a66148!2sWashington%2C%20DC!5e0!3m2!1sen!2sus!4v1620511234567!5m2!1sen!2sus"
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
