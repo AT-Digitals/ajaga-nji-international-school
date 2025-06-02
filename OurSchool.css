@@ -18,6 +18,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-bg: #0f313a;
+  --main-text: #ff6600;
+  --primary-color: #15b5fc;
+  --border-color: #b3ecf7;
+  --text-dark: #0f1f2e;
+  --text-muted: #6b7280;
+  --bg-light: #f6feff;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   color: #2c2c2c;
@@ -65,13 +75,18 @@ body {
 }
 
 .banner a {
-  background: white;
-  color: #2c2c2c;
+  background: none;
+  color: var(--main-text);
+  border: 1px solid var(--main-text);
   padding: 10px 20px;
   text-decoration: none;
   font-weight: 700;
   border-radius: 5px;
   display: inline-block;
+}
+.banner a:hover {
+  background: var(--main-text);
+  color: white;
 }
 
 .learning_section {
@@ -92,9 +107,12 @@ body {
 .divider {
   width: 84px;
   height: 3px;
-  background-color: #ff6600; /* blue color */
+  background-color: var(--main-text); /* blue color */
   margin-left: 570px; /* pushes it to the right */
   margin-bottom: 3rem;
+}
+.nav a.active {
+  color: var(--main-text) !important;
 }
 
 .learning_section-content {
@@ -144,10 +162,10 @@ body {
 }
 
 .school-stats {
-  background-color: #f8f9ff;
+  /* background-color: #f8f9ff; */
   padding: 50px 20px;
   text-align: center;
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Lexend";
 }
 
 .school-stats h2 {
@@ -166,7 +184,7 @@ body {
 .stat-box {
   font-size: 69px;
   font-weight: bold;
-  color: #ff6600;
+  color: var(--main-text);
 }
 
 .stat-box p {
@@ -180,7 +198,7 @@ body {
   font-size: 69px;
   font-family: "Lexend";
 
-  color: #ff6600;
+  color: var(--main-text);
 }
 
 .testimonial-section {
@@ -208,14 +226,14 @@ body {
 
 .testimonial-text {
   max-width: 600px;
-  position: relative;
+  /* position: relative; */
   padding-left: 20px;
   text-align: left;
 }
 
 .quote-mark {
   font-size: 69px;
-  color: #ff6600;
+  color: var(--main-text);
   display: block;
   height: 80px;
 }
@@ -245,7 +263,7 @@ body {
   font-size: 16px;
   color: #222;
   font-weight: bold;
-  margin-top: 20px;
+  margin: 20px 0;
 }
 
 .circular_section {
@@ -368,7 +386,7 @@ body {
   margin: 0;
   font-size: 24px;
   font-weight: 400;
-  color: #ff6600;
+  color: var(--main-text);
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -380,7 +398,7 @@ body {
 }
 
 .bullet {
-  color: #ff6600;
+  color: var(--main-text);
   margin-right: 10px;
   font-weight: bold;
 }
@@ -407,7 +425,7 @@ body {
   align-items: center;
   overflow: hidden;
 
-  background: #0f313a;
+  background: var(--main-bg);
   gap: 10px;
   margin-bottom: 30px;
   width: 100%;
@@ -465,7 +483,14 @@ body {
   line-height: 1.6;
 }
 .acc_section .content .read_more {
-  color: #ff6600;
+  color: var(--main-text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.read_more {
+  color: var(--main-text);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -516,8 +541,10 @@ h2 {
   margin-left: 10px;
 }
 
-.accadamic_btn:hover {
-  color: #ff6600;
+.accadamic_btn {
+  background: var(--main-text);
+  border: 1px solid var(--main-text);
+  color: var(--main-text);
 }
 .our_cc_p {
   display: flex;
@@ -528,4 +555,203 @@ h2 {
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
   text-align: center;
+}
+.download_container_Box {
+  max-width: 1200px;
+  background-image: linear-gradient(
+      112.5deg,
+      rgb(214, 214, 214) 0%,
+      rgb(214, 214, 214) 10%,
+      rgb(195, 195, 195) 10%,
+      rgb(195, 195, 195) 53%,
+      rgb(176, 176, 176) 53%,
+      rgb(176, 176, 176) 55%,
+      rgb(157, 157, 157) 55%,
+      rgb(157, 157, 157) 60%,
+      rgb(137, 137, 137) 60%,
+      rgb(137, 137, 137) 88%,
+      rgb(118, 118, 118) 88%,
+      rgb(118, 118, 118) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(
+      157.5deg,
+      rgb(214, 214, 214) 0%,
+      rgb(214, 214, 214) 10%,
+      rgb(195, 195, 195) 10%,
+      rgb(195, 195, 195) 53%,
+      rgb(176, 176, 176) 53%,
+      rgb(176, 176, 176) 55%,
+      rgb(157, 157, 157) 55%,
+      rgb(157, 157, 157) 60%,
+      rgb(137, 137, 137) 60%,
+      rgb(137, 137, 137) 88%,
+      rgb(118, 118, 118) 88%,
+      rgb(118, 118, 118) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(214, 214, 214) 0%,
+      rgb(214, 214, 214) 10%,
+      rgb(195, 195, 195) 10%,
+      rgb(195, 195, 195) 53%,
+      rgb(176, 176, 176) 53%,
+      rgb(176, 176, 176) 55%,
+      rgb(157, 157, 157) 55%,
+      rgb(157, 157, 157) 60%,
+      rgb(137, 137, 137) 60%,
+      rgb(137, 137, 137) 88%,
+      rgb(118, 118, 118) 88%,
+      rgb(118, 118, 118) 91%,
+      rgb(99, 99, 99) 91%,
+      rgb(99, 99, 99) 100%
+    ),
+    linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
+  background-blend-mode: overlay, overlay, overlay, normal;
+  border-radius: 30px;
+  margin: 2rem auto;
+}
+.download_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+.download_container h2 {
+  color: #0f313a;
+  text-align: center;
+}
+.download_container p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+.download_btn {
+  border: 1px solid #ff6600;
+  padding: 15px;
+  cursor: pointer;
+  color: var(--main-text);
+  max-width: 200px;
+  width: 100%;
+  text-align: center;
+}
+.download_btn:hover {
+  background-color: var(--main-text);
+  color: white;
+  border: 1px solid;
+}
+
+@media (max-width: 768px) {
+  .download_container {
+    padding: 40px 0;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  .max_width {
+    padding: 0 20px;
+  }
+  .process {
+    padding: 0 20px;
+  }
+  .container {
+    padding: 0 20px !important;
+  }
+  .header_inner {
+    padding: 0 20px;
+  }
+  .header_inner .btn {
+    display: none;
+  }
+}
+.addmissions_icon i {
+  background-color: var(--main-text);
+  padding: 15px;
+  border-radius: 30px;
+}
+.addmissions_icon {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 2rem 0;
+}
+.addmissions_icon p {
+  font-size: 22px;
+  font-family: "Lexend";
+}
+
+.process {
+  text-align: left;
+  max-width: 1240px;
+  margin: 2rem auto;
+}
+
+.process h2 {
+  font-weight: 600;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.steps {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  background: white;
+  border: 1px solid var(--main-text);
+  border-radius: 12px;
+  padding: 24px;
+  flex: 1 1 calc(25% - 24px);
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.step-number {
+  color: var(--main-text);
+  font-size: 90px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: "Lexend";
+}
+
+.step-card h3 {
+  color: black;
+  margin: 0 0 12px;
+  font-weight: 600;
+  font-size: 32px;
+  font-family: "Lexend";
+}
+
+.step-card p {
+  color: black;
+  font-size: 0.95rem;
+  font-family: "Nunito Sans", sans-serif;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+.step-card a {
+  color: var(--main-text);
+  cursor: pointer;
+  text-decoration: none;
+}
+.admissions_process_des {
+  max-width: 1000px;
+  margin: 4rem auto;
+  text-align: center;
+}
+.admissions_process_des h2 {
+  font-size: 24px;
+}
+
+.view_more {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
 }

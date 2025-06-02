@@ -5,14 +5,9 @@
   font-family: "Arial", sans-serif;
 }
 
-body {
-  padding: 40px;
-  background-color: #f2f2f2;
-}
-
 .news_container {
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -73,12 +68,14 @@ body {
   font-size: 13px;
   font-weight: 600;
   margin-bottom: 5px;
+  font-family: "Lexend";
 }
 
 .overlay p {
   font-size: 14px;
   font-weight: bold;
   padding-top: 10px;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .news_card:hover .overlay p {
@@ -92,6 +89,7 @@ body {
   bottom: 0;
   width: 100%;
   padding: 20px 20px;
+  gap: 20px;
   display: flex;
   justify-content: space-between;
   color: #fff;
@@ -100,13 +98,6 @@ body {
   z-index: 2;
   font-size: 14px;
   flex-direction: column;
-}
-
-.hover-meta .read_more {
-  text-decoration: underline;
-  font-size: 16px;
-  padding-top: 10px;
-  color: #4747d7;
 }
 
 .news_card:hover .hover-meta {

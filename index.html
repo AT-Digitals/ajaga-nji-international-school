@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
+        <link rel="stylesheet" href="NewsCard.css" />
+
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
@@ -35,21 +37,21 @@
           </div>
           <nav class="nav web">
             <div class="dropdown">
-              <a href="./index.html" class="active dropdown-toggle"
+              <a href="./index.html" class="dropdown-toggle"
                 >Our School <i class="fas fa-caret-down"></i
               ></a>
               <div class="dropdown-menu">
-                <a href="#" class="history">History </a>
-                <a href="#">Board of Directors</a>
-                <a href="#">Staff</a>
-                <a href="#">Groups</a>
+                <a href="/bistory" class="history">History </a>
+                <a href="/board">Board of Directors</a>
+                <a href="/staf">Staff</a>
+                <a href="/grp">Groups</a>
               </div>
             </div>
             <a href="./Accademic.html">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">News & Events</a>
-            <a href="#">Media Gallery</a>
-            <a href="#">Support Us</a>
+          <a href="./Adminssions.html">Admissions</a>
+            <a href="/EventNews.html">News & Events</a>
+            <a href="/media">Media Gallery</a>
+            <a href="/support">Support Us</a>
           </nav>
           <div>
             <a class="btn" href="#"
@@ -126,7 +128,35 @@
         </div>
       </section>
 
-      <!-- Second Section -->
+      <section class="testimonial-section">
+        <div class="testimonial-container">
+          <div class="testimonial-image">
+            <img
+              src="https://static.wixstatic.com/media/2e5f27_86cf3eef8b4b468e8f34bc79b36135a9~mv2.jpg/v1/fill/w_499,h_361,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/143a9472_edited_edited_edited_edited.jpg"
+              alt="Headmaster"
+            />
+          </div>
+          <div class="testimonial-text">
+            <!-- <span class="quote-mark">❝</span> -->
+            <p class="quote_text">
+              I am Ndipen Kelly Pride Forkeng, the Head Mistress of Ngumys
+              Fantastic International School. Please take the time to browse
+              through our site, learn about our primary school, our facilities,
+              our philosophies and our staff. We offer a friendly and safe
+              environment for Anglo-Saxon education in the university town of
+              Dschang in the Western province of Cameroon.
+            </p>
+            <p class="author">Ndipen Kelly Pride Forkeng — Headmaster</p>
+            <div class="content">
+              <a class="read_more">
+                Read more <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Second Section 
       <section class="learning_section">
         <h2>
           Learning Begins<br />
@@ -153,7 +183,7 @@
             <a class="know-more" href="#">→ Know More About Us</a>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- 3 -->
       <section class="school-stats">
         <h2>Ngumys Fantastic International School at a Glance</h2>
@@ -181,32 +211,123 @@
         </div>
       </section>
 
-      <!-- 4 -->
-      <section class="testimonial-section">
-        <div class="testimonial-container">
-          <div class="testimonial-image">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_86cf3eef8b4b468e8f34bc79b36135a9~mv2.jpg/v1/fill/w_499,h_361,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/143a9472_edited_edited_edited_edited.jpg"
-              alt="Headmaster"
-            />
+      <section class="max_width">
+        <div class="blogs_section">
+          <h2>Our Latest News</h2>
+        </div>
+        </section>
+        <div class="news_container">
+      <div class="news_card">
+        <div
+          class="bg-image"
+          style="
+            background-image: url('https://images.pexels.com/photos/5211446/pexels-photo-5211446.jpeg');
+          "
+        ></div>
+        <div class="overlay">
+          <div class="meta">Klaus Nji • Jan 3, 2022</div>
+        </div>
+        <div class="hover-meta">
+          <div style="line-height: 1.5;">
+            It was a rough here for </br>
+            Ngumys Internation school
+        </br>
+            and lost our father.
           </div>
-          <div class="testimonial-text">
-            <span class="quote-mark">❝</span>
-            <p class="quote_text">
-              I am Ndipen Kelly Pride Forkeng, the Head Mistress of Ngumys
-              Fantastic International School. Please take the time to browse
-              through our site, learn about our primary school, our facilities,
-              our philosophies and our staff. We offer a friendly and safe
-              environment for Anglo-Saxon education in the university town of
-              Dschang in the Western province of Cameroon.
+<a class="read_more">Read more</a>
+        </div>
+      </div>
+
+      <!-- Repeat for other cards -->
+      <div class="news_card">
+        <div
+          class="bg-image"
+          style="
+            background-image: url('https://images.pexels.com/photos/4144101/pexels-photo-4144101.jpeg');
+          "
+        ></div>
+        <div class="overlay">
+          <div class="meta">Klaus Nji • Jan 3, 2022 </div>
+        </div>
+        <div class="hover-meta">
+            <div style="line-height: 1.5;">
+                It was a rough here for </br>
+                Ngumys Internation school
+            </br>
+                and lost our father.
+              </div>
+<a class="read_more">Read more</a>
+        </div>
+      </div>
+
+      <div class="news_card">
+        <div
+          class="bg-image"
+          style="
+            background-image: url('https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "
+        ></div>
+        <div class="overlay">
+          <div class="meta">Klaus Nji • Jan 3, 2022 </div>
+        </div>
+        <div class="hover-meta">
+            <div style="line-height: 1.5;">
+                It was a rough here for </br>
+                Ngumys Internation school
+            </br>
+                and lost our father.
+              </div>
+<a class="read_more">Read more</a>
+        </div>
+      </div>
+
+      <div class="news_card">
+        <div
+          class="bg-image"
+          style="
+            background-image: url('https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg');
+          "
+        ></div>
+        <div class="overlay">
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+        </div>
+        <div class="hover-meta">
+            <div style="line-height: 1.5;">
+                It was a rough here for </br>
+                Ngumys Internation school
+            </br>
+                and lost our father.
+              </div>
+<a class="read_more">Read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="view_more">
+                              <a class="download_btn"  > View more </a>
+
+    </div>
+
+
+
+      <section style="padding: 20px">
+        <div class="download_container_Box">
+          <div class="download_container">
+            <h2>Download Our School Calendar</h2>
+            <p>
+              You can download our school calendar of events from the link
+              below.
             </p>
-            <p class="author">Ndipen Kelly Pride Forkeng — Headmaster</p>
+            <a class="download_btn" download target="_blank"> Download </a>
           </div>
         </div>
       </section>
+
+      <!-- 4 -->
+
       <!-- 5 -->
 
-      <section class="bg_clr">
+      <!-- <section class="bg_clr">
         <section class="learning_section">
           <div class="divider no_left"></div>
 
@@ -218,13 +339,13 @@
                 Overview
               </h2>
             </div>
-            <!-- <div class="half_section">
+            <div class="half_section">
             <p>
               We are an English-speaking school in Dschang, Cameroon, W. Africa.
               We offer kindergarten (nursery school) all the way to class 7.
               Each class covers the following main curriculum.
             </p>
-          </div> -->
+          </div> 
           </div>
         </section>
         <div class="academics-grid">
@@ -323,7 +444,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> 
 
       <section class="activities-section">
         <img
@@ -360,7 +481,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Subscribe Section -->
     </body>
@@ -398,7 +519,8 @@
             </div>
           </div>
           <div class="item-row">
-            <i class="fas fa-phone-alt icon"></i>
+            <i class="fas fa-phone-alt icon"               style="transform: rotate(90deg)"
+></i>
             <div>
               <p class="label">Phones:</p>
               <a
@@ -481,6 +603,17 @@
     </footer>
 
     <script>
+      const navLinks = document.querySelectorAll(".nav.web a");
+  const currentPath = window.location.pathname;
+
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
+
+    // Compare the link's path to current page's path
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    }
+  });
       window.addEventListener("scroll", function () {
         const header = document.getElementById("mainHeader");
         if (window.scrollY > 50) {
