@@ -1,0 +1,215 @@
+body {
+  background-color: #fff;
+}
+
+.container1 {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+  padding: 20px 60px;
+}
+
+.all_post {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+.news_post {
+  color: black;
+  font-family: "Lexend";
+  font-size: 42px;
+  padding-bottom: 15px;
+  padding-top: 20px;
+  font-weight: 600;
+}
+
+.line_quote {
+  border: 2px solid #ff6600;
+  width: 8%;
+}
+
+.card {
+  width: 360px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  background: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.image-container {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  bottom: 12px;
+  right: 12px;
+  cursor: pointer;
+}
+
+.arrow i {
+  font-size: 18px;
+  color: #ff6600;
+}
+
+.arrow:hover {
+  background: #ff6600;
+}
+
+.arrow:hover i {
+  color: white;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content p {
+  font-size: 14px;
+  font-family: "Lexend";
+  padding-bottom: 15px;
+  color: #434242;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #ff6600;
+  color: white;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #ff6600;
+  position: relative;
+  left: 100px;
+}
+
+.tag:hover {
+  display: inline-block;
+  background-color: white;
+  color: #ff6600;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border: 1px solid #ff6600;
+  position: relative;
+  left: 100px;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.meta {
+  display: flex;
+  font-size: 0.85rem;
+  color: #6b7280;
+  gap: 1rem;
+  align-items: center;
+}
+
+.meta i {
+  margin-right: 0.3rem;
+  color: #dc2626;
+}
+.heart {
+  padding-left: 125px;
+  color: red;
+}
+
+.banner {
+  background: url("./WhatsApp\ Image\ 2025-05-28\ at\ 10.42.27\ PM.jpeg")
+    no-repeat center center/cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(7 7 7 / 40%); /* dark overlay */
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  padding-left: 50px;
+  margin: auto;
+}
+
+.banner h1 {
+  font-family: "Lexend";
+  font-size: 40px;
+  margin: 0;
+  font-weight: bold;
+}
+.author {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.avatar {
+  background-color: #ff6600;
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.meta {
+  color: gray;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+}

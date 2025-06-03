@@ -139,12 +139,13 @@ body {
   font-weight: 700;
 }
 
-.container {
+.contact_container1 {
   display: flex;
   min-height: 100vh;
   padding: 40px;
   gap: 50px;
   box-sizing: border-box;
+  padding-top: 0px;
 }
 
 .left {
@@ -191,7 +192,7 @@ textarea {
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background: #1e1f29;
+  background: white;
   color: #fff;
   font-size: 1rem;
 }
@@ -233,8 +234,75 @@ button {
   border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 button:hover {
   background-color: #ff6600;
+}
+
+.contact-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  z-index: 1;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.contact-container h2 {
+  font-family: "Lexend";
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-container p.subtext {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 35px;
+}
+
+.contact-item i {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #ff6600;
+  min-width: 30px;
+}
+
+.contact-details h4 {
+  margin: 0 0 5px;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.contact-details p {
+  margin: 0;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .contact_container1 {
+    display: flex;
+    min-height: 100vh;
+    padding: 40px;
+    gap: 50px;
+    box-sizing: border-box;
+    padding-top: 0px;
+    flex-direction: column;
+  }
+  .contact-container h2 {
+    font-family: "Lexend";
+    font-size: 30px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
 }
