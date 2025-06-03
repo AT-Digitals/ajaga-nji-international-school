@@ -1028,7 +1028,7 @@ a {
 .learn-card {
   display: flex;
   gap: 16px;
-  background-color: #001828;
+  background-color: var(--main-bg);
   padding: 18px 20px;
   border-radius: 12px;
   align-items: flex-start;
@@ -1037,14 +1037,20 @@ a {
 }
 
 .learn-card:hover {
-  background-color: #002244;
+  background-color: white;
   transform: scale(1.02);
+}
+.learn-card:hover .learn-description {
+  color: #000;
+}
+.history-icon {
+  color: var(--main-text);
 }
 
 /* Icon */
 .learn-icon {
   font-size: 24px;
-  color: #15b5fc;
+  color: var(--main-text);
   margin-top: 6px;
 }
 
@@ -1053,11 +1059,12 @@ a {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 6px;
+  color: var(--main-text);
 }
 
 .learn-description {
   font-size: 15px;
-  color: #d3d3d3;
+  color: white;
   line-height: 1.6;
 }
 
