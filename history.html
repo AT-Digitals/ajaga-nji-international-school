@@ -6,11 +6,12 @@
     <title>Courses Section</title>
     <link rel="stylesheet" href="OurSchool.css" />
     <link rel="stylesheet" href="header.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <header>
     <div class="header" id="mainHeader">
@@ -44,7 +45,6 @@
             </div>
           </div>
           <a href="./Accademic.html">Academics</a>
-
           <a href="./Adminssions.html">Admissions</a>
           <a href="/EventNews.html">News & Events</a>
           <a href="./MediaGallery.html">Media Gallery</a>
@@ -52,9 +52,15 @@
         </nav>
         <div>
           <a class="btn" href="./ContactPage.html"
-            >Contact Us <i class="hover fas fa-arrow-right"></i
+            >Contact Us <i class="fas fa-arrow-right"></i
           ></a>
         </div>
+
+        <!-- <div class="social-icons web">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div> -->
 
         <!-- Mobile Slide Menu -->
         <div class="menu-content" id="menuContent">
@@ -65,15 +71,17 @@
           </div>
           <nav class="nav">
             <div class="mobile-dropdown">
-              <a href="./index.html" class="mobile-dropdown-toggle">
+              <a href="#" class="active mobile-dropdown-toggle">
                 Our School
                 <i class="fas fa-chevron-down arrow"></i>
               </a>
               <div class="mobile-dropdown-menu">
-                <a href="./history.html" class="history">History </a>
+                <a href="#" class="history"
+                  >History <span class="history-desc">(About founder)</span></a
+                >
                 <a href="./board-of-director.html">Board of Directors</a>
                 <a href="./staff.html">Staff</a>
-                <a href="#">Groups</a>
+                <a href="./group">Groups</a>
               </div>
             </div>
             <a href="./Accademic.html">Academics</a>
@@ -94,112 +102,135 @@
   </header>
   <body>
     <section>
-      <div class="banner_image">
+      <div
+        style="position: relative; height: 400px; width: 100%; overflow: hidden"
+      >
         <img
-          src="./images/accde.webp"
+          src="https://static.wixstatic.com/media/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg/v1/fill/w_1901,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg"
           style="height: 100%; width: 100%; object-fit: cover"
           alt="banner"
         />
       </div>
     </section>
     <section>
-      <div class="max_width">
-        <div class="our_cc_p">
-          <h2>Our Academics</h2>
-          <div class="divider no_left"></div>
+      <div class="our_cc_p">
+        <h2>Our journey began in 2025…</h2>
+        <div class="divider no_left"></div>
 
-          <p>
-            We are an English-speaking school in Dschang, Cameroon, W. Africa.
-            <br />
-            We offer kindergarten (nursery school) all the way to class 7.
-            <br />
-            Each class covers the following main curriculum.
-          </p>
-        </div>
-        <div class="acc_section_box">
-          <div class="acc_section">
-            <img
-              src="https://media.istockphoto.com/id/1470160123/photo/female-teacher-reads-to-multi-cultural-elementary-school-pupils-sitting-on-floor-in-class-at.jpg?s=612x612&w=0&k=20&c=NZKN3_mYkdNqdNJYYcN4auHJsyuyvep1QD31I5tlGIA="
-              alt="Computer Science"
-            />
-            <div class="content">
-              <h2>Literacy</h2>
-              <p>
-                We offer classes in English and French, We also offer civics,
-                literature and writing to improve literacy.
-              </p>
-            </div>
+        <p>
+          We caused a seismic shift in the way learning is perceived and
+          consumed in Africa.
+          <br />
+          We built a fully-virtual platform where Africans, regardless of who
+          they are can access global standard learning resources.
+        </p>
+      </div>
+    </section>
+    <section class="history-section">
+      <div class="history-overlay">
+        <div class="history_container">
+          <div class="history-card">
+            <i class="fas fa-scroll history-icon"></i>
+            <h3 class="history-title">Our Philosophy</h3>
+            <p class="history-text">
+              A wonderful serenity has taken possession of my entire soul, like
+              these sweet mornings of spring which I enjoy with my whole heart.
+              I am alone, and feel the charm of existence.
+            </p>
           </div>
-
-          <div class="acc_section">
-            <img
-              src="https://www.shutterstock.com/image-photo/boy-student-leaning-over-notebook-600nw-2622948673.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Writing</h2>
-              <p>
-                All our classes have an element of writing. We also place an
-                emphasis on good writing.
-              </p>
-            </div>
+          <div class="history-card">
+            <i class="fas fa-university history-icon"></i>
+            <h3 class="history-title">Kingster’s Principle</h3>
+            <p class="history-text">
+              A wonderful serenity has taken possession of my entire soul, like
+              these sweet mornings of spring which I enjoy with my whole heart.
+              I am alone, and feel the charm of existence.
+            </p>
           </div>
-          <div class="acc_section">
-            <img
-              src="https://media.istockphoto.com/id/950609102/photo/girl-solving-mathematical-addition.jpg?s=612x612&w=0&k=20&c=hIOWKbDapOX0leF6wwRkSYeqJggAuEYTLdY-KHf1je4="
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Mathematics</h2>
-              <p>
-                Mathematics is core and fundamental to many disciplines, We
-                cover mathematics (arithmetic) in all classes.
-              </p>
-            </div>
-          </div>
-          <div class="acc_section">
-            <img
-              src="https://kaderacademy.co.uk/wp-content/uploads/2024/09/01-Year-3Kader_Academy-289-1024x683.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Science</h2>
-              <p>
-                Science is fundamental to society. We touch areas of science and
-                also expose students to information technology.
-              </p>
-            </div>
-          </div>
-
-          <div class="acc_section">
-            <img
-              src="https://thumbs.dreamstime.com/b/teacher-teaching-geography-cheerful-elementary-school-globe-32597103.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Geography</h2>
-              <p>
-                Geography is fundamental to understanding how the earth works.
-                Goegraphy is covered in all classes.
-              </p>
-            </div>
-          </div>
-          <div class="acc_section">
-            <img
-              src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/04/school-having-physical-education-in-india.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Physical Education</h2>
-              <p>
-                We ensure students remain active and understand the benefits of
-                physical education. PE is covered in all classes.
-              </p>
-            </div>
+          <div class="history-card">
+            <i class="fas fa-globe history-icon"></i>
+            <h3 class="history-title">Key Of Success</h3>
+            <p class="history-text">
+              A wonderful serenity has taken possession of my entire soul, like
+              these sweet mornings of spring which I enjoy with my whole heart.
+              I am alone, and feel the charm of existence.
+            </p>
           </div>
         </div>
       </div>
     </section>
+
+    <section class="learning_section_history">
+      <div class="learning_section_container">
+        <div class="learn-features">
+          <div class="learn-card">
+            <div class="learn-icon"><i class="fas fa-location-dot"></i></div>
+            <div>
+              <h3 class="learn-title">Learn anywhere</h3>
+              <p class="learn-description">
+                Learn in your own space, at your own pace. Make the world your
+                classroom.
+              </p>
+            </div>
+          </div>
+
+          <div class="learn-card">
+            <div class="learn-icon"><i class="fas fa-microphone"></i></div>
+            <div>
+              <h3 class="learn-title">Learning is fun</h3>
+              <p class="learn-description">
+                Say goodbye to outdated curriculums and boring lectures. We make
+                learning exciting!
+              </p>
+            </div>
+          </div>
+
+          <div class="learn-card">
+            <div class="learn-icon"><i class="fas fa-users"></i></div>
+            <div>
+              <h3 class="learn-title">Learning is Communal</h3>
+              <p class="learn-description">
+                Learn with peers, share ideas, and grow together. You’re not
+                alone on this journey.
+              </p>
+            </div>
+          </div>
+
+          <div class="learn-card">
+            <div class="learn-icon"><i class="fas fa-check-circle"></i></div>
+            <div>
+              <h3 class="learn-title">Learn from the best</h3>
+              <p class="learn-description">
+                Get top-tier instructors who are passionate about helping you
+                succeed.
+              </p>
+            </div>
+          </div>
+
+          <div class="learn-card">
+            <div class="learn-icon"><i class="fas fa-coins"></i></div>
+            <div>
+              <h3 class="learn-title">Learn the profitable way</h3>
+              <p class="learn-description">
+                Gain practical skills that translate into income and career
+                growth.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="learning_text_content">
+          <h2 class="learning_heading">Reimagining the African Dream</h2>
+          <p class="learning_paragraph">
+            AltSchool Africa is where dreams come to life. We truly believe
+            there is no limit to what we can be and we exist to help people
+            reach their full potential. With our carefully crafted learning
+            courses and diploma programs we will meet you where you are, and
+            take you to where you want to be in your career.
+          </p>
+        </div>
+      </div>
+    </section>
+
     <script>
       const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;
