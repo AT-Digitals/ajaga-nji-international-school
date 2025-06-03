@@ -6,11 +6,12 @@
     <title>Courses Section</title>
     <link rel="stylesheet" href="OurSchool.css" />
     <link rel="stylesheet" href="header.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <header>
     <div class="header" id="mainHeader">
@@ -38,13 +39,12 @@
             ></a>
             <div class="dropdown-menu">
               <a href="./history.html" class="history">History </a>
-              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="/board">Board of Directors</a>
               <a href="./staff.html">Staff</a>
               <a href="/grp">Groups</a>
             </div>
           </div>
           <a href="./Accademic.html">Academics</a>
-
           <a href="./Adminssions.html">Admissions</a>
           <a href="/EventNews.html">News & Events</a>
           <a href="./MediaGallery.html">Media Gallery</a>
@@ -52,9 +52,15 @@
         </nav>
         <div>
           <a class="btn" href="./ContactPage.html"
-            >Contact Us <i class="hover fas fa-arrow-right"></i
+            >Contact Us <i class="fas fa-arrow-right"></i
           ></a>
         </div>
+
+        <!-- <div class="social-icons web">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div> -->
 
         <!-- Mobile Slide Menu -->
         <div class="menu-content" id="menuContent">
@@ -65,15 +71,17 @@
           </div>
           <nav class="nav">
             <div class="mobile-dropdown">
-              <a href="./index.html" class="mobile-dropdown-toggle">
+              <a href="#" class="active mobile-dropdown-toggle">
                 Our School
                 <i class="fas fa-chevron-down arrow"></i>
               </a>
               <div class="mobile-dropdown-menu">
-                <a href="./history.html" class="history">History </a>
+                <a href="#" class="history"
+                  >History <span class="history-desc">(About founder)</span></a
+                >
                 <a href="./board-of-director.html">Board of Directors</a>
                 <a href="./staff.html">Staff</a>
-                <a href="#">Groups</a>
+                <a href="./group">Groups</a>
               </div>
             </div>
             <a href="./Accademic.html">Academics</a>
@@ -94,112 +102,100 @@
   </header>
   <body>
     <section>
-      <div class="banner_image">
+      <div
+        style="position: relative; height: 400px; width: 100%; overflow: hidden"
+      >
         <img
-          src="./images/accde.webp"
+          src="https://static.wixstatic.com/media/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg/v1/fill/w_1901,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg"
           style="height: 100%; width: 100%; object-fit: cover"
           alt="banner"
         />
       </div>
     </section>
-    <section>
-      <div class="max_width">
-        <div class="our_cc_p">
-          <h2>Our Academics</h2>
-          <div class="divider no_left"></div>
+    <section class="board_direc" style="background: #e3e9d8">
+      <div class="our_cc_p">
+        <h2>Our Board Of Director</h2>
+        <div class="divider no_left"></div>
 
-          <p>
-            We are an English-speaking school in Dschang, Cameroon, W. Africa.
-            <br />
-            We offer kindergarten (nursery school) all the way to class 7.
-            <br />
-            Each class covers the following main curriculum.
-          </p>
+        <p>
+          We are an English-speaking school in Dschang, Cameroon, W. Africa. We
+          offer kindergarten (nursery school) all the way to class 7. Each class
+          covers the following main curriculum.
+        </p>
+      </div>
+      <div class="board_directors_section">
+        <div class="board_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg"
+            alt="Ndifor Loveline Ngufuet"
+            class="staff_avatar"
+          />
+          <div class="board_details">
+            <h3 class="staff_name">Ndifor Loveline Ngufuet</h3>
+            <p>Co-Founder</p>
+
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="acc_section_box">
-          <div class="acc_section">
-            <img
-              src="https://media.istockphoto.com/id/1470160123/photo/female-teacher-reads-to-multi-cultural-elementary-school-pupils-sitting-on-floor-in-class-at.jpg?s=612x612&w=0&k=20&c=NZKN3_mYkdNqdNJYYcN4auHJsyuyvep1QD31I5tlGIA="
-              alt="Computer Science"
-            />
-            <div class="content">
-              <h2>Literacy</h2>
-              <p>
-                We offer classes in English and French, We also offer civics,
-                literature and writing to improve literacy.
-              </p>
-            </div>
-          </div>
+        <div class="board_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_8a14556d78844137b5f5319c10a40119~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_308,h_283,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mirabel%20sheri.jpg"
+            alt="Ndifor Loveline Ngufuet"
+            class="staff_avatar"
+          />
+          <div class="board_details">
+            <h3 class="staff_name">Mirabel Sheri</h3>
+            <p>Co-Founder</p>
 
-          <div class="acc_section">
-            <img
-              src="https://www.shutterstock.com/image-photo/boy-student-leaning-over-notebook-600nw-2622948673.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Writing</h2>
-              <p>
-                All our classes have an element of writing. We also place an
-                emphasis on good writing.
-              </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
-          <div class="acc_section">
-            <img
-              src="https://media.istockphoto.com/id/950609102/photo/girl-solving-mathematical-addition.jpg?s=612x612&w=0&k=20&c=hIOWKbDapOX0leF6wwRkSYeqJggAuEYTLdY-KHf1je4="
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Mathematics</h2>
-              <p>
-                Mathematics is core and fundamental to many disciplines, We
-                cover mathematics (arithmetic) in all classes.
-              </p>
-            </div>
-          </div>
-          <div class="acc_section">
-            <img
-              src="https://kaderacademy.co.uk/wp-content/uploads/2024/09/01-Year-3Kader_Academy-289-1024x683.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Science</h2>
-              <p>
-                Science is fundamental to society. We touch areas of science and
-                also expose students to information technology.
-              </p>
-            </div>
-          </div>
+        </div>
+        <div class="board_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_040c396d568a45f591da3ca2ea79c033~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsombo%20valery.jpg"
+            alt="Ndifor Loveline Ngufuet"
+            class="staff_avatar"
+          />
+          <div class="board_details">
+            <h3 class="staff_name">Nsombo Valery</h3>
+            <p>Co-Founder</p>
 
-          <div class="acc_section">
-            <img
-              src="https://thumbs.dreamstime.com/b/teacher-teaching-geography-cheerful-elementary-school-globe-32597103.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Geography</h2>
-              <p>
-                Geography is fundamental to understanding how the earth works.
-                Goegraphy is covered in all classes.
-              </p>
-            </div>
-          </div>
-          <div class="acc_section">
-            <img
-              src="https://www.euroschoolindia.com/blogs/wp-content/uploads/2023/04/school-having-physical-education-in-india.jpg"
-              alt="Fine Arts"
-            />
-            <div class="content">
-              <h2>Physical Education</h2>
-              <p>
-                We ensure students remain active and understand the benefits of
-                physical education. PE is covered in all classes.
-              </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <script>
       const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;

@@ -29,14 +29,13 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: #2c2c2c;
   line-height: 1.6;
 }
 
 .banner {
-  background: url("https://media.istockphoto.com/id/1468140092/photo/happy-elementary-students-raising-their-hands-on-a-class-at-school.jpg?s=612x612&w=0&k=20&c=BrkqxwR_nW4WzbDCAmpQEyF-QYvML9EktH4hhCj-76U=")
-    no-repeat center center/cover;
+  background: url("./images/home_banernymc.jpg") no-repeat center center/cover;
   height: 100dvh;
   display: flex;
   align-items: center;
@@ -45,7 +44,12 @@ body {
   color: white;
   position: relative;
 }
-
+.banner_image {
+  position: relative;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+}
 .banner::after {
   content: "";
   position: absolute;
@@ -77,7 +81,8 @@ body {
 .banner a {
   background: none;
   color: var(--main-text);
-  border: 1px solid var(--main-text);
+  border: 1px solid white;
+  background: white;
   padding: 10px 20px;
   text-decoration: none;
   font-weight: 700;
@@ -87,6 +92,10 @@ body {
 .banner a:hover {
   background: var(--main-text);
   color: white;
+  border: 1px solid var(--main-text);
+}
+.fa-phone-alt {
+  transform: rotate(90deg);
 }
 
 .learning_section {
@@ -102,6 +111,14 @@ body {
   margin-bottom: 1rem;
   color: #1a1a1a;
   font-family: "Lexend";
+}
+.title_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title_div .divider {
+  margin: 1rem 0;
 }
 
 .divider {
@@ -171,7 +188,6 @@ body {
 .school-stats h2 {
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 40px;
 }
 
 .stats-container {
@@ -408,6 +424,22 @@ body {
     flex-direction: column;
     padding: 40px 20px;
   }
+  .staff_member {
+    flex-direction: column;
+  }
+  .staff_member.reverse {
+    flex-direction: column !important;
+  }
+  .staff_members {
+    padding: 20px;
+  }
+  .our_cc_p {
+    padding: 20px;
+  }
+  .board_directors_section {
+    justify-content: center !important;
+    gap: 20px;
+  }
 }
 
 .acc_section_box {
@@ -492,7 +524,8 @@ body {
 .read_more {
   color: var(--main-text);
   display: flex;
-  align-items: center;
+  align-items: baseline;
+  font-family: "Lexend";
   gap: 10px;
   cursor: pointer;
 }
@@ -527,16 +560,19 @@ body {
   color: white;
   text-align: center;
 }
+footer .fas {
+  color: var(--main-text);
+}
 
 h2 {
   font-size: 48px;
   font-family: "Lexend";
   font-weight: 400;
 }
-
-.btn i {
-  margin-left: 10px;
+.btn:hover .fa-arrow-right {
+  color: var(--main-text); /* change icon color on hover */
 }
+
 .accadamic_btn i {
   margin-left: 10px;
 }
@@ -612,7 +648,7 @@ h2 {
     linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
   background-blend-mode: overlay, overlay, overlay, normal;
   border-radius: 30px;
-  margin: 2rem auto;
+  margin: 0 auto 2rem;
 }
 .download_container {
   display: flex;
@@ -631,6 +667,9 @@ h2 {
   font-size: 16px;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 .download_btn {
   border: 1px solid #ff6600;
   padding: 15px;
@@ -639,6 +678,8 @@ h2 {
   max-width: 200px;
   width: 100%;
   text-align: center;
+  border-radius: 5px;
+  font-family: "Lexend";
 }
 .download_btn:hover {
   background-color: var(--main-text);
@@ -673,6 +714,7 @@ h2 {
   background-color: var(--main-text);
   padding: 15px;
   border-radius: 30px;
+  color: white;
 }
 .addmissions_icon {
   display: flex;
@@ -753,5 +795,305 @@ h2 {
 .view_more {
   display: flex;
   justify-content: center;
-  margin: 4rem 0;
+  padding: 3rem 0 2rem;
+}
+
+.staff_members {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1240px;
+  margin: 4rem auto;
+  transition: transform 0.3s ease;
+}
+
+.staff_member {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  gap: 1.5rem;
+  /* max-width: 800px; */
+  width: 98%;
+  margin: auto;
+}
+.staff_section .staff_avatar {
+  width: 200px;
+  height: 100%;
+  transition: transform 0.4s ease;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.staff_member:hover .staff_avatar {
+  transform: scale(1.1); /* Zoom in */
+}
+
+.staff_member.reverse {
+  flex-direction: row-reverse;
+}
+
+.staff_avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.4s ease;
+  display: block;
+}
+
+.board_member:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+.board_member {
+  overflow: hidden;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+}
+.staff_details {
+  flex: 1;
+  box-shadow: rgba(1, 6, 12, 0.14) 0px 4px 25px 0px;
+  padding: 1.5rem;
+  background-color: rgb(249, 243, 231);
+}
+
+.staff_role {
+  margin: 0;
+  color: var(--main-text);
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.staff_name {
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0.2rem 0 0.6rem;
+  font-family: "Lexend";
+  font-size: 22px;
+}
+
+.staff_message {
+  line-height: 1.6;
+  color: #333;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+}
+.staff_socials {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.social_icon {
+  font-size: 20px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.social_icon.instagram:hover {
+  color: var(--main-text); /* Instagram pink */
+}
+
+.social_icon.twitter:hover {
+  color: var(--main-text); /* Instagram pink */
+}
+
+.social_icon.linkedin:hover {
+  color: var(--main-text); /* Instagram pink */
+}
+.board_directors_section {
+  max-width: 1200px;
+  margin: 4rem auto;
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  gap: 20px;
+}
+.board_member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  background: white;
+  padding: 2rem 0;
+  border-radius: 20px;
+}
+
+.board_member .staff_socials {
+  justify-content: center;
+}
+.board_member:hover .staff_avatar {
+  transform: scale(1.1); /* Zoom in */
+}
+
+.history-section {
+  background-image: url("https://thumbs.dreamstime.com/b/school-time-multiethnic-kids-writing-notebooks-smiling-talking-each-other-laughing-sitting-table-classrom-studying-266526710.jpg"); /* Replace with actual image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  /* padding: 60px 20px; */
+  position: relative;
+}
+
+.history-overlay {
+  background-color: rgba(0, 0, 51, 0.7); /* dark overlay */
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 100px;
+}
+.history_container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.history-card {
+  flex: 1 1 30%;
+  min-width: 250px;
+}
+
+.history-icon {
+  font-size: 36px;
+  color: #15b5fc;
+  margin-bottom: 15px;
+}
+
+.history-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-family: "Lexend";
+}
+
+.history-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* General Section Styling */
+.learning_section_history {
+  color: black;
+  padding: 80px 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Container */
+.learning_section_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Left text content */
+.learning_text_content {
+  flex: 1 1 400px;
+  max-width: 500px;
+}
+
+.learning_heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.learning_paragraph {
+  font-size: 16px;
+  line-height: 1.8;
+  color: black;
+}
+
+/* Right features */
+.learn-features {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Individual cards */
+.learn-card {
+  display: flex;
+  gap: 16px;
+  background-color: var(--main-bg);
+  padding: 18px 20px;
+  border-radius: 12px;
+  align-items: flex-start;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.learn-card:hover {
+  background-color: white;
+  transform: scale(1.02);
+}
+.learn-card:hover .learn-description {
+  color: #000;
+}
+.history-icon {
+  color: var(--main-text);
+}
+
+/* Icon */
+.learn-icon {
+  font-size: 24px;
+  color: var(--main-text);
+  margin-top: 6px;
+}
+
+/* Title & Description */
+.learn-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--main-text);
+}
+
+.learn-description {
+  font-size: 15px;
+  color: white;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .learning_section_container {
+    flex-direction: column;
+  }
+  .board_directors_section {
+    flex-wrap: wrap;
+  }
+  .our_cc_p {
+    padding: 20px !important;
+  }
+}
+.header.scrolled .nav a:hover {
+  color: var(--main-text);
+}
+.board_direc .our_cc_p {
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.board_direc .board_directors_section {
+  margin: 0 auto;
+  padding: 1rem 0 4rem;
+}
+.board_details .staff_socials .social_icon {
+  color: var(--main-text) !important;
+}
+.board_details .staff_socials .social_icon:hover {
+  color: black !important;
 }
