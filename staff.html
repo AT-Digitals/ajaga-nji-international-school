@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses Section</title>
+    <link rel="stylesheet" href="OurSchool.css" />
+    <link rel="stylesheet" href="header.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <header>
+    <div class="header" id="mainHeader">
+      <div class="header_inner">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="header_logo.png"
+              alt="Champion School Logo"
+              class="logo black"
+            />
+          </a>
+          <a href="./index.html">
+            <img
+              src="footer_logo.png"
+              alt="Champion School Logo"
+              class="logo white"
+            />
+          </a>
+        </div>
+        <nav class="nav web">
+          <div class="dropdown">
+            <a href="./index.html" class="dropdown-toggle"
+              >Our School <i class="fas fa-caret-down"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./history.html" class="history">History </a>
+              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="./staff.html">Staff</a>
+              <a href="/grp">Groups</a>
+            </div>
+          </div>
+          <a href="./Accademic.html">Academics</a>
+
+          <a href="./Adminssions.html">Admissions</a>
+          <a href="/EventNews.html">News & Events</a>
+          <a href="/MediaGallery.html">Media Gallery</a>
+          <a href="/support">Support Us</a>
+        </nav>
+        <div>
+          <a class="btn" href="./ContactPage.html"
+            >Contact Us <i class="fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <!-- <div class="social-icons web">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div> -->
+
+        <!-- Mobile Slide Menu -->
+        <div class="menu-content" id="menuContent">
+          <div class="close-btn-div">
+            <button class="close-btn" id="menuClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="nav">
+            <div class="mobile-dropdown">
+              <a href="#" class="active mobile-dropdown-toggle">
+                Our School
+                <i class="fas fa-chevron-down arrow"></i>
+              </a>
+              <div class="mobile-dropdown-menu">
+                <a href="#" class="history"
+                  >History <span class="history-desc">(About founder)</span></a
+                >
+                <a href="./board-of-director.html">Board of Directors</a>
+                <a href="./staff.html">Staff</a>
+                <a href="./group">Groups</a>
+              </div>
+            </div>
+            <a href="./Accademic.html">Academics</a>
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
+            <a href="./MediaGallery.html">Media Gallery</a>
+            <a href="#">Support Us</a>
+            <a href="./ContactPage.html">Contact Us</a>
+          </nav>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <section>
+      <div class="banner_image">
+        <img
+          src="./images/staf.jpg"
+          style="height: 100%; width: 100%; object-fit: cover"
+          alt="banner"
+        />
+      </div>
+    </section>
+    <section class="staff_section">
+      <div class="our_cc_p">
+        <h2>Our Staff</h2>
+        <div class="divider no_left"></div>
+
+        <p>
+          We pride ourselves in the fact that Ngumys is a home away from home
+          for our students, a place where they can learn and grow both in and
+          outside of the classroom. <br />
+          Whether in the residence halls or on the sports fields, students build
+          strong bonds with peers, learn valuable leadership lessons, and
+          develop themselves through a wide variety of clubs, sports, and
+          leadership roles.
+        </p>
+      </div>
+      <div class="staff_members">
+        <!-- Row 1 -->
+        <div class="staff_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_097afa8a65e145ae8f6fa8fdfb7f0c21~mv2.jpg/v1/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nkemasong%20berlin.jpg"
+            alt="Nkemasong Berline"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Nkemasong Berline</h3>
+            <p class="staff_role">Pre-Nursery (Pre-K)</p>
+            <p class="staff_message">
+              Fostering early childhood development through play-based learning
+              and social interaction.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff_member reverse">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_4d764761920446ad978f3d1c42bc8afd~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ajuamendem%20prudencia.jpg"
+            alt="Ajuamendem Prudencia"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Ajuamendem Prudencia</h3>
+            <p class="staff_role">Nursery I (Kindergarten I)</p>
+            <p class="staff_message">
+              Introducing structured learning with a focus on basic literacy,
+              numeracy, and creativity.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_ec24852a7c904d22a5c7bcd81cd8ab9c~mv2.jpg/v1/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ngimanju%20gilda%20.jpg"
+            alt="Ngimanju Gilda"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Ngimanju Gilda</h3>
+            <p class="staff_role">Nursery II (Kindergarten II)</p>
+            <p class="staff_message">
+              Preparing students for primary education through hands-on
+              activities and foundational skills.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="staff_member reverse">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_8a14556d78844137b5f5319c10a40119~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_308,h_283,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mirabel%20sheri.jpg"
+            alt="Mirabel Sheri"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Mirabel Sheri</h3>
+            <p class="staff_role">Class 1 (Grade 1)</p>
+            <p class="staff_message">
+              Building reading and writing fluency, and introducing early math
+              concepts in a nurturing setting.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_dc64d3148c8a460492756b4dd91a9ed1~mv2.jpg/v1/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ndifor%20loveline%20ngufuet.jpg"
+            alt="Ndifor Loveline Ngufuet"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Ndifor Loveline Ngufuet</h3>
+            <p class="staff_role">Class 2 (Grade 2)</p>
+            <p class="staff_message">
+              Strengthening core academic skills and encouraging curiosity
+              through interactive lessons.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff_member reverse">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_040c396d568a45f591da3ca2ea79c033~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsombo%20valery.jpg"
+            alt="Nsombo Valery"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Nsombo Valery</h3>
+            <p class="staff_role">Class 3 (Grade 3)</p>
+            <p class="staff_message">
+              Developing independent thinking, critical problem-solving, and
+              team collaboration.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="staff_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg"
+            alt="Ndifor Loveline Ngufuet"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Ndifor Loveline Ngufuet</h3>
+            <p class="staff_role">Class 4 (Grade 4)</p>
+            <p class="staff_message">
+              Expanding knowledge in core subjects while emphasizing analytical
+              and research skills.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff_member reverse">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_337f1ce5112945f2932f92e99b6261ea~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/sofa%20collins%20kinjo.jpg"
+            alt="Sofa Collins Kingo"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Sofa Collins Kingo</h3>
+            <p class="staff_role">Class 5 (Grade 5)</p>
+            <p class="staff_message">
+              Promoting academic responsibility, leadership skills, and
+              preparation for upper primary.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="staff_member">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_cffff3b17f7b4853aec0c33df1b127e0~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ndemboh%20agnes.jpg"
+            alt="Ndemboh Agnes"
+            class="staff_avatar"
+          />
+          <div class="staff_details">
+            <h3 class="staff_name">Ndemboh Agnes</h3>
+            <p class="staff_role">Class 6 (Grade 6)</p>
+            <p class="staff_message">
+              Ensuring readiness for secondary education with a strong
+              foundation in all subject areas.
+            </p>
+            <div class="staff_socials">
+              <a href="#" class="social_icon instagram" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social_icon twitter" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const navLinks = document.querySelectorAll(".nav.web a");
+      const currentPath = window.location.pathname;
+
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href).pathname;
+
+        // Compare the link's path to current page's path
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+        }
+      });
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("mainHeader");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+      $(document).ready(function () {
+        $("#menuToggle").on("click", function () {
+          $("#menuContent").addClass("open");
+        });
+
+        $("#menuClose").on("click", function () {
+          $("#menuContent").removeClass("open");
+        });
+
+        // Mobile dropdown accordion toggle
+        $(".mobile-dropdown-toggle").on("click", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $(this).next(".mobile-dropdown-menu").slideToggle(200);
+          $(this).find(".arrow").toggleClass("rotate");
+        });
+      });
+      $(document).ready(function () {
+        $(".count").each(function () {
+          var $this = $(this);
+          var target = +$this.attr("data-target");
+          $({ countNum: $this.text() }).animate(
+            { countNum: target },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function () {
+                $this.text(Math.ceil(this.countNum));
+              },
+              complete: function () {
+                $this.text(target);
+              },
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="container flex-wrap space-between">
+      <!-- Left Column -->
+      <div class="column">
+        <a href="./index.html">
+          <img
+            src="footer_logo.png"
+            alt="Goodrise Logistics"
+            class="brand-logo"
+          />
+        </a>
+        <p class="text">
+          We are an English-speaking school in Dschang, Cameroon, W. Africa. We
+          offer kindergarten (nursery school) all the way to class 7
+        </p>
+      </div>
+
+      <!-- Center Column -->
+      <div class="column">
+        <h3 class="title">Contact info</h3>
+        <div class="item-row">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <div>
+            <p class="label">Our location:</p>
+            <p class="text">
+              Ngumys Fantastic International School P.O Box 138 Dschang,
+              Cameroon W. Africa
+            </p>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-phone-alt icon"></i>
+          <div>
+            <p class="label">Phones:</p>
+            <p class="text">+237-679259202 <br />+237 691512550</p>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-envelope icon"></i>
+          <div>
+            <p class="label">Email:</p>
+            <p class="text">info@goodriselogistics.com</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column">
+        <h3 class="title">Subscribe</h3>
+        <div class="input-row">
+          <p class="text">
+            If you are interested in subscribing to newsletters, please enter in
+            your email address and click on Subscribe Now.
+          </p>
+          <div class="subscribe-box">
+            <input type="text" placeholder="Subscribe with us" />
+            <button>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+        <label class="checkbox-group">
+          <input type="checkbox" /> I authorize the use of the information
+          entered
+        </label>
+      </div>
+    </div>
+    <div class="copy_rights">
+      <!-- <div class="icon-row"></div> -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 by
+          <span class="highlight"> Ngumys Fantastic International School </span>
+        </p>
+      </div>
+      <div class="icon-row">
+        <a href="https://www.facebook.com/ngumys.fantastic">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>
