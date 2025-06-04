@@ -5,26 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ngumys Fantastic Card</title>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="Card.css" />
+    <link rel="stylesheet" href="OurSchool.css" />
   </head>
   <header>
     <div class="header" id="mainHeader">
       <div class="header_inner">
         <div class="logo">
-          <img
-            src="header_logo.png"
-            alt="Champion School Logo"
-            class="logo black"
-          />
-          <img
-            src="footer_logo.png"
-            alt="Champion School Logo"
-            class="logo white"
-          />
+          <a href="./index.html">
+            <img
+              src="header_logo.png"
+              alt="Champion School Logo"
+              class="logo black"
+            />
+          </a>
+          <a href="./index.html">
+            <img
+              src="footer_logo.png"
+              alt="Champion School Logo"
+              class="logo white"
+            />
+          </a>
         </div>
         <nav class="nav web">
           <div class="dropdown">
@@ -32,9 +43,9 @@
               >Our School <i class="fas fa-caret-down"></i
             ></a>
             <div class="dropdown-menu">
-              <a href="/bistory" class="history">History </a>
-              <a href="/board">Board of Directors</a>
-              <a href="/staf">Staff</a>
+              <a href="./history.html" class="history">History </a>
+              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="./staff.html">Staff</a>
               <a href="/grp">Groups</a>
             </div>
           </div>
@@ -47,15 +58,9 @@
         </nav>
         <div>
           <a class="btn" href="./ContactPage.html"
-            >Contact Us <i class="fas fa-arrow-right"></i
+            >Contact Us <i class="hover fas fa-arrow-right"></i
           ></a>
         </div>
-
-        <!-- <div class="social-icons web">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div> -->
 
         <!-- Mobile Slide Menu -->
         <div class="menu-content" id="menuContent">
@@ -66,32 +71,24 @@
           </div>
           <nav class="nav">
             <div class="mobile-dropdown">
-              <a href="#" class="active mobile-dropdown-toggle">
+              <a href="./index.html" class="active mobile-dropdown-toggle">
                 Our School
                 <i class="fas fa-chevron-down arrow"></i>
               </a>
               <div class="mobile-dropdown-menu">
-                <a href="#" class="history"
-                  >History <span class="history-desc">(About founder)</span></a
-                >
-                <a href="#">Board of Directors</a>
-                <a href="#">Staff</a>
+                <a href="./history.html" class="history">History </a>
+                <a href="./board-of-director.html">Board of Directors</a>
+                <a href="./staff.html">Staff</a>
                 <a href="#">Groups</a>
               </div>
             </div>
-            <a href="#">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">News & Events</a>
-            <a href="#">Media Gallery</a>
+            <a href="./Accademic.html">Academics</a>
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
+            <a href="./MediaGallery.html">Media Gallery</a>
             <a href="#">Support Us</a>
-            <a href="#">Contact Us</a>
+            <a href="./ContactPage.html">Contact Us</a>
           </nav>
-
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
         </div>
 
         <!-- Hamburger Menu Button -->
@@ -103,7 +100,14 @@
   </header>
   <body>
     <div class="card_container">
-     
+      <div class="card_whole_container">
+        <div class="card_author">
+          <div class="avatar">K</div>
+          <div class="meta">Klaus Nji • Jan 3, 2022 • 1 min read</div>
+        </div>
+        <h1>Work continues on the Intellexi Bridge</h1>
+        <p class="line_quote1"></p>
+      </div>
       <div class="left-section">
         <img
           id="slideshow"
@@ -111,14 +115,7 @@
           alt="Basketball Game"
         />
       </div>
-      <div class="whole_container">
-        <div class="author">
-          <div class="avatar">K</div>
-          <div class="meta">Klaus Nji • Jan 3, 2022 • 1 min read</div>
-        </div>
-        <h1>Work continues on the Intellexi Bridge</h1>
-        <p class="line_quote"></p>
-      </div>
+    
       <div class="right-section">
      
         <div class="activity">
@@ -149,7 +146,10 @@
 
     <div class="section">
       <div class="recent_post">
-        <h2>Recent Posts</h2>
+        <div class="recent_divider">
+          <h2>Recent Posts</h2>
+          <p class="line_quote"></p>
+        </div>
       </div>
       <div class="cards">
         <a href="Card.html" class="card-link">
@@ -159,16 +159,16 @@
               alt="Bridge Completed"
             />
             <div class="card-content">
-              <h3>Work completed on Ngumys Fantastic</h3>
+              <h3>Work completed on Ajaga Fantastic</h3>
               <p>
-                It was a rough here for Ngumys Fanstastic Internation School. We
+                It was a rough here for Ajaga Fanstastic Internation School. We
                 lost our father, dad and founder, Professor Ajaga Nji in July.
             </p>
             </div>
             <div class="button_container">
              <button class="card_button"> 
-              <div><i class="fas fa-eye" style="color: #ff6600;"></i> 5</div>
-              <div><i class="fas fa-comment-alt" style="color: #ff6600;"></i> 0</div> 
+              <div><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
+              <div><i class="fas fa-comment-alt" style="color: #800000;"></i> 0</div> 
               <div class="heart">❤</div></button>
             </div>
           </div>
@@ -188,8 +188,8 @@
             </div>
             <div class="button_container">
               <button class="card_button"> 
-                <div><i class="fas fa-eye" style="color: #ff6600;"></i> 5</div>
-                <div><i class="fas fa-comment-alt" style="color: #ff6600;"></i> 0</div> 
+                <div><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
+                <div><i class="fas fa-comment-alt" style="color: #800000;"></i> 0</div> 
                <div class="heart">❤</div></button>
              </div>
           </div>
@@ -209,8 +209,8 @@
             </div>
             <div class="button_container">
               <button class="card_button"> 
-                <div><i class="fas fa-eye" style="color: #ff6600;"></i> 5</div>
-                <div><i class="fas fa-comment-alt" style="color: #ff6600;"></i> 0</div> 
+                <div><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
+                <div><i class="fas fa-comment-alt" style="color: #800000;"></i> 0</div> 
                <div class="heart">❤</div></button>
              </div>
           </div>
@@ -221,8 +221,8 @@
       <h3>Leave a Comment</h3>
       <textarea class="comment-box" placeholder="Write a comment..."></textarea>
       <div class="form_box">
-          <input type="Your Name" placeholder="Your Name" required />
-          <input type="Your Email" placeholder="Your Email" required />
+          <input class="comment_input" type="Your Name" placeholder="Your Name" required />
+          <input class="comment_input" type="Your Email" placeholder="Your Email" required />
         </div>
         <div class="form_button">
         <button class="comment_button">Leave a comment</button>
@@ -231,6 +231,17 @@
     </div>
 
     <script>
+     const navLinks = document.querySelectorAll(".nav.web a");
+      const currentPath = window.location.pathname;
+
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href).pathname;
+
+        // Compare the link's path to current page's path
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+        }
+      });
       window.addEventListener("scroll", function () {
         const header = document.getElementById("mainHeader");
         if (window.scrollY > 50) {
@@ -281,20 +292,17 @@
     <div class="container flex-wrap space-between">
       <!-- Left Column -->
       <div class="column">
-        <img
-          src="footer_logo.png"
-          alt="Goodrise Logistics"
-          class="brand-logo"
-        />
+        <a href="./index.html">
+          <img
+            src="footer_logo.png"
+            alt="Goodrise Logistics"
+            class="brand-logo"
+          />
+        </a>
         <p class="text">
           We are an English-speaking school in Dschang, Cameroon, W. Africa. We
           offer kindergarten (nursery school) all the way to class 7
         </p>
-        <div class="icon-row big_size">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-twitter"></i>
-        </div>
       </div>
 
       <!-- Center Column -->
@@ -372,9 +380,17 @@
         </p>
       </div>
       <div class="icon-row">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
+        <a href="https://www.facebook.com/ngumys.fantastic">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
       </div>
     </div>
   </footer>
