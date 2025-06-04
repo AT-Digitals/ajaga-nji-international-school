@@ -461,7 +461,7 @@ body {
   align-items: center;
   overflow: hidden;
 
-  background: var(--main-bg);
+  background: white;
   gap: 10px;
   margin-bottom: 30px;
   width: 100%;
@@ -509,12 +509,12 @@ body {
 .acc_section .content h2 {
   font-size: 28px;
   margin-bottom: 16px;
-  color: white;
+  color: var(--main-text);
 }
 
 .acc_section .content p {
   font-size: 16px;
-  color: white;
+  color: var(--main-bg);
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -687,6 +687,10 @@ a {
   text-align: center;
   border-radius: 5px;
   font-family: "Lexend";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 .download_btn:hover {
   background-color: var(--main-text);
