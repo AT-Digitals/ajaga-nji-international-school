@@ -1296,7 +1296,7 @@ a {
 }
 
 .supportpage-badge {
-  background-color: #15b982;
+  background-color: var(--main-bg);
   color: white;
   font-size: 14px;
   padding: 5px 12px;
@@ -1330,7 +1330,7 @@ a {
 }
 
 .filled {
-  background-color: #15b982;
+  background-color: var(--main-bg);
   height: 100%;
 }
 
@@ -1350,7 +1350,7 @@ a {
 
 .btn-pay {
   flex: 1;
-  border: 1px solid #f2a233;
+  border: 1px solid var(--main-bg);
   background: transparent;
   color: #111;
   padding: 12px 0;
@@ -1361,6 +1361,98 @@ a {
 }
 
 .btn-pay:hover {
-  background: #f2a233;
+  background-color: var(--main-subTitle);
   color: white;
+}
+
+.about-us-section {
+  padding: 60px 20px;
+}
+
+.about-us-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-us-image {
+  flex: 1;
+  position: relative;
+  min-width: 300px;
+}
+
+.about-us-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.icon-box {
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  background-color: var(--main-subTitle);
+  padding: 15px;
+  border-radius: 50%;
+}
+
+.icon-box img {
+  width: 40px;
+  height: 40px;
+}
+
+.about-us-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.section-label {
+  color: var(--main-bg);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-us-content h2 {
+  font-size: 32px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.features-list li {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.description {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-button {
+  background-color: var(--main-subTitle);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.about-button:hover {
+  background-color: var(--main-subTitle);
+}
+
+.supportpage-buttons .btn {
+  width: 100%;
 }

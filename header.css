@@ -39,7 +39,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90px;
+  /* height: 90px; */
   background-color: white;
   position: fixed;
   z-index: 1000;
@@ -52,7 +52,9 @@ header {
   color: white;
 }
 .logo {
-  max-width: 130px;
+  max-width: 100px;
+  background-color: white;
+  border-radius: 50%;
 }
 .logo.white {
   display: none;
@@ -234,7 +236,7 @@ header {
 .menu-content.open {
   right: 0;
   display: none;
-  background-color: #0f313a;
+  background-color: var(--main-bg);
 }
 
 /* Close Button */
@@ -335,6 +337,9 @@ header {
   .nav {
     gap: 5px;
   }
+  .testimonial-grid {
+    grid-template-columns: none !important;
+  }
 }
 
 /* Base styles */
@@ -358,7 +363,9 @@ header {
 }
 
 .brand-logo {
-  width: 130px;
+  width: 115px;
+  background: white;
+  border-radius: 50%;
 }
 
 .text {
