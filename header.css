@@ -22,8 +22,14 @@
 }
 
 :root {
-  --main-bg: #0f313a;
-  --main-text: #ff6600;
+  --main-bg: #095d40;
+  --main-text: #800000;
+  --primary-color: #15b5fc;
+  --border-color: #b3ecf7;
+  --text-dark: #0f1f2e;
+  --text-muted: #6b7280;
+  --bg-light: #f6feff;
+  --main-subTitle: #f7cb2d;
 }
 /* Header Container */
 header {
@@ -42,11 +48,11 @@ header {
 }
 .header.scrolled {
   position: fixed;
-  background: #0f313a;
+  background: var(--main-bg);
   color: white;
 }
 .logo {
-  max-width: 100px;
+  max-width: 130px;
 }
 .logo.white {
   display: none;
@@ -57,6 +63,9 @@ header {
 
 .header.scrolled .logo.black {
   display: none;
+}
+.dropdown-menu a:hover {
+  color: var(--main-subTitle) !important;
 }
 .header_inner {
   display: flex;
@@ -111,7 +120,7 @@ header {
   font-family: "Lexend";
 }
 .nav a:hover {
-  color: var(--main-text);
+  color: var(--main-subTitle);
 }
 /* Dropdown container */
 .dropdown {
@@ -258,7 +267,7 @@ header {
   text-decoration: none;
 }
 .menu-content .nav a.active {
-  color: var(--main-text);
+  color: var(--main-subTitle);
   font-weight: bold;
 }
 
@@ -330,7 +339,7 @@ header {
 
 /* Base styles */
 .footer {
-  background-color: #0f313a;
+  background-color: var(--main-bg);
   color: white;
   padding: 20px 0 0px;
 }
@@ -377,7 +386,7 @@ header {
 }
 
 .title {
-  color: var(--main-text);
+  color: var(--main-subTitle);
   margin-bottom: 20px;
   font-size: 24px;
   font-family: "Lexend";
@@ -389,6 +398,12 @@ header {
   gap: 10px;
   margin-bottom: 15px;
 }
+.item-row:hover .fas {
+  color: white;
+}
+.item-row:hover .label {
+  color: white;
+}
 
 .icon {
   font-size: 20px;
@@ -397,7 +412,7 @@ header {
 }
 
 .label {
-  color: var(--main-text);
+  color: var(--main-subTitle);
   font-weight: bold;
   margin-bottom: 4px;
   font-family: "Lexend";
@@ -435,6 +450,7 @@ header {
   display: flex;
   align-items: center;
   font-size: 13px;
+  font-family: "Lexend";
 }
 
 .checkbox-group input {
@@ -452,18 +468,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: "Lexend";
+
   padding: 10px 60px;
 }
 
 .highlight {
-  color: var(--main-text);
+  color: var(--main-subTitle);
+  font-family: "Lexend";
 }
 
 .footer-bottom a {
   color: var(--main-text);
   text-decoration: none;
+  font-family: "Lexend";
 }
 
+.footer-bottom p {
+  font-family: "Lexend";
+}
 .subscribe-box {
   display: flex;
   align-items: center;
@@ -480,16 +503,17 @@ header {
   color: var(--main-text);
   font-size: 16px;
   outline: none;
+  font-family: "Lexend";
 }
 /* .fas {
   color: var(--main-text);
 } */
 .checkbox-group input[type="checkbox"] {
-  accent-color: var(--main-text); /* Modern browsers */
+  accent-color: var(--main-subTitle); /* Modern browsers */
 }
 
 .subscribe-box input::placeholder {
-  color: var(--main-text);
+  color: var(--main-subTitle);
 }
 
 .subscribe-box button {
@@ -502,7 +526,7 @@ header {
 }
 
 .icon-row i:hover {
-  color: var(--main-text);
+  color: var(--main-subTitle);
 }
 
 .btn i {
