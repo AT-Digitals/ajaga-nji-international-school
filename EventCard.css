@@ -6,7 +6,7 @@ body {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   margin-bottom: 50px;
   padding: 20px 60px;
 }
@@ -30,7 +30,7 @@ body {
 }
 
 .line_quote {
-  border: 2px solid #ff6600;
+  border: 2px solid #800000;
   width: 8%;
 }
 
@@ -74,11 +74,11 @@ body {
 
 .arrow i {
   font-size: 18px;
-  color: #ff6600;
+  color: #800000;
 }
 
 .arrow:hover {
-  background: #ff6600;
+  background: #800000;
 }
 
 .arrow:hover i {
@@ -91,7 +91,7 @@ body {
 
 .card-content p {
   font-size: 14px;
-  font-family: "Lexend";
+  font-family: "Nunito Sans", sans-serif;
   padding-bottom: 15px;
   color: #434242;
 }
@@ -103,30 +103,30 @@ body {
 
 .tag {
   display: inline-block;
-  background-color: #ff6600;
+  background-color: #800000;
   color: white;
   font-size: 0.8rem;
   padding: 4px 10px;
   border-radius: 5px;
   margin-bottom: 0.5rem;
   cursor: pointer;
-  border: 1px solid #ff6600;
+  border: 1px solid #800000;
   position: relative;
-  left: 100px;
+  left: 90px;
 }
 
 .tag:hover {
   display: inline-block;
   background-color: white;
-  color: #ff6600;
+  color: #800000;
   font-size: 0.8rem;
   padding: 4px 10px;
   border-radius: 8px;
   margin-bottom: 0.5rem;
   cursor: pointer;
-  border: 1px solid #ff6600;
+  border: 1px solid #800000;
   position: relative;
-  left: 100px;
+  left: 90px;
 }
 
 .card-title {
@@ -134,7 +134,7 @@ body {
   font-size: 16px;
   line-height: 1.4;
   margin-bottom: 18px;
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Lexend";
 }
 
 .meta {
@@ -154,7 +154,7 @@ body {
   color: red;
 }
 
-.banner {
+.event_banner {
   background: url("./WhatsApp\ Image\ 2025-05-28\ at\ 10.42.27\ PM.jpeg")
     no-repeat center center/cover;
   height: 400px;
@@ -164,7 +164,7 @@ body {
   position: relative;
 }
 
-.banner::after {
+.event_banner::after {
   content: "";
   position: absolute;
   top: 0;
@@ -182,7 +182,7 @@ body {
   margin: auto;
 }
 
-.banner h1 {
+.event_banner h1 {
   font-family: "Lexend";
   font-size: 40px;
   margin: 0;
@@ -196,7 +196,7 @@ body {
 }
 
 .avatar {
-  background-color: #ff6600;
+  background-color: #800000;
   color: white;
   width: 28px;
   height: 28px;
