@@ -37,7 +37,7 @@ body {
 }
 
 .contact_section h4 {
-  color: #f7cb2d;
+  color: #800000;
   margin: 0;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
@@ -108,9 +108,8 @@ body {
 }
 
 .contact_info {
-  background: #095d40;
   background-size: cover;
-  color: #fff;
+  color: black;
   width: 100%;
   max-width: 420px;
 }
