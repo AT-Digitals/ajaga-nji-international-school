@@ -231,25 +231,18 @@
     </div>
 
     <script>
-      const navLinks = document.querySelectorAll(".nav.web a");
-      const currentPath = window.location.pathname;
+       const navLinks = document.querySelectorAll(".nav.web a");
+  const currentPath = window.location.pathname;
 
-      navLinks.forEach((link) => {
-        const linkPath = new URL(link.href).pathname;
+  navLinks.forEach(link => {
+    const linkPath = new URL(link.href).pathname;
 
-        // Compare the link's path to current page's path
-        if (linkPath === currentPath) {
-          link.classList.add("active");
-        }
-      });
-      window.addEventListener("scroll", function () {
-        const header = document.getElementById("mainHeader");
-        if (window.scrollY > 50) {
-          header.classList.add("scrolled");
-        } else {
-          header.classList.remove("scrolled");
-        }
-      });
+    // Compare the link's path to current page's path
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    }
+  });
+      
       $(document).ready(function () {
         $("#menuToggle").on("click", function () {
           $("#menuContent").addClass("open");
