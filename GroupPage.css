@@ -13,6 +13,17 @@
   font-style: normal; /* Optional: Set the style */
 }
 
+:root {
+  --main-bg: #095d40;
+  --main-text: #800000;
+  --primary-color: #15b5fc;
+  --border-color: #b3ecf7;
+  --text-dark: #0f1f2e;
+  --text-muted: #6b7280;
+  --bg-light: #f6feff;
+  --main-subTitle: #f7cb2d;
+}
+
 .filters {
   display: flex;
   align-items: center;
@@ -229,7 +240,14 @@
   border: 1px solid #800000;
   border-radius: 4px;
   background: white;
+  font-family: "Lexend";
   color: #800000;
+}
+.right-panel .icon {
+  color: var(--main-subTitle) !important;
+}
+.stats div h4 {
+  color: var(--main-text);
 }
 
 .custom-select::after {
