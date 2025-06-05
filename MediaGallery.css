@@ -134,10 +134,56 @@ body {
 .close:hover {
   color: #bbb;
 }
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
 /* Responsive breakpoints */
 @media (max-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 26%;
+    border-radius: 8px;
+    position: relative;
+    top: 132px;
+  }
+
+  .prev {
+    position: absolute;
+    top: 32%;
+    left: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .next {
+    position: absolute;
+    top: 32%;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
   }
 }
 

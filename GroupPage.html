@@ -4,39 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Groups</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script
+    src="https://kit.fontawesome.com/a076d05399.js"
+    crossorigin="anonymous"
+  ></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="GroupPage.css" />
+    <link rel="stylesheet" href="OurSchool.css" />
   </head>
   <header>
     <div class="header" id="mainHeader">
       <div class="header_inner">
         <div class="logo">
-          <img src="../test123.png" alt="Champion School Logo" />
+          <a href="./index.html">
+            <img
+              src="./images/logo.png"
+              alt="Champion School Logo"
+              class="logo"
+            />
+          </a>
         </div>
         <nav class="nav web">
           <div class="dropdown">
-            <a href="#" class="active dropdown-toggle"
+            <a href="./index.html" class="dropdown-toggle"
               >Our School <i class="fas fa-caret-down"></i
             ></a>
             <div class="dropdown-menu">
-              <a href="#" class="history">History </a>
-              <a href="#">Board of Directors</a>
-              <a href="#">Staff</a>
-              <a href="#">Groups</a>
+              <a href="./history.html" class="history">History </a>
+              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="./staff.html">Staff</a>
+              <a href="/grp">Groups</a>
             </div>
           </div>
           <a href="./Accademic.html">Academics</a>
-          <a href="#">Admissions</a>
-          <a href="./EventNews.html">News & Events</a>
-          <a href="#">Media Gallery</a>
-          <a href="./GroupPage.html">Support Us</a>
-          <a href="./ContactPage.html">Contact Us</a>
-        </nav>
 
-        <div class="social-icons web">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="./Adminssions.html">Admissions</a>
+          <a href="./EventCard.html">News & Events</a>
+          <a href="./MediaGallery.html">Media Gallery</a>
+          <a href="./Supports.html">Support Us</a>
+        </nav>
+        <div>
+          <a class="btn" href="./ContactPage.html"
+            >Contact Us <i class="hover fas fa-arrow-right"></i
+          ></a>
         </div>
 
         <!-- Mobile Slide Menu -->
@@ -48,32 +64,24 @@
           </div>
           <nav class="nav">
             <div class="mobile-dropdown">
-              <a href="#" class="active mobile-dropdown-toggle">
+              <a href="./index.html" class="active mobile-dropdown-toggle">
                 Our School
                 <i class="fas fa-chevron-down arrow"></i>
               </a>
               <div class="mobile-dropdown-menu">
-                <a href="#" class="history"
-                  >History <span class="history-desc">(About founder)</span></a
-                >
-                <a href="#">Board of Directors</a>
-                <a href="#">Staff</a>
-                <a href="#">Groups</a>
+                <a href="./history.html" class="history">History </a>
+                <a href="./board-of-director.html">Board of Directors</a>
+                <a href="./staff.html">Staff</a>
+                <a href="./GroupPage.html">Groups</a>
               </div>
             </div>
-            <a href="#">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">News & Events</a>
-            <a href="#">Media Gallery</a>
-            <a href="#">Support Us</a>
-            <a href="#">Contact Us</a>
+            <a href="./Accademic.html">Academics</a>
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
+            <a href="./MediaGallery.html">Media Gallery</a>
+            <a href="./Supports.html">Support Us</a>
+            <a href="./ContactPage.html">Contact Us</a>
           </nav>
-
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
         </div>
 
         <!-- Hamburger Menu Button -->
@@ -84,32 +92,43 @@
     </div>
   </header>
   <body>
-    <section class="banner">
-      <div class="banner-content">
+    <section class="group_banner">
+      <div class="group_banner-content">
         <h1>Groups</h1>
-        <div class="breadcrumb">
-          <span class="active">School</span>
-          <span class="separator">—</span>
-          <span>Groups</span>
-        </div>
       </div>
     </section>
-    <div class="filters">
-      <label for="sort">Sort by:</label>
-      <select id="sort">
-        <option selected>Recent Activity</option>
-      </select>
-      <input type="search" placeholder="Search..." />
+    <div class="controls">
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search..." />
+      </div>
+      <div class="custom-select">
+        <select>
+          <option selected>Default sorting</option>
+          <option>Sort by popularity</option>
+          <option>Sort by rating</option>
+          <option>Sort by latest</option>
+        </select>
+      </div>
+  
+      <!-- Search input -->
+     
     </div>
-
     <div class="tabs">
       <span class="active">All (3)</span>
       <span>My Groups</span>
       <span>Suggested Groups</span>
+     
     </div>
+    <!-- <p class="line_quote1"></p> -->
 
+    
+    <p class="no-groups-message" style="display: none; text-align: center; font-size: 30px; font-family: 'Lexend'; font-weight: bold; margin-top: 40px; margin-bottom: 60px;">
+      No Groups
+    </p>
     <div class="groups">
-      <a href="GroupSection.html" class="card-link">
+    
+    
         <div class="group-card">
           <img
             src="https://images.pexels.com/photos/2781814/pexels-photo-2781814.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -118,11 +137,15 @@
           <div class="group-card-content">
             <div class="group-title">After School Activities</div>
             <div class="group-meta">Public · 1 member</div>
-            <button class="join-button">Join</button>
+            <div class="grp_section" >
+              <a class="group_btn" href="#" id="joinBtn">
+                Join <i class="hover fas fa-arrow-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </a>
-      <a href="GroupSection1.html" class="card-link">
+     
+     
       <div class="group-card">
         <img
           src="https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -131,7 +154,11 @@
         <div class="group-card-content">
           <div class="group-title">Parent Teacher Association</div>
           <div class="group-meta">Public · 1 member</div>
-          <button class="join-button">Join</button>
+          <div class="grp_section" >
+            <a class="group_btn" href="#" id="joinBtn">
+              Join <i class="hover fas fa-arrow-right"></i>
+            </a>
+          </div>
         </div>
     </a>  
     </div>
@@ -144,21 +171,233 @@
         <div class="group-card-content">
           <div class="group-title">Ngumys School Band</div>
           <div class="group-meta">Public · 1 member</div>
-          <button class="join-button">Join</button>
+          <div class="grp_section" >
+            <a class="group_btn" href="#" id="joinBtn">
+              Join <i class="hover fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <p>Already a member? <a href="#">Log In</a></p>
+        <button class="google-btn">Sign up with Google</button>
+        <button class="facebook-btn">Sign up with Facebook</button>
+        <div class="divider">or</div>
+        <button class="email-btn">Sign up with email</button>
+        <div class="public-profile">
+          <input type="checkbox" checked /> Sign up to this site with a public profile.
+          <a href="#">Read more</a>
         </div>
       </div>
     </div>
     <script>
-      const tabs = document.querySelectorAll(".tabs span");
+       const navLinks = document.querySelectorAll(".nav.web a");
+      const currentPath = window.location.pathname;
 
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          // Remove active from all tabs
-          tabs.forEach((t) => t.classList.remove("active"));
-          // Add active to the clicked tab
-          tab.classList.add("active");
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href).pathname;
+
+        // Compare the link's path to current page's path
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+        }
+      });
+
+      $(document).ready(function () {
+        $("#menuToggle").on("click", function () {
+          $("#menuContent").addClass("open");
+        });
+
+        $("#menuClose").on("click", function () {
+          $("#menuContent").removeClass("open");
+        });
+
+        // Mobile dropdown accordion toggle
+        $(".mobile-dropdown-toggle").on("click", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $(this).next(".mobile-dropdown-menu").slideToggle(200);
+          $(this).find(".arrow").toggleClass("rotate");
         });
       });
+      $(document).ready(function () {
+        $(".count").each(function () {
+          var $this = $(this);
+          var target = +$this.attr("data-target");
+          $({ countNum: $this.text() }).animate(
+            { countNum: target },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function () {
+                $this.text(Math.ceil(this.countNum));
+              },
+              complete: function () {
+                $this.text(target);
+              },
+            }
+          );
+        });
+      });
+
+      const tabs = document.querySelectorAll(".tabs span");
+  const groupsContainer = document.querySelector(".groups");
+  const noGroupsMessage = document.querySelector(".no-groups-message");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      tabs.forEach((t) => t.classList.remove("active"));
+      tab.classList.add("active");
+
+      const selectedTab = tab.textContent.trim();
+
+      if (selectedTab === "All (3)") {
+        groupsContainer.style.display = "flex";
+        noGroupsMessage.style.display = "none";
+      } else if (selectedTab === "My Groups") {
+        groupsContainer.style.display = "none";
+        noGroupsMessage.style.display = "block";
+      } else if (selectedTab === "Suggested Groups") {
+        groupsContainer.style.display = "flex";
+        noGroupsMessage.style.display = "none";
+      }
+    });
+  });
+
+  const modal = document.getElementById("signupModal");
+  const btn = document.getElementById("joinBtn");
+  const span = document.querySelector(".close");
+
+  btn.onclick = function (e) {
+    e.preventDefault(); // Prevent default link behavior
+    modal.style.display = "block";
+  };
+
+  span.onclick = function () {
+    modal.style.display = "none";
+  };
+
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
     </script>
   </body>
+  <footer class="footer">
+    <div class="container flex-wrap space-between">
+      <!-- Left Column -->
+      <div class="column">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="Goodrise Logistics"
+            class="brand-logo"
+          />
+        </a>
+        <p class="text">
+          We are an English-speaking school in Dschang, Cameroon, W. Africa. We
+          offer kindergarten (nursery school) all the way to class 7
+        </p>
+      </div>
+
+      <!-- Center Column -->
+      <div class="column">
+        <h3 class="title">Contact info</h3>
+        <div class="item-row">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <div>
+            <p class="label">Our location:</p>
+            <p class="text">
+              Ajaga Nji Bilingual International School P.O Box 138 Dschang,
+              Cameroon W. Africa
+            </p>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-phone-alt icon" style="transform: rotate(90deg)"></i>
+          <div>
+            <p class="label">Phones:</p>
+            <a
+              style="text-decoration: none; color: #b9b9b9; font-family: Lexend"
+              href="tel:+237-679259202"
+              >+237-679259202
+            </a>
+            <br />
+            <a
+              style="text-decoration: none; color: #b9b9b9; font-family: Lexend"
+              href="tel:+237-679259202"
+              >+237 691512550
+            </a>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-envelope icon"></i>
+          <div>
+            <p class="label">Email:</p>
+            <a
+              style="text-decoration: none; color: #b9b9b9; font-family: Lexend"
+              href="mailto:ngumysnpschool@gmail.com"
+              >ngumysnpschool@gmail.com
+            </a>
+            <p class="text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column">
+        <h3 class="title">Subscribe</h3>
+        <div class="input-row">
+          <p class="text">
+            If you are interested in subscribing to newsletters, please enter in
+            your email address and click on Subscribe Now.
+          </p>
+          <div class="subscribe-box">
+            <input type="text" placeholder="Subscribe with us" />
+            <button>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+        <label class="checkbox-group">
+          <input type="checkbox" /> I authorize the use of the information
+          entered
+        </label>
+      </div>
+    </div>
+    <div class="copy_rights">
+      <!-- <div class="icon-row"></div> -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 by
+          <span class="highlight">
+            Ajaga Nji Bilingual International School
+          </span>
+        </p>
+      </div>
+      <div class="icon-row">
+        <a target="_blank" href="https://www.facebook.com/ngumys.fantastic">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
 </html>

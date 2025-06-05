@@ -4,39 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parent Teacher Association</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="GroupSection.css" />
+    <link rel="stylesheet" href="OurSchool.css" />
   </head>
   <header>
     <div class="header" id="mainHeader">
       <div class="header_inner">
         <div class="logo">
-          <img src="../test123.png" alt="Champion School Logo" />
+          <a href="./index.html">
+            <img
+              src="./images/logo.png"
+              alt="Champion School Logo"
+              class="logo"
+            />
+          </a>
         </div>
         <nav class="nav web">
           <div class="dropdown">
-            <a href="#" class="active dropdown-toggle"
+            <a href="./index.html" class="dropdown-toggle"
               >Our School <i class="fas fa-caret-down"></i
             ></a>
             <div class="dropdown-menu">
-              <a href="#" class="history">History </a>
-              <a href="#">Board of Directors</a>
-              <a href="#">Staff</a>
-              <a href="#">Groups</a>
+              <a href="./history.html" class="history">History </a>
+              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="./staff.html">Staff</a>
+              <a href="/grp">Groups</a>
             </div>
           </div>
           <a href="./Accademic.html">Academics</a>
-          <a href="#">Admissions</a>
-          <a href="./EventNews.html">News & Events</a>
-          <a href="#">Media Gallery</a>
-          <a href="./GroupPage.html">Support Us</a>
-          <a href="./ContactPage.html">Contact Us</a>
-        </nav>
 
-        <div class="social-icons web">
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="./Adminssions.html">Admissions</a>
+          <a href="./EventCard.html">News & Events</a>
+          <a href="./MediaGallery.html">Media Gallery</a>
+          <a href="./Supports.html">Support Us</a>
+        </nav>
+        <div>
+          <a class="btn" href="./ContactPage.html"
+            >Contact Us <i class="hover fas fa-arrow-right"></i
+          ></a>
         </div>
 
         <!-- Mobile Slide Menu -->
@@ -48,32 +64,24 @@
           </div>
           <nav class="nav">
             <div class="mobile-dropdown">
-              <a href="#" class="active mobile-dropdown-toggle">
+              <a href="./index.html" class="active mobile-dropdown-toggle">
                 Our School
                 <i class="fas fa-chevron-down arrow"></i>
               </a>
               <div class="mobile-dropdown-menu">
-                <a href="#" class="history"
-                  >History <span class="history-desc">(About founder)</span></a
-                >
-                <a href="#">Board of Directors</a>
-                <a href="#">Staff</a>
+                <a href="./history.html" class="history">History </a>
+                <a href="./board-of-director.html">Board of Directors</a>
+                <a href="./staff.html">Staff</a>
                 <a href="#">Groups</a>
               </div>
             </div>
-            <a href="#">Academics</a>
-            <a href="#">Admissions</a>
-            <a href="#">News & Events</a>
-            <a href="#">Media Gallery</a>
-            <a href="#">Support Us</a>
-            <a href="#">Contact Us</a>
+            <a href="./Accademic.html">Academics</a>
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
+            <a href="./MediaGallery.html">Media Gallery</a>
+            <a href="./Supports.html">Support Us</a>
+            <a href="./ContactPage.html">Contact Us</a>
           </nav>
-
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
         </div>
 
         <!-- Hamburger Menu Button -->
@@ -84,16 +92,13 @@
     </div>
   </header>
   <body>
-    <div class="container">
-      <header>
-        <div class="breadcrumb">Home > Groups > Parent Teacher Association</div>
-        <div class="cover-image">
-          <img
-            src="https://static.wixstatic.com/media/2e5f27_650512937f9744aca0540d97d7f852c1~mv2.jpeg/v1/fill/w_768,h_196,fp_0.50_0.50,q_80,enc_auto/2e5f27_650512937f9744aca0540d97d7f852c1~mv2.jpeg"
-            alt="Group Cover"
-          />
-        </div>
-      </header>
+    <div class="group_section_container">
+      <div class="cover-image">
+        <img
+          src="https://static.wixstatic.com/media/2e5f27_650512937f9744aca0540d97d7f852c1~mv2.jpeg/v1/fill/w_768,h_196,fp_0.50_0.50,q_80,enc_auto/2e5f27_650512937f9744aca0540d97d7f852c1~mv2.jpeg"
+          alt="Group Cover"
+        />
+      </div>
 
       <div class="group-header">
         <div style="display: flex; flex-direction: column">
@@ -131,10 +136,6 @@
                   alt="Post Image"
                 />
               </div>
-              <div class="post-footer">
-                <button>👍 0</button>
-                <button>💬 0 Comments</button>
-              </div>
               <textarea
                 class="comment-box"
                 placeholder="Write a comment..."
@@ -152,10 +153,6 @@
               <div class="post-content">
                 In this group we discuss all parent/teacher related matters
                 around student welfare and the parent/student interactions.
-              </div>
-              <div class="post-footer">
-                <button>👍 0</button>
-                <button>💬 0 Comments</button>
               </div>
               <textarea
                 class="comment-box"
