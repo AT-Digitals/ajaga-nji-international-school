@@ -13,21 +13,14 @@
   font-style: normal; /* Optional: Set the style */
 }
 
-.container {
-  max-width: 1000px;
+.group_section_container {
+  max-width: 1200px;
   margin: 0 auto;
   background: white;
-  padding-top: 10px;
+  padding-top: 111px;
   padding-left: 10px;
   padding-bottom: 10px;
-}
-
-.breadcrumb {
-  color: #666;
-  margin-bottom: 10px;
-  font-size: 16px;
-  font-family: "Nunito Sans", sans-serif;
-  margin-top: 90px;
+  width: 100%;
 }
 
 .cover-image img {
@@ -54,7 +47,7 @@
 }
 
 .join-button button {
-  background-color: #4c4cd1;
+  background-color: #800000;
   color: white;
   padding: 8px 16px;
   border: none;
@@ -68,9 +61,11 @@
   padding: 0;
   display: flex;
   gap: 20px;
-  border-bottom: 2px solid #4c4cd1;
+  border-bottom: 2px solid #800000;
   margin-top: 10px;
-  margin-left: 144px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 .tabs ul li {
@@ -80,7 +75,7 @@
 
 .tabs ul li.active {
   font-weight: bold;
-  border-bottom: 2px solid #4c4cd1;
+  border-bottom: 2px solid #800000;
 }
 
 .main-content {
@@ -112,7 +107,7 @@
 }
 
 .user-icon {
-  background-color: #4c4cd1;
+  background-color: #800000;
   color: white;
   border-radius: 50%;
   width: 35px;
@@ -160,6 +155,7 @@
 
 .members-box a {
   text-decoration: none;
+  color: #800000;
 }
 
 .group-meta {
@@ -179,7 +175,7 @@
 }
 
 .read_more {
-  color: #4c4cd1;
+  color: #800000;
   padding-top: 10px;
 }
 
