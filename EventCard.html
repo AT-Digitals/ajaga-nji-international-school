@@ -105,219 +105,290 @@
 
     <div class="container1">
       <!-- Card 1 -->
-      <a href="Card.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_cc7e01f82c484aac8890af62597bfb65~mv2.jpeg/v1/fill/w_959,h_720,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_cc7e01f82c484aac8890af62597bfb65~mv2.jpeg"
-              alt="Air Freight"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-            <!-- <img src="share.png" alt="share" /> -->
-          </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
-            </div>
 
-            <div class="card-title">Ajaga Fantastic ends rough with bang</div>
-            <p>
-              It was a rough here for Ngumys Fanstastic Internation School. We
-              lost our father, dad and founder, Professor Ajaga Nji in July.
-            </p>
-            <div class="meta">
-              <div>
-                <span>16 views</span>
-              </div>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+      <div class="card" onclick="window.location.href='Card.html'">
+        <div class="image-container">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_cc7e01f82c484aac8890af62597bfb65~mv2.jpeg/v1/fill/w_959,h_720,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_cc7e01f82c484aac8890af62597bfb65~mv2.jpeg"
+            alt="Air Freight"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+          <!-- <img src="share.png" alt="share" /> -->
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
+            </div>
+          </div>
+
+          <div class="card-title">Ajaga Fantastic ends rough with bang</div>
+          <p>
+            It was a rough here for Ngumys Fanstastic Internation School. We
+            lost our father, dad and founder, Professor Ajaga Nji in July.
+          </p>
+          <div class="meta">
+            <div>
+              <span>16 views</span>
+            </div>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+
       <!-- Card 2 -->
-      <a href="Card1.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_b4e9880e134b4b47a0e0edb7f5d8e5f6~mv2.jpeg/v1/fill/w_1039,h_780,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_b4e9880e134b4b47a0e0edb7f5d8e5f6~mv2.jpeg"
-              alt="Delivery"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
+
+      <div class="card" onclick="window.location.href='Card1.html'">
+        <div class="image-container">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_b4e9880e134b4b47a0e0edb7f5d8e5f6~mv2.jpeg/v1/fill/w_1039,h_780,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_b4e9880e134b4b47a0e0edb7f5d8e5f6~mv2.jpeg"
+            alt="Delivery"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
             </div>
-            <div class="card-title">Work completed on the Intellexi Bridge</div>
-            <p>
-              Work has completed on the bridge connecting the town to the suburb
-              of Tchale. This allows for full restoration of transportation.
-            </p>
-            <div class="meta">
-              <span>16 views</span>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+          </div>
+          <div class="card-title">Work completed on the Intellexi Bridge</div>
+          <p>
+            Work has completed on the bridge connecting the town to the suburb
+            of Tchale. This allows for full restoration of transportation.
+          </p>
+          <div class="meta">
+            <span>16 views</span>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+
       <!-- Card 3 -->
-      <a href="Card2.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_67261ab4fc704e65aec8dba5a9ffc7d1~mv2.jpeg/v1/fill/w_1039,h_780,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_67261ab4fc704e65aec8dba5a9ffc7d1~mv2.jpeg"
-              alt="Shipping"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
+
+      <div class="card" onclick="window.location.href='Card2.html'">
+        <div class="image-container">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_67261ab4fc704e65aec8dba5a9ffc7d1~mv2.jpeg/v1/fill/w_1039,h_780,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_67261ab4fc704e65aec8dba5a9ffc7d1~mv2.jpeg"
+            alt="Shipping"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
             </div>
-            <div class="card-title">Work continues on the Intellexi Bridge</div>
-            <p>
-              The main bridge connection the suburb of Tchale collapsed several
-              weeks ago and is currently under being repaired.
-            </p>
-            <div class="meta">
-              <span>16 views</span>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+          </div>
+          <div class="card-title">Work continues on the Intellexi Bridge</div>
+          <p>
+            The main bridge connection the suburb of Tchale collapsed several
+            weeks ago and is currently under being repaired.
+          </p>
+          <div class="meta">
+            <span>16 views</span>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+
       <!-- Card 4 -->
-      <a href="Card3.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://images.pexels.com/photos/6936085/pexels-photo-6936085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Shipping"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
+
+      <div class="card" onclick="window.location.href='Card3.html'">
+        <div class="image-container">
+          <img
+            src="https://images.pexels.com/photos/6936085/pexels-photo-6936085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Shipping"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
             </div>
-            <div class="card-title">Mourning the recent passing founder</div>
-            <p>
-              Mourning the recent passing of an icon, the founding father of
-              Ngumy's Fantastic International School We mourn the recent
-              passing.
-            </p>
-            <div class="meta">
-              <span>16 views</span>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+          </div>
+          <div class="card-title">Mourning the recent passing founder</div>
+          <p>
+            Mourning the recent passing of an icon, the founding father of
+            Ngumy's Fantastic International School We mourn the recent passing.
+          </p>
+          <div class="meta">
+            <span>16 views</span>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+
       <!-- Card 5 -->
-      <a href="Card4.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_0fda1f033673458e8bc2b5aee3c4b520~mv2.jpg/v1/fill/w_2056,h_1544,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_0fda1f033673458e8bc2b5aee3c4b520~mv2.jpg"
-              alt="Shipping"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
+
+      <div class="card" onclick="window.location.href='Card4.html'">
+        <div class="image-container">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_0fda1f033673458e8bc2b5aee3c4b520~mv2.jpg/v1/fill/w_2056,h_1544,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_0fda1f033673458e8bc2b5aee3c4b520~mv2.jpg"
+            alt="Shipping"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
             </div>
-            <div class="card-title">The pupils in class 1 enjoy more room</div>
-            <p>
-              Class 1 has been expanded to allow the students more room and
-              freedom Over the summer of 2021, we expanded the square area in
-              Class 1.
-            </p>
-            <div class="meta">
-              <span>16 views</span>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+          </div>
+          <div class="card-title">The pupils in class 1 enjoy more room</div>
+          <p>
+            Class 1 has been expanded to allow the students more room and
+            freedom Over the summer of 2021, we expanded the square area in
+            Class 1.
+          </p>
+          <div class="meta">
+            <span>16 views</span>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+
       <!-- Card 6 -->
-      <a href="Card5.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_aa825df9f3384645bcc8a1119d542cc7~mv2.jpg/v1/fill/w_1438,h_1080,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_aa825df9f3384645bcc8a1119d542cc7~mv2.jpg"
-              alt="Shipping"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
-          </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
+
+      <div class="card" onclick="window.location.href='Card5.html'">
+        <div class="image-container">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_aa825df9f3384645bcc8a1119d542cc7~mv2.jpg/v1/fill/w_1438,h_1080,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_aa825df9f3384645bcc8a1119d542cc7~mv2.jpg"
+            alt="Shipping"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
             </div>
-            <div class="card-title">Gearing up for the school year 2022</div>
-            <p>
-              The pupils at Ngumy's could not wait to restart the 2022 school
-              year It appeared to be a long summer. Not only did we lose our
-              founding.
-            </p>
-            <div class="meta">
-              <span>16 views</span>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+          </div>
+          <div class="card-title">Gearing up for the school year 2022</div>
+          <p>
+            The pupils at Ngumy's could not wait to restart the 2022 school year
+            It appeared to be a long summer. Not only did we lose our founding.
+          </p>
+          <div class="meta">
+            <span>16 views</span>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+
       <!-- Card 7 -->
-      <a href="Card6.html" class="card-link">
-        <div class="card">
-          <div class="image-container">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_09fe459079f4461c972c711405266954~mv2.jpg/v1/fill/w_2056,h_1544,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_09fe459079f4461c972c711405266954~mv2.jpg"
-              alt="Shipping"
-            />
-            <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+      <div class="card" onclick="window.location.href='Card6.html'">
+        <div class="image-container">
+          <img
+            src="https://static.wixstatic.com/media/2e5f27_09fe459079f4461c972c711405266954~mv2.jpg/v1/fill/w_2056,h_1544,fp_0.50_0.50,q_90,enc_avif,quality_auto/2e5f27_09fe459079f4461c972c711405266954~mv2.jpg"
+            alt="Shipping"
+          />
+          <div class="arrow"><i class="fa-solid fa-arrow-right"></i></div>
+        </div>
+        <div class="card-content">
+          <div class="author">
+            <div class="avatar">K</div>
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+            <div class="tag" onclick="event.stopPropagation(); openModal();">
+              Share
+            </div>
           </div>
-          <div class="card-content">
-            <div class="author">
-              <div class="avatar">K</div>
-              <div class="meta">Klaus Nji • Jan 3, 2022</div>
-              <div class="tag">Share</div>
-            </div>
-            <div class="card-title">
-              Recently renovated Afor Information and Communication Technology
-              Center
-            </div>
-            <p>
-              We have revamped the Afor Information and Communication Technology
-              Center with new computers and a better network Over the summer,
-              we.
-            </p>
-            <div class="meta">
-              <span>16 views</span>
-              <span>0 comments</span>
-              <div class="heart">❤ 1</div>
+          <div class="card-title">
+            Recently renovated Afor Information and Communication Technology
+            Center
+          </div>
+          <p>
+            We have revamped the Afor Information and Communication Technology
+            Center with new computers and a better network Over the summer, we.
+          </p>
+          <div class="meta">
+            <span>16 views</span>
+            <span>0 comments</span>
+            <div
+              class="heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
             </div>
           </div>
         </div>
-      </a>
+      </div>
+    </div>
+
+    <div class="modal" id="shareModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>Share this post</h3>
+        <div class="card_social-icons">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#"><i class="fas fa-link"></i></a>
+          <a
+            href="https://in.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
     </div>
     <script>
       const navLinks = document.querySelectorAll(".nav.web a");
@@ -368,6 +439,30 @@
           );
         });
       });
+
+      function openModal() {
+        document.getElementById("shareModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("shareModal").style.display = "none";
+      }
+
+      // Optional: close modal when clicking outside of it
+      window.onclick = function (event) {
+        const modal = document.getElementById("shareModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+
+      function toggleLike(el) {
+        const countSpan = el.querySelector(".like-count");
+        const liked = el.classList.toggle("liked");
+
+        // Show "1" when liked, hide when unliked
+        countSpan.textContent = liked ? "1" : "";
+      }
     </script>
   </body>
   <footer class="footer">
