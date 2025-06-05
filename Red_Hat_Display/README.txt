@@ -10,7 +10,7 @@ This means all the styles are contained in these files:
   RedHatDisplay-VariableFont_wght.ttf
   RedHatDisplay-Italic-VariableFont_wght.ttf
 
-If your app fully supports variable fonts, you can now pick intermediate styles
+If your app fully Support variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
 in those cases you can use the static font files for Red Hat Display:
   static/RedHatDisplay-Light.ttf
