@@ -323,9 +323,12 @@ header {
 }
 
 /* Responsive Behavior */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .menu-toggle {
     display: block;
+  }
+  .header_inner .btn {
+    display: none;
   }
   .web {
     display: none;
