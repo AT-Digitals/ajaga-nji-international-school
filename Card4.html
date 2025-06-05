@@ -130,15 +130,26 @@
           <div class="card-meta_share">
             <div><i class="fas fa-eye"></i> 5</div>
             <div><i class="fas fa-comment-alt"></i> 0</div>
-            <div class="card_heart">❤ 1</div>
+            <div
+            class="heart"
+            onclick="event.stopPropagation(); toggleLike(this);"
+          >
+            ❤ <span class="like-count"></span>
+          </div>
           </div>
           <div class="share-container">
             <span class="share-label">Share:</span>
             <div class="card_social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-x-twitter"></i></a>
-              <a href="#"><i class="fab fa-pinterest-p"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-x-twitter"></i>
+              </a>
+              <a href="#"><i class="fas fa-link"></i></a>
+              <a href="https://in.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
             </div>
          </div>
         </div>
@@ -152,70 +163,85 @@
         </div>
       </div>
       <div class="cards">
-        <a href="Card.html" class="card-link">
-          <div class="card">
-            <img
-              src="https://images.pexels.com/photos/6281030/pexels-photo-6281030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Bridge Completed"
-            />
-            <div class="card-content">
-              <h3>Work completed on Ajaga Fantastic</h3>
-              <p>
-                It was a rough here for Ajaga Fanstastic Internation School. We
-                lost our father, dad and founder, Professor Ajaga Nji in July.
-            </p>
-            </div>
-            <div class="button_container">
-             <button class="card_button"> 
+       
+        <div class="card" onclick="window.location.href='Card.html'">
+          <img
+            src="https://images.pexels.com/photos/6281030/pexels-photo-6281030.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Bridge Completed"
+          />
+          <div class="card-content">
+            <h3>Work completed on Ajaga Fantastic</h3>
+            <p>
+              It was a rough here for Ajaga Fanstastic Internation School. We
+              lost our father, dad and founder, Professor Ajaga Nji in July.
+          </p>
+          </div>
+          <div class="button_container">
+           <button class="card_button"> 
+            <div class="eye_button"><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
+            <div class="comment_btn"><i class="fas fa-comment-alt" style="color: #800000;"></i> 1</div> 
+            <div
+            class="card_heart"
+            onclick="event.stopPropagation(); toggleLike(this);"
+          >
+            ❤ <span class="like-count"></span>
+          </div></button>
+          </div>
+        </div>
+    
+     
+        <div class="card" onclick="window.location.href='Card1.html'">
+          <img
+            src="https://images.pexels.com/photos/8363771/pexels-photo-8363771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Bridge In Progress"
+          />
+          <div class="card-content">
+            <h3>Work completed on the Intellexi Bridge</h3>
+            <p>
+              It was a rough here for Ngumys Fanstastic Internation School. We
+              lost our father, dad and founder, Professor Ajaga Nji in July.
+          </p>
+          </div>
+          <div class="button_container">
+            <button class="card_button"> 
+              <div class="eye_button"><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
+            <div class="comment_btn"><i class="fas fa-comment-alt" style="color: #800000;"></i> 1</div> 
+            <div
+            class="card_heart"
+            onclick="event.stopPropagation(); toggleLike(this);"
+          >
+            ❤ <span class="like-count"></span>
+          </div></button>
+           </div>
+        </div>
+     
+     
+        <div class="card" onclick="window.location.href='Card2.html'">
+          <img
+            src="https://images.pexels.com/photos/8500287/pexels-photo-8500287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Bridge In Progress"
+          />
+          <div class="card-content">
+            <h3>Work continues on the Intellexi Bridge</h3>
+            <p>
+              It was a rough here for Ngumys Fanstastic Internation School. We
+              lost our father, dad and founder, Professor Ajaga Nji in July.
+          </p>
+          </div>
+          <div class="button_container">
+            <button class="card_button"> 
               <div class="eye_button"><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
               <div class="comment_btn"><i class="fas fa-comment-alt" style="color: #800000;"></i> 1</div> 
-              <div class="heart">❤ 1</div></button>
-            </div>
-          </div>
-        </a>
-        <a href="Card1.html" class="card-link">
-          <div class="card">
-            <img
-              src="https://images.pexels.com/photos/8363771/pexels-photo-8363771.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Bridge In Progress"
-            />
-            <div class="card-content">
-              <h3>Work completed on the Intellexi Bridge</h3>
-              <p>
-                It was a rough here for Ngumys Fanstastic Internation School. We
-                lost our father, dad and founder, Professor Ajaga Nji in July.
-            </p>
-            </div>
-            <div class="button_container">
-              <button class="card_button"> 
-                <div class="eye_button"><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
-                <div class="comment_btn"><i class="fas fa-comment-alt" style="color: #800000;"></i> 1</div> 
-                <div class="heart">❤ 1</div></button>
-             </div>
-          </div>
-        </a>
-        <a href="Card2.html" class="card-link">
-          <div class="card">
-            <img
-              src="https://images.pexels.com/photos/8500287/pexels-photo-8500287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              alt="Bridge In Progress"
-            />
-            <div class="card-content">
-              <h3>Work continues on the Intellexi Bridge</h3>
-              <p>
-                It was a rough here for Ngumys Fanstastic Internation School. We
-                lost our father, dad and founder, Professor Ajaga Nji in July.
-            </p>
-            </div>
-            <div class="button_container">
-              <button class="card_button"> 
-                <div class="eye_button"><i class="fas fa-eye" style="color: #800000;"></i> 5</div>
-                <div class="comment_btn"><i class="fas fa-comment-alt" style="color: #800000;"></i> 1</div> 
-                <div class="heart">❤ 1</div></button>
-             </div>
-          </div>
-        </a>
-      </div>
+              <div
+              class="card_heart"
+              onclick="event.stopPropagation(); toggleLike(this);"
+            >
+              ❤ <span class="like-count"></span>
+            </div></button>
+           </div>
+        </div>
+      
+    </div>
     </div>
     <div class="comment-section">
       <h3>Leave a Comment</h3>
@@ -279,6 +305,14 @@
           );
         });
       });
+
+      function toggleLike(el) {
+        const countSpan = el.querySelector(".like-count");
+        const liked = el.classList.toggle("liked");
+
+        // Show "1" when liked, hide when unliked
+        countSpan.textContent = liked ? "1" : "";
+      }
     </script>
   </body>
   <footer class="footer">
