@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Groups</title>
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-  />
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <script
-    src="https://kit.fontawesome.com/a076d05399.js"
-    crossorigin="anonymous"
-  ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="GroupPage.css" />
     <link rel="stylesheet" href="OurSchool.css" />
@@ -102,31 +102,41 @@
         <i class="fas fa-search"></i>
         <input type="text" placeholder="Search..." />
       </div>
+
       <div class="custom-select">
+        <p>Sort by:</p>
         <select>
-          <option selected>Default sorting</option>
-          <option>Sort by popularity</option>
-          <option>Sort by rating</option>
-          <option>Sort by latest</option>
+          <option selected>Member Count</option>
+          <option>Recent Activity</option>
+          <option>A-Z</option>
         </select>
       </div>
-  
+
       <!-- Search input -->
-     
     </div>
     <div class="tabs">
       <span class="active">All (3)</span>
       <span>My Groups</span>
       <span>Suggested Groups</span>
-     
     </div>
     <!-- <p class="line_quote1"></p> -->
 
-    
-    <p class="no-groups-message" style="display: none; text-align: center; font-size: 30px; font-family: 'Lexend'; font-weight: bold; margin-top: 40px; margin-bottom: 60px;">
+    <p
+      class="no-groups-message"
+      style="
+        display: none;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Lexend';
+        font-weight: bold;
+        margin-top: 40px;
+        margin-bottom: 60px;
+      "
+    >
       No Groups
     </p>
     <div class="groups">
+
     
     
         <a href="./GroupSection.html">
@@ -155,12 +165,13 @@ src="./images/parant_teacher.webp"          alt="Parent Teacher Association"
         <div class="group-card-content">
           <div class="group-title">Parent Teacher Association</div>
           <div class="group-meta">Public · 1 member</div>
-          <div class="grp_section" >
-            <a class="group_btn" href="#" id="joinBtn">
+          <div class="grp_section">
+            <a class="group_btn joinBtn" href="#" id="joinBtn">
               Join <i class="hover fas fa-arrow-right"></i>
             </a>
           </div>
         </div>
+      </div>
     </a>  
     </div>
 </a>
@@ -174,8 +185,8 @@ src="./images/school_band.avif"          alt="Ngumys School Band"
         <div class="group-card-content">
           <div class="group-title">Ngumys School Band</div>
           <div class="group-meta">Public · 1 member</div>
-          <div class="grp_section" >
-            <a class="group_btn" href="#" id="joinBtn">
+          <div class="grp_section">
+            <a class="group_btn joinBtn" href="#" id="joinBtn">
               Join <i class="hover fas fa-arrow-right"></i>
             </a>
           </div>
@@ -188,19 +199,47 @@ src="./images/school_band.avif"          alt="Ngumys School Band"
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Sign Up</h2>
-        <p>Already a member? <a href="#">Log In</a></p>
-        <button class="google-btn">Sign up with Google</button>
-        <button class="facebook-btn">Sign up with Facebook</button>
-        <div class="divider">or</div>
+        <p class="modal_para">
+          Already a member? <a href="#" style="color: #800000">Log In</a>
+        </p>
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="google-btn">
+            <span class="google-icon-wrapper">
+              <img
+                src="./google-icon-2048x2048-czn3g8x8.png"
+                alt="Google Logo"
+              />
+            </span>
+            Sign up with Google
+          </button>
+        </a>
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="facebook-btn">
+            <span class="facebook-icon-wrapper">
+              <i class="fab fa-facebook-f"></i>
+            </span>
+            Sign up with Facebook
+          </button></a
+        >
+        <div class="modal_divider">or</div>
         <button class="email-btn">Sign up with email</button>
         <div class="public-profile">
-          <input type="checkbox" checked /> Sign up to this site with a public profile.
-          <a href="#">Read more</a>
+          <input type="checkbox" checked /> Sign up to this site with a public
+          profile.
+          <a href="#" style="color: #800000; text-decoration: underline"
+            >Read more</a
+          >
         </div>
       </div>
     </div>
     <script>
-       const navLinks = document.querySelectorAll(".nav.web a");
+      const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;
 
       navLinks.forEach((link) => {
@@ -250,47 +289,54 @@ src="./images/school_band.avif"          alt="Ngumys School Band"
       });
 
       const tabs = document.querySelectorAll(".tabs span");
-  const groupsContainer = document.querySelector(".groups");
-  const noGroupsMessage = document.querySelector(".no-groups-message");
+      const groupsContainer = document.querySelector(".groups");
+      const noGroupsMessage = document.querySelector(".no-groups-message");
 
-  tabs.forEach((tab) => {
-    tab.addEventListener("click", () => {
-      tabs.forEach((t) => t.classList.remove("active"));
-      tab.classList.add("active");
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
 
-      const selectedTab = tab.textContent.trim();
+          const selectedTab = tab.textContent.trim();
 
-      if (selectedTab === "All (3)") {
-        groupsContainer.style.display = "flex";
-        noGroupsMessage.style.display = "none";
-      } else if (selectedTab === "My Groups") {
-        groupsContainer.style.display = "none";
-        noGroupsMessage.style.display = "block";
-      } else if (selectedTab === "Suggested Groups") {
-        groupsContainer.style.display = "flex";
-        noGroupsMessage.style.display = "none";
-      }
-    });
-  });
+          if (selectedTab === "All (3)") {
+            groupsContainer.style.display = "flex";
+            noGroupsMessage.style.display = "none";
+          } else if (selectedTab === "My Groups") {
+            groupsContainer.style.display = "none";
+            noGroupsMessage.style.display = "block";
+          } else if (selectedTab === "Suggested Groups") {
+            groupsContainer.style.display = "flex";
+            noGroupsMessage.style.display = "none";
+          }
+        });
+      });
 
-  const modal = document.getElementById("signupModal");
-  const btn = document.getElementById("joinBtn");
-  const span = document.querySelector(".close");
+      const modal = document.getElementById("signupModal");
+      const btn = document.getElementById("joinBtn");
+      const span = document.querySelector(".close");
 
-  btn.onclick = function (e) {
-    e.preventDefault(); // Prevent default link behavior
-    modal.style.display = "block";
-  };
+      btn.onclick = function (e) {
+        e.preventDefault(); // Prevent default link behavior
+        modal.style.display = "block";
+      };
 
-  span.onclick = function () {
-    modal.style.display = "none";
-  };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
 
-  window.onclick = function (event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      document.querySelectorAll(".joinBtn").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("signupModal").style.display = "block";
+        });
+      });
     </script>
   </body>
   <footer class="footer">

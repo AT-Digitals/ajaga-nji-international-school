@@ -106,10 +106,11 @@
 .groups {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 45px;
   width: 100%;
   max-width: 1200px;
   margin: 30px auto;
+  justify-content: center;
 }
 
 .group-card {
@@ -225,6 +226,9 @@
   position: relative;
   font-size: 16px;
   right: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .custom-select select {
@@ -298,7 +302,7 @@
   width: 400px;
   position: relative;
   text-align: center;
-  font-family: sans-serif;
+  font-family: "Lexend";
 }
 
 .close {
@@ -311,9 +315,95 @@
   cursor: pointer;
 }
 
-.google-btn,
-.facebook-btn,
+.facebook-btn {
+  display: flex;
+  align-items: center;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  width: 100%;
+  gap: 35px;
+  font-family: "Lexend";
+}
+
+.facebook-icon-wrapper {
+  background-color: white;
+  color: #1877f2;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.facebook-icon-wrapper i {
+  font-size: 16px;
+}
+
+.google-btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  font-family: "Lexend";
+  margin-bottom: 20px;
+  margin-top: 15px;
+  width: 100%;
+  gap: 35px;
+  border: 1px solid black;
+}
+
+.google-btn:hover {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: fit-content;
+  font-family: "Lexend";
+  margin-bottom: 20px;
+  margin-top: 15px;
+  width: 100%;
+  gap: 35px;
+  border: 1px solid black;
+}
+
+.google-icon-wrapper {
+  background-color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.google-icon-wrapper img {
+  width: 18px;
+  height: 18px;
+}
+
 .email-btn {
+  background: white;
+  color: black;
   width: 100%;
   margin: 10px 0;
   padding: 12px;
@@ -321,30 +411,22 @@
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  border: 1px solid black;
 }
 
-.google-btn {
-  background: #fff;
-  border: 1px solid #ccc;
+.email-btn:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
 }
 
-.facebook-btn {
-  background: #1877f2;
-  color: #fff;
-}
-
-.email-btn {
-  background: #f1f1f1;
-}
-
-.divider {
+.modal_divider {
   margin: 15px 0;
   border-top: 1px solid #ccc;
   position: relative;
 }
 
-.divider::after {
-  content: "or";
+.modal_divider::after {
   position: absolute;
   top: -12px;
   left: 50%;
@@ -358,4 +440,9 @@
   margin-top: 15px;
   font-size: 14px;
   text-align: left;
+}
+
+.modal_para {
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
 }
