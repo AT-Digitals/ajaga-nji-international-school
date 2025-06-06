@@ -2011,6 +2011,9 @@ a {
   .supportpage-overlay {
     margin: 3rem auto;
   }
+  .sidebar {
+    width: 100%;
+  }
 }
 
 .following_box {
