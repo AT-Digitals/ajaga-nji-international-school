@@ -99,8 +99,9 @@
 }
 
 .grp_section {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   display: flex;
+  padding: 0 20px;
 }
 
 .groups {
@@ -129,7 +130,10 @@
 }
 
 .group-card-content {
-  padding: 15px;
+  padding: 15px 15px 0px;
+}
+.group-card:hover .group-title {
+  color: var(--main-text);
 }
 
 .group-title {
