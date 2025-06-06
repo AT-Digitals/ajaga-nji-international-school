@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parent Teacher Association</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="GroupSection.css" />
+    <link rel="stylesheet" href="OurSchool.css" />
+    <link rel="stylesheet" href="Card.css" />
+
+    <link rel="stylesheet" href="GroupPage.css" />
+    <link rel="stylesheet" href="EventCard.css" />
+  </head>
+  <header>
+    <div class="header" id="mainHeader">
+      <div class="header_inner">
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./images/logo.png"
+              alt="Champion School Logo"
+              class="logo"
+            />
+          </a>
+        </div>
+        <nav class="nav web">
+          <div class="dropdown">
+            <a href="./index.html" class="dropdown-toggle"
+              >Our School <i class="fas fa-caret-down"></i
+            ></a>
+            <div class="dropdown-menu">
+              <a href="./history.html" class="history">History </a>
+              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="./staff.html">Staff</a>
+              <a href="./GroupPage.html">Groups</a>
+            </div>
+          </div>
+          <a href="./Accademic.html">Academics</a>
+
+          <a href="./Adminssions.html">Admissions</a>
+          <a href="./EventCard.html">News & Events</a>
+          <a href="./MediaGallery.html">Media Gallery</a>
+          <a href="./Support.html">Support Us</a>
+        </nav>
+        <div>
+          <a class="btn" href="./ContactPage.html"
+            >Contact Us <i class="hover fas fa-arrow-right"></i
+          ></a>
+        </div>
+
+        <!-- Mobile Slide Menu -->
+        <div class="menu-content" id="menuContent">
+          <div class="close-btn-div">
+            <button class="close-btn" id="menuClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="nav">
+            <div class="mobile-dropdown">
+              <a href="./index.html" class="active mobile-dropdown-toggle">
+                Our School
+                <i class="fas fa-chevron-down arrow"></i>
+              </a>
+              <div class="mobile-dropdown-menu">
+                <a href="./history.html" class="history">History </a>
+                <a href="./board-of-director.html">Board of Directors</a>
+                <a href="./staff.html">Staff</a>
+                <a href="./GroupPage.html">Groups</a>
+              </div>
+            </div>
+            <a href="./Accademic.html">Academics</a>
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
+            <a href="./MediaGallery.html">Media Gallery</a>
+            <a href="./Support.html">Support Us</a>
+            <a href="./ContactPage.html">Contact Us</a>
+          </nav>
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <body>
+    <section>
+      <div
+        style="position: relative; height: 400px; width: 100%; overflow: hidden"
+      >
+        <img
+          src="https://static.wixstatic.com/media/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg/v1/fill/w_1901,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg"
+          style="height: 100%; width: 100%; object-fit: cover"
+          alt="banner"
+        />
+      </div>
+    </section>
+    <div class="userProfilePage">
+      <div class="sidebar">
+        <div class="user-card">
+          <div class="dots-wrapper">
+            <span class="dots" onclick="toggleDropdown(this)">⋮</span>
+            <div class="dropdown">
+              <p>Report Member</p>
+            </div>
+          </div>
+          <div class="profile_avatar">K</div>
+          <div class="name">Klaus Nji</div>
+          <div class="admin-badge">👑 Admin</div>
+          <div class="follow-info">
+            <div class="following_box border_right">
+              <p>0</p>
+              <p>Followers</p>
+            </div>
+
+            <div class="following_box">
+              <p>0</p>
+              <p>Followers</p>
+            </div>
+          </div>
+          <button class="follow-btn">Follow</button>
+        </div>
+      </div>
+      <div class="user_profile_tabs">
+        <nav class="tabs">
+          <ul>
+            <li class="tab active" data-tab="profile">Profile</li>
+            <li class="tab" data-tab="events">Events</li>
+          </ul>
+        </nav>
+        <div class="main-content">
+          <div id="profile" class="tab-content active userprofile_posts">
+            <h2>Profile</h2>
+            <p>Join date: Aug 26, 2021</p>
+            <hr />
+            <h3>Posts</h3>
+            <div class="cards">
+              <div class="card" onclick="window.location.href='Card.html'">
+                <img
+                  src="https://images.pexels.com/photos/6281030/pexels-photo-6281030.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+                  alt="Bridge Completed"
+                />
+                <div class="card-content">
+                  <h3>Work completed on Ajaga Fantastic</h3>
+                  <p>
+                    It was a rough here for Ajaga Fanstastic Internation School.
+                    We lost our father, dad and founder, Professor Ajaga Nji in
+                    July.
+                  </p>
+                </div>
+                <div class="button_container">
+                  <button class="card_button">
+                    <div class="comments_userprofile">
+                      <div class="eye_button">
+                        <i class="fas fa-eye" style="color: #800000"></i> 5
+                      </div>
+                      <div class="comment_btn">
+                        <i
+                          class="fas fa-comment-alt"
+                          style="color: #800000"
+                        ></i>
+                        1
+                      </div>
+                    </div>
+                    <div
+                      class="card_heart"
+                      onclick="event.stopPropagation(); toggleLike(this);"
+                    >
+                      ❤ <span class="like-count"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card" onclick="window.location.href='Card1.html'">
+                <img
+                  src="https://images.pexels.com/photos/8363771/pexels-photo-8363771.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+                  alt="Bridge In Progress"
+                />
+                <div class="card-content">
+                  <h3>Work completed on the Intellexi Bridge</h3>
+                  <p>
+                    It was a rough here for Ngumys Fanstastic Internation
+                    School. We lost our father, dad and founder, Professor Ajaga
+                    Nji in July.
+                  </p>
+                </div>
+                <div class="button_container">
+                  <button class="card_button">
+                    <div class="comments_userprofile">
+                      <div class="eye_button">
+                        <i class="fas fa-eye" style="color: #800000"></i> 5
+                      </div>
+                      <div class="comment_btn">
+                        <i
+                          class="fas fa-comment-alt"
+                          style="color: #800000"
+                        ></i>
+                        1
+                      </div>
+                    </div>
+                    <div
+                      class="card_heart"
+                      onclick="event.stopPropagation(); toggleLike(this);"
+                    >
+                      ❤ <span class="like-count"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+
+              <div class="card" onclick="window.location.href='Card1.html'">
+                <img
+                  src="https://images.pexels.com/photos/8500287/pexels-photo-8500287.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
+                  alt="Bridge In Progress"
+                />
+                <div class="card-content">
+                  <h3>Work continues on the Intellexi Bridge</h3>
+                  <p>
+                    It was a rough here for Ngumys Fanstastic Internation
+                    School. We lost our father, dad and founder, Professor Ajaga
+                    Nji in July.
+                  </p>
+                </div>
+                <div class="button_container">
+                  <button class="card_button">
+                    <div class="comments_userprofile">
+                      <div class="eye_button">
+                        <i class="fas fa-eye" style="color: #800000"></i> 5
+                      </div>
+                      <div class="comment_btn">
+                        <i
+                          class="fas fa-comment-alt"
+                          style="color: #800000"
+                        ></i>
+                        1
+                      </div>
+                    </div>
+                    <div
+                      class="card_heart"
+                      onclick="event.stopPropagation(); toggleLike(this);"
+                    >
+                      ❤ <span class="like-count"></span>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="events" class="tab-content">
+            <h2>Events</h2>
+            <p>Track and manage your events here.</p>
+            <div class="inner_tabs">
+              <nav class="tabs inner-tabs">
+                <ul>
+                  <li class="inner-tab active" data-tab="upcoming">Upcoming</li>
+                  <li class="inner-tab" data-tab="past">Past</li>
+                </ul>
+              </nav>
+            </div>
+            <div id="upcoming" class="inner-tab-content active">
+              <div class="container_about_group">
+                <div class="media_group">
+                  <h2>No Media Yet</h2>
+                  <p>
+                    Once people start posting photos or videos, you’ll be able
+                    to see them all here.
+                  </p>
+                  <button class="btn">
+                    Create Post <i class="hover fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleDropdown(dotElement) {
+        const dropdown = dotElement.nextElementSibling;
+        const isVisible = dropdown.style.display === "block";
+
+        // Hide all other dropdowns
+        document
+          .querySelectorAll(".userProfilePage .dropdown")
+          .forEach((el) => {
+            el.style.display = "none";
+          });
+
+        // Toggle current
+        dropdown.style.display = isVisible ? "none" : "block";
+
+        // Close if clicking outside
+        document.addEventListener("click", function handler(e) {
+          if (!e.target.closest(".dots-wrapper")) {
+            dropdown.style.display = "none";
+            document.removeEventListener("click", handler);
+          }
+        });
+      }
+      const tabs = document.querySelectorAll(".tab");
+      const contents = document.querySelectorAll(".tab-content");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          // Remove active from all tabs and contents
+          tabs.forEach((t) => t.classList.remove("active"));
+          contents.forEach((c) => c.classList.remove("active"));
+
+          // Activate clicked tab and corresponding content
+          tab.classList.add("active");
+          const target = document.getElementById(tab.dataset.tab);
+          if (target) {
+            target.classList.add("active");
+          }
+        });
+      });
+      const innerTabs = document.querySelectorAll(".inner-tab");
+      const innerContents = document.querySelectorAll(".inner-tab-content");
+
+      innerTabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          innerTabs.forEach((t) => t.classList.remove("active"));
+          innerContents.forEach((c) => c.classList.remove("active"));
+
+          tab.classList.add("active");
+          const target = document.getElementById(tab.dataset.tab);
+          if (target) {
+            target.classList.add("active");
+          }
+        });
+      });
+
+      // Optional: Ensure active tab content is shown on page load
+      document.addEventListener("DOMContentLoaded", () => {
+        const activeOuter = document.querySelector(".tab.active");
+        if (activeOuter) {
+          const target = document.getElementById(activeOuter.dataset.tab);
+          if (target) {
+            contents.forEach((c) => c.classList.remove("active"));
+            target.classList.add("active");
+          }
+        }
+
+        const activeInner = document.querySelector(".inner-tab.active");
+        if (activeInner) {
+          const target = document.getElementById(activeInner.dataset.tab);
+          if (target) {
+            innerContents.forEach((c) => c.classList.remove("active"));
+            target.classList.add("active");
+          }
+        }
+      });
+
+      function openModal() {
+        document.getElementById("shareModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("shareModal").style.display = "none";
+      }
+      window.onclick = function (event) {
+        const modal = document.getElementById("shareModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+      const modal = document.getElementById("signupModal");
+      const btn = document.getElementById("joinBtn");
+      const span = document.querySelector(".close");
+      btn.onclick = function (e) {
+        e.preventDefault(); // Prevent default link behavior
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+  <footer class="footer">
+    <div class="container flex-wrap space-between">
+      <!-- Left Column -->
+      <div class="column">
+        <a href="./index.html">
+          <img
+            src="./images/logo.png"
+            alt="Goodrise Logistics"
+            class="brand-logo"
+          />
+        </a>
+        <p class="text">
+          We are an English-speaking school in Dschang, Cameroon, W. Africa. We
+          offer kindergarten (nursery school) all the way to class 7
+        </p>
+      </div>
+
+      <!-- Center Column -->
+      <div class="column">
+        <h3 class="title">Contact info</h3>
+        <div class="item-row">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <div>
+            <p class="label">Our location:</p>
+            <p class="text">
+              Ajaga Nji Bilingual International School P.O Box 138 Dschang,
+              Cameroon W. Africa
+            </p>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-phone-alt icon" style="transform: rotate(90deg)"></i>
+          <div>
+            <p class="label">Phones:</p>
+            <a
+              style="text-decoration: none; color: #b9b9b9; font-family: Lexend"
+              href="tel:+237-679259202"
+              >+237-679259202
+            </a>
+            <br />
+            <a
+              style="text-decoration: none; color: #b9b9b9; font-family: Lexend"
+              href="tel:+237-679259202"
+              >+237 691512550
+            </a>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-envelope icon"></i>
+          <div>
+            <p class="label">Email:</p>
+            <a
+              style="text-decoration: none; color: #b9b9b9; font-family: Lexend"
+              href="mailto:ngumysnpschool@gmail.com"
+              >ngumysnpschool@gmail.com
+            </a>
+            <p class="text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column">
+        <h3 class="title">Subscribe</h3>
+        <div class="input-row">
+          <p class="text">
+            If you are interested in subscribing to newsletters, please enter in
+            your email address and click on Subscribe Now.
+          </p>
+          <div class="subscribe-box">
+            <input type="text" placeholder="Subscribe with us" />
+            <button>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+        <label class="checkbox-group">
+          <input type="checkbox" /> I authorize the use of the information
+          entered
+        </label>
+      </div>
+    </div>
+    <div class="copy_rights">
+      <!-- <div class="icon-row"></div> -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 by
+          <span class="highlight">
+            Ajaga Nji Bilingual International School
+          </span>
+        </p>
+      </div>
+      <div class="icon-row">
+        <a target="_blank" href="https://www.facebook.com/ngumys.fantastic">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+</html>

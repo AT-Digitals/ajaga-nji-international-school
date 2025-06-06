@@ -298,7 +298,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.modal-content {
+#signupModal .modal-content {
   background-color: #fff;
   margin: auto;
   padding: 30px;
