@@ -218,7 +218,7 @@
                 </p>
                 <p style="color: #800000">Follow</p>
               </div>
-              <a href="#">See All Members (1)</a>
+              <a href="./userProfile.html">See All Members (1)</a>
             </div>
           </aside>
         </div>
@@ -284,7 +284,9 @@
               <div class="avatar">
                 <a href="./userProfile.html"> K</a>
               </div>
-              <div class="name">Klaus Nji</div>
+              <div class="name">
+                <a href="./userProfile.html"> Klaus Nji </a>
+              </div>
             </div>
             <button class="btn">
               Follow <i class="hover fas fa-arrow-right"></i>
@@ -369,7 +371,6 @@
           <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
             <i class="fab fa-x-twitter"></i>
           </a>
-          <a href="#"><i class="fas fa-link"></i></a>
           <a
             href="https://in.linkedin.com/"
             target="_blank"
@@ -377,6 +378,7 @@
           >
             <i class="fab fa-linkedin-in"></i>
           </a>
+          <a href="#"><i class="fas fa-link"></i></a>
         </div>
       </div>
     </div>
@@ -402,35 +404,6 @@
       const tabs = document.querySelectorAll(".tab");
       const contents = document.querySelectorAll(".tab-content");
 
-      function openModal() {
-        document.getElementById("shareModal").style.display = "flex";
-      }
-
-      function closeModal() {
-        document.getElementById("shareModal").style.display = "none";
-      }
-      window.onclick = function (event) {
-        const modal = document.getElementById("shareModal");
-        if (event.target === modal) {
-          closeModal();
-        }
-      };
-      const modal = document.getElementById("signupModal");
-      const btn = document.getElementById("joinBtn");
-      const span = document.querySelector(".close");
-      btn.onclick = function (e) {
-        e.preventDefault(); // Prevent default link behavior
-        modal.style.display = "block";
-      };
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-
       tabs.forEach((tab) => {
         tab.addEventListener("click", () => {
           // Remove active class from all tabs and contents
@@ -445,6 +418,21 @@
           }
         });
       });
+      function openModal() {
+        document.getElementById("shareModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("shareModal").style.display = "none";
+      }
+
+      // Optional: close modal when clicking outside of it
+      window.onclick = function (event) {
+        const modal = document.getElementById("shareModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
     </script>
   </body>
   <footer class="footer">
