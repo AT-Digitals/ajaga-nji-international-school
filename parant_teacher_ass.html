@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="GroupSection.css" />
     <link rel="stylesheet" href="OurSchool.css" />
     <link rel="stylesheet" href="GroupPage.css" />
+    <link rel="stylesheet" href="EventCard.css" />
   </head>
   <header>
     <div class="header" id="mainHeader">
@@ -100,7 +101,7 @@
           <div class="group-meta">Public · 1 member</div>
         </div>
         <div>
-          <button class="btn">
+          <button class="btn" id="joinBtn">
             Join <i class="hover fas fa-arrow-right"></i>
           </button>
         </div>
@@ -165,7 +166,12 @@
                     <small>November 8, 2025 - updated the description</small>
                   </div>
                 </div>
-                <i class="fa-solid fa-share"></i>
+                <div
+                  style="cursor: pointer"
+                  onclick="event.stopPropagation(); openModal();"
+                >
+                  <i class="fa-solid fa-share"></i>
+                </div>
               </div>
               <div class="post-content">
                 In this group we discuss all parent/teacher related matters
@@ -343,10 +349,82 @@
         </div>
       </div>
     </div>
+    <div class="modal" id="shareModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>Share this post</h3>
+        <div class="card_social-icons">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="#"><i class="fas fa-link"></i></a>
+          <a
+            href="https://in.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <p>Already a member? <a href="#">Log In</a></p>
+        <button class="google-btn">Sign up with Google</button>
+        <button class="facebook-btn">Sign up with Facebook</button>
+        <div class="divider">or</div>
+        <button class="email-btn">Sign up with email</button>
+        <div class="public-profile">
+          <input type="checkbox" checked /> Sign up to this site with a public
+          profile.
+          <a href="#">Read more</a>
+        </div>
+      </div>
+    </div>
 
     <script>
       const tabs = document.querySelectorAll(".tab");
       const contents = document.querySelectorAll(".tab-content");
+
+      function openModal() {
+        document.getElementById("shareModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("shareModal").style.display = "none";
+      }
+      window.onclick = function (event) {
+        const modal = document.getElementById("shareModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
+      const modal = document.getElementById("signupModal");
+      const btn = document.getElementById("joinBtn");
+      const span = document.querySelector(".close");
+      btn.onclick = function (e) {
+        e.preventDefault(); // Prevent default link behavior
+        modal.style.display = "block";
+      };
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
 
       tabs.forEach((tab) => {
         tab.addEventListener("click", () => {
