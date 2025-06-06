@@ -498,7 +498,7 @@
     left: 0px;
   }
   .search-box input {
-    width: 720px; /* or any width you prefer */
+    max-width: 720px; /* or any width you prefer */
     padding: 8px;
     font-size: 14px;
     padding-left: 32px;
