@@ -231,7 +231,17 @@
 
 .members-box a {
   text-decoration: none;
-  color: white;
+  color: var(--main-text);
+}
+.user-icon {
+  color: white !important;
+}
+.right-panel .card {
+  width: 100%;
+  box-shadow: none;
+}
+.left-panel .card {
+  box-shadow: none;
 }
 
 .group-meta {
@@ -273,6 +283,9 @@
   outline: none;
   transition: border-color 0.3s;
   margin-top: 15px;
+}
+.hidden-card {
+  display: none;
 }
 
 .reaction-container {
