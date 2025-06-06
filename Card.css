@@ -137,6 +137,7 @@
 .section h2 {
   font-family: "Lexend";
   font-size: 42px;
+  padding-bottom: 10px;
 }
 
 .cards {
@@ -412,6 +413,8 @@ textarea {
   padding: 20px;
   background-color: white;
   margin-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .card_social-icons {
   display: flex;
@@ -441,7 +444,7 @@ textarea {
 .card-meta_share {
   display: flex;
   gap: 17px;
-  padding: 0 20px 20px;
+  padding: 0px;
   font-size: 14px;
   color: #800000;
 }
@@ -459,7 +462,10 @@ textarea {
 .card_button {
   width: 100%;
   max-width: 330px;
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: white;
   color: white;
   display: flex;
@@ -474,6 +480,7 @@ textarea {
     padding: 40px;
     min-width: 300px;
     margin: 0;
+    padding-top: 0px;
   }
 
   .card_whole_container {
@@ -485,7 +492,7 @@ textarea {
   .card-meta_share {
     display: flex;
     gap: 17px;
-    padding: 16px 0px 20px;
+    padding: 0px;
     font-size: 14px;
     color: #800000;
   }
@@ -499,6 +506,8 @@ textarea {
     margin-top: 10px;
     flex-direction: column;
     gap: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .share-container {
@@ -524,5 +533,18 @@ textarea {
     font-family: "Nunito Sans", sans-serif;
     height: auto;
     padding-top: 12px;
+  }
+  .line_quote1 {
+    border: 2px solid #800000;
+    width: 17%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line_quote1 {
+    border: 2px solid #800000;
+    width: 25%;
+    margin-bottom: 25px;
   }
 }

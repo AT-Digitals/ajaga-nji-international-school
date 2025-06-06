@@ -242,7 +242,7 @@ body {
 
 .modal-content {
   background: white;
-  padding: 20px;
+  padding: 30px;
   border-radius: 10px;
   text-align: center;
   position: relative;
@@ -285,4 +285,41 @@ body {
   font-size: 25px;
   cursor: pointer;
   color: black;
+}
+
+@media (max-width: 768px) {
+  .line_quote {
+    border: 2px solid #800000;
+    width: 17%;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .line_quote {
+    border: 2px solid #800000;
+    width: 25%;
+    margin-bottom: 25px;
+  }
+  .container1 {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px;
+  }
+  .tag {
+    display: inline-block;
+    background-color: #800000;
+    color: white;
+    font-size: 0.8rem;
+    padding: 4px 10px;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    border: 1px solid #800000;
+    position: relative;
+    left: 70px;
+  }
 }
