@@ -1901,10 +1901,16 @@ a {
 .profile-info .avatar {
   font-size: 14px;
   color: white;
+  background-color: var(--main-text) !important;
+  width: 35px !important;
+  height: 35px !important;
 }
 .profile-info .avatar a {
   font-size: 14px;
   color: white;
+}
+.profile-info .name a {
+  color: var(--main-text);
 }
 
 .name {

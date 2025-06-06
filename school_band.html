@@ -16,6 +16,8 @@
     ></script>
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="GroupSection.css" />
+    <link rel="stylesheet" href="EventCard.css" />
+
     <link rel="stylesheet" href="OurSchool.css" />
     <link rel="stylesheet" href="GroupPage.css" />
   </head>
@@ -165,7 +167,12 @@
                     <small>November 8, 2025 - updated the description</small>
                   </div>
                 </div>
-                <i class="fa-solid fa-share"></i>
+                <div
+                  style="cursor: pointer"
+                  onclick="event.stopPropagation(); openModal();"
+                >
+                  <i class="fa-solid fa-share"></i>
+                </div>
               </div>
               <div class="post-content">
                 In this group we discuss all parent/teacher related matters
@@ -209,7 +216,7 @@
                 </p>
                 <p style="color: #800000">Follow</p>
               </div>
-              <a href="#">See All Members (1)</a>
+              <a href="./userProfile.html">See All Members (1)</a>
             </div>
           </aside>
         </div>
@@ -272,8 +279,12 @@
 
           <div class="profile">
             <div class="profile-info">
-              <div class="avatar">K</div>
-              <div class="name">Klaus Nji</div>
+              <div class="avatar">
+                <a href="./userProfile.html"> K</a>
+              </div>
+              <div class="name">
+                <a href="./userProfile.html"> Klaus Nji </a>
+              </div>
             </div>
             <button class="btn">
               Follow <i class="hover fas fa-arrow-right"></i>
@@ -343,8 +354,49 @@
         </div>
       </div>
     </div>
+    <div class="modal" id="shareModal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <h3>Share this post</h3>
+        <div class="card_social-icons">
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a
+            href="https://in.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#"><i class="fas fa-link"></i></a>
+        </div>
+      </div>
+    </div>
 
     <script>
+      function openModal() {
+        document.getElementById("shareModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("shareModal").style.display = "none";
+      }
+
+      // Optional: close modal when clicking outside of it
+      window.onclick = function (event) {
+        const modal = document.getElementById("shareModal");
+        if (event.target === modal) {
+          closeModal();
+        }
+      };
       const tabs = document.querySelectorAll(".tab");
       const contents = document.querySelectorAll(".tab-content");
 
