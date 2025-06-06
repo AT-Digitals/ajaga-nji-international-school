@@ -558,7 +558,7 @@ body {
 
 .acc_section .content p {
   font-size: 16px;
-  color: var(--main-bg);
+  color: var(--main-text);
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -612,7 +612,7 @@ body {
   text-align: center;
 }
 footer .fas {
-  color: var(--main-subTitle);
+  color: var(--main-text);
 }
 
 h2 {
@@ -913,6 +913,7 @@ a {
   box-shadow: rgba(1, 6, 12, 0.14) 0px 4px 25px 0px;
   padding: 1.5rem;
   background-color: #ffce1f6e;
+  border-radius: 20px;
 }
 
 .staff_role {
@@ -1196,7 +1197,7 @@ a {
   color: var(--main-bg) !important;
 }
 .board_details .staff_socials .social_icon:hover {
-  color: var(--main-subTitle) !important;
+  color: var(--main-text) !important;
 }
 
 .customer-testimonials {
