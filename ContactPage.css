@@ -135,7 +135,7 @@ body {
 }
 
 .contact_info h1 {
-  color: #f7cb2d;
+  color: #800000;
   margin-bottom: 10px;
   font-family: "Lexend";
   font-size: 30px;
@@ -160,7 +160,7 @@ body {
 .conatct_info-item i {
   font-size: 20px;
   margin-top: 5px;
-  color: #f7cb2d;
+  color: #800000;
 }
 
 .share-container {
@@ -170,7 +170,7 @@ body {
 
 .card_social-icons a {
   display: inline-block;
-  background-color: #f7cb2d;
+  background-color: #800000;
   color: white;
   width: 40px;
   height: 40px;
