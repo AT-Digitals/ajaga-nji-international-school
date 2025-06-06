@@ -451,6 +451,19 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+.search-box input {
+  width: 250px; /* or any width you prefer */
+  padding: 8px;
+  font-size: 14px;
+  padding-left: 32px;
+}
+
+.custom_flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
 @media (max-width: 768px) {
   .tabs {
     display: flex;
@@ -476,6 +489,12 @@
   .search-box {
     position: relative;
     left: 0px;
+  }
+  .search-box input {
+    width: 720px; /* or any width you prefer */
+    padding: 8px;
+    font-size: 14px;
+    padding-left: 32px;
   }
 }
 
@@ -505,5 +524,33 @@
   .search-box {
     position: relative;
     left: 0px;
+  }
+  .search-box input {
+    width: 345px; /* or any width you prefer */
+    padding: 8px;
+    font-size: 14px;
+    padding-left: 32px;
+  }
+  .custom-select select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px 30px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #800000;
+    border-radius: 4px;
+    background: white;
+    font-family: "Lexend";
+    color: #800000;
+    width: 100%;
+  }
+  .custom-select {
+    position: relative;
+    font-size: 16px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 263px;
   }
 }
