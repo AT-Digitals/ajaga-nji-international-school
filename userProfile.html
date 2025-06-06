@@ -97,9 +97,7 @@
   </header>
   <body>
     <section>
-      <div
-        style="position: relative; height: 400px; width: 100%; overflow: hidden"
-      >
+      <div class="banner_image">
         <img
           src="https://static.wixstatic.com/media/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg/v1/fill/w_1901,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg"
           style="height: 100%; width: 100%; object-fit: cover"
@@ -130,7 +128,9 @@
               <p>Followers</p>
             </div>
           </div>
-          <button class="follow-btn">Follow</button>
+          <button class="btn">
+            Follow <i class="hover fas fa-arrow-right"></i>
+          </button>
         </div>
       </div>
       <div class="user_profile_tabs">
@@ -140,12 +140,9 @@
             <li class="tab" data-tab="events">Events</li>
           </ul>
         </nav>
-        <div class="main-content">
+        <div class="userprofile_sectino">
           <div id="profile" class="tab-content active userprofile_posts">
-            <h2>Profile</h2>
-            <p>Join date: Aug 26, 2021</p>
-            <hr />
-            <h3>Posts</h3>
+            <h3 style="padding: 1rem 0">Posts</h3>
             <div class="cards">
               <div class="card" onclick="window.location.href='Card.html'">
                 <img
@@ -261,8 +258,6 @@
           </div>
 
           <div id="events" class="tab-content">
-            <h2>Events</h2>
-            <p>Track and manage your events here.</p>
             <div class="inner_tabs">
               <nav class="tabs inner-tabs">
                 <ul>
@@ -274,14 +269,11 @@
             <div id="upcoming" class="inner-tab-content active">
               <div class="container_about_group">
                 <div class="media_group">
-                  <h2>No Media Yet</h2>
-                  <p>
-                    Once people start posting photos or videos, you’ll be able
-                    to see them all here.
-                  </p>
-                  <button class="btn">
-                    Create Post <i class="hover fas fa-arrow-right"></i>
-                  </button>
+                  <h2>No tickets or RSVPs yet</h2>
+
+                  <a href="./index.html" class="btn">
+                    Browse Post <i class="hover fas fa-arrow-right"></i>
+                  </a>
                 </div>
               </div>
             </div>
