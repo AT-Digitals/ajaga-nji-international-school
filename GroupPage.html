@@ -142,7 +142,7 @@
           <div class="group-title">After School Activities</div>
           <div class="group-meta">Public · 1 member</div>
           <div class="grp_section">
-            <a class="group_btn" href="#" id="joinBtn">
+            <a class="group_btn joinBtn" href="#" id="joinBtn">
               Join <i class="hover fas fa-arrow-right"></i>
             </a>
           </div>
@@ -158,7 +158,7 @@
           <div class="group-title">Parent Teacher Association</div>
           <div class="group-meta">Public · 1 member</div>
           <div class="grp_section">
-            <a class="group_btn" href="#" id="joinBtn">
+            <a class="group_btn joinBtn" href="#" id="joinBtn">
               Join <i class="hover fas fa-arrow-right"></i>
             </a>
           </div>
@@ -172,7 +172,7 @@
             <div class="group-title">Ajaga School Band</div>
             <div class="group-meta">Public · 1 member</div>
             <div class="grp_section">
-              <a class="group_btn" href="#" id="joinBtn">
+              <a class="group_btn joinBtn" href="#" id="joinBtn">
                 Join <i class="hover fas fa-arrow-right"></i>
               </a>
             </div>
@@ -275,6 +275,13 @@
           modal.style.display = "none";
         }
       };
+
+      document.querySelectorAll(".joinBtn").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("signupModal").style.display = "block";
+        });
+      });
     </script>
   </body>
   <footer class="footer">
