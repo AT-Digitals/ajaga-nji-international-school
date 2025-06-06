@@ -222,7 +222,7 @@
   gap: 20px;
   width: 100%;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 30px auto;
   justify-content: space-between;
 }
 
@@ -552,5 +552,11 @@
     align-items: center;
     gap: 10px;
     width: 263px;
+  }
+  .custom_flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 7px;
   }
 }
