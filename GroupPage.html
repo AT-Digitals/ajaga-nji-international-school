@@ -101,11 +101,11 @@
         <input type="text" placeholder="Search..." />
       </div>
       <div class="custom-select">
+        <p>Sort by:</p>
         <select>
-          <option selected>Default sorting</option>
-          <option>Sort by popularity</option>
-          <option>Sort by rating</option>
-          <option>Sort by latest</option>
+          <option selected>Member count</option>
+          <option>Recent Activity</option>
+          <option>A-Z</option>
         </select>
       </div>
 
@@ -145,7 +145,7 @@
           </div>
         </a>
         <div class="grp_section">
-          <a class="group_btn" href="#" id="joinBtn">
+          <a class="group_btn joinBtn" href="#" id="joinBtn">
             Join <i class="hover fas fa-arrow-right"></i>
           </a>
         </div>
@@ -160,7 +160,7 @@
           </div>
         </a>
         <div class="grp_section">
-          <a class="group_btn" href="#" id="joinBtn">
+          <a class="group_btn joinBtn" href="#" id="joinBtn">
             Join <i class="hover fas fa-arrow-right"></i>
           </a>
         </div>
@@ -175,7 +175,7 @@
           </div>
         </a>
         <div class="grp_section">
-          <a class="group_btn" href="#" id="joinBtn">
+          <a class="group_btn joinBtn" href="#" id="joinBtn">
             Join <i class="hover fas fa-arrow-right"></i>
           </a>
         </div>
@@ -185,15 +185,43 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Sign Up</h2>
-        <p>Already a member? <a href="#">Log In</a></p>
-        <button class="google-btn">Sign up with Google</button>
-        <button class="facebook-btn">Sign up with Facebook</button>
-        <div class="divider">or</div>
+        <p>Already a member? <a href="#" style="color: #800000">Log In</a></p>
+        <a
+          href="https://www.google.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="google-btn">
+            <span class="google-icon-wrapper">
+              <img
+                src="./google-icon-2048x2048-czn3g8x8.png"
+                alt="Google Logo"
+              />
+            </span>
+            Sign up with Google
+          </button>
+        </a>
+
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><button class="facebook-btn">
+            <span class="facebook-icon-wrapper">
+              <i class="fab fa-facebook-f"></i>
+            </span>
+            Sign up with Facebook
+          </button></a
+        >
+
+        <div class="modal_divider">or</div>
+
         <button class="email-btn">Sign up with email</button>
         <div class="public-profile">
           <input type="checkbox" checked /> Sign up to this site with a public
           profile.
-          <a href="#">Read more</a>
+          <a href="#" style="color: #800000; text-decoration: underline"
+            >Read more</a
+          >
         </div>
       </div>
     </div>
@@ -276,6 +304,13 @@
           modal.style.display = "none";
         }
       };
+
+      document.querySelectorAll(".joinBtn").forEach((btn) => {
+        btn.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.getElementById("signupModal").style.display = "block";
+        });
+      });
     </script>
   </body>
   <footer class="footer">

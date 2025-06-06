@@ -26,6 +26,11 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
+.contact_titl {
+  font-family: "Lexend";
+  font-size: 16px;
+}
+
 .contact_section,
 .contact_info {
   padding: 40px;
@@ -91,7 +96,7 @@ body {
 .line_quote1 {
   border: 2px solid #800000;
   width: 10%;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 .contact_button {
@@ -237,5 +242,17 @@ body {
     flex-direction: column;
     gap: 20px;
     margin-bottom: 20px;
+  }
+  .line_quote1 {
+    border: 2px solid #800000;
+    width: 17%;
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .line_quote1 {
+    border: 2px solid #800000;
+    width: 25%;
+    margin-bottom: 25px;
   }
 }
