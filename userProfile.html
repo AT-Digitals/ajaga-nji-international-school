@@ -218,7 +218,10 @@
                 </div>
               </div>
 
-              <div class="card" onclick="window.location.href='Card1.html'">
+              <div
+                class="card hidden-card"
+                onclick="window.location.href='Card1.html'"
+              >
                 <img
                   src="https://images.pexels.com/photos/8500287/pexels-photo-8500287.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
                   alt="Bridge In Progress"
@@ -255,6 +258,11 @@
                 </div>
               </div>
             </div>
+            <div style="display: flex; justify-content: center">
+              <button class="btn" id="toggleCardsBtn" onclick="toggleCards()">
+                Load More
+              </button>
+            </div>
           </div>
 
           <div id="events" class="tab-content">
@@ -283,6 +291,30 @@
     </div>
 
     <script>
+      function toggleCards() {
+        const hiddenCards = document.querySelectorAll(".hidden-card");
+        const btn = document.getElementById("toggleCardsBtn");
+        const isHidden =
+          hiddenCards[0]?.style.display === "none" ||
+          hiddenCards[0]?.classList.contains("hidden-card");
+
+        if (isHidden) {
+          // Show hidden cards
+          hiddenCards.forEach((card) => (card.style.display = "block"));
+          btn.textContent = "Load More";
+        } else {
+          // Hide extra cards again
+          hiddenCards.forEach((card) => (card.style.display = "none"));
+          btn.textContent = "Load More";
+        }
+      }
+
+      // Optional: Ensure cards are hidden on load
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".hidden-card").forEach((card) => {
+          card.style.display = "none";
+        });
+      });
       function toggleDropdown(dotElement) {
         const dropdown = dotElement.nextElementSibling;
         const isVisible = dropdown.style.display === "block";
