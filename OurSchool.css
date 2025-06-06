@@ -553,6 +553,7 @@ body {
   font-size: 28px;
   margin-bottom: 16px;
   color: var(--main-text);
+  font-weight: 600 !important;
 }
 
 .acc_section .content p {
@@ -966,7 +967,7 @@ a {
   justify-content: space-between;
   /* flex-wrap: wrap; */
   gap: 20px;
-  padding: 60px 0;
+  padding: 0px 0 60px;
 }
 .no_bg .testimonial-section {
   background-color: white;
@@ -1852,14 +1853,17 @@ a {
   padding: 20px;
   width: 100%;
   max-width: 1240px;
-  margin: auto;
+  margin: 2rem auto;
   gap: 20px;
+}
+.userprofile_sectino {
+  padding: 0 25px;
 }
 
 .sidebar {
   width: 350px;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 25px;
   background-color: #fff;
   height: 100%;
 }
@@ -1869,6 +1873,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 
   /* padding: 15px 0; */
 }
@@ -1876,12 +1881,29 @@ a {
 .profile_avatar {
   width: 100px;
   height: 100px;
-  background: red;
+  background: var(--main-text);
   text-align: center;
   border-radius: 50%;
   display: flex;
+  color: white;
+  font-size: 30px;
   align-items: center;
   justify-content: center;
+}
+.left-panel .card {
+  width: 100%;
+}
+.profile-info .name {
+  margin-top: 0px !important;
+}
+
+.profile-info .avatar {
+  font-size: 14px;
+  color: white;
+}
+.profile-info .avatar a {
+  font-size: 14px;
+  color: white;
 }
 
 .name {
@@ -1909,6 +1931,9 @@ a {
   cursor: pointer;
 }
 
+.user-card .btn {
+  width: 100%;
+}
 .tabs {
   margin-top: 20px;
 }
@@ -1983,6 +2008,9 @@ a {
   .userProfilePage {
     flex-direction: column;
   }
+  .supportpage-overlay {
+    margin: 3rem auto;
+  }
 }
 
 .following_box {
@@ -2042,4 +2070,12 @@ a {
 
 .userProfilePage .dropdown p:hover {
   background-color: #f1f1f1;
+}
+
+.inner_tabs .inner-tabs {
+  padding: 0px !important;
+}
+
+.inner-tab-content h2 {
+  font-size: 16px;
 }
