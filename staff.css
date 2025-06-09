@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Lexend"; /* Name of the font */
+  src: url("./Lexend/Lexend-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
+
+@font-face {
+  font-family: "RedHatDisplay"; /* Name of the font */
+  src: url("./Red_Hat_Display//RedHatDisplay-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal; /* Optional: Set the weight */
+  font-style: normal; /* Optional: Set the style */
+}
+
+.sidebar_container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sidebar */
+.staff_sidebar {
+  width: 100%;
+  max-width: 350px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.staff_sidebar h3 {
+  background-color: #13333c;
+  color: white;
+  padding: 15px;
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-family: "Lexend";
+}
+
+.service-item {
+  padding: 15px 20px;
+  border: 1px solid #eee;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+  color: #334;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: "Lexend";
+  font-size: 18px;
+}
+
+.service-item:hover {
+  background-color: #f9f9f9;
+}
+
+.service-item.active {
+  background-color: #800000;
+  color: white;
+  font-family: "Lexend";
+  font-size: 18px;
+}
+
+.service-item.active span {
+  color: white;
+}
+
+.service-item span {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.sidebar_card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sidebar_card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  text-align: center;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.sidebar_title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #102a43;
+  margin-bottom: 10px;
+  font-family: "Lexend";
+}
+
+.sidebar_description {
+  font-size: 16px;
+  color: #6b7280;
+  margin-bottom: 20px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.score {
+  font-weight: bold;
+  color: #800000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #aaa;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-size: 14px;
+  font-family: "Lexend";
+}
+
+/* Tab content visibility */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: flex;
+}
+
+/* For content with simple text */
+.tab-content p {
+  font-size: 18px;
+  color: #555;
+  margin: 20px;
+}
+
+.service-item:hover {
+  background-color: #800000; /* red color */
+  color: white; /* make text white for contrast */
+}
+
+.service-item:hover span {
+  color: white; /* arrow color also white */
+}
+
+.staff_member {
+  display: none;
+}
+
+.staff_member.visible {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.staff_member.reverse {
+  flex-direction: row-reverse;
+}
+
+.staff_toggle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#toggleStaffBtn {
+  padding: 10px 20px;
+  background-color: #800000;
+  color: white;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  border: 1px solid #800000;
+}
+
+#toggleStaffBtn:hover:enabled {
+  background-color: white;
+  color: #800000;
+  border: 1px solid #800000;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+@media (max-width: 768px) {
+  .sidebar_container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .staff_sidebar {
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
