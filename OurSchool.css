@@ -35,6 +35,46 @@ body {
   line-height: 1.6;
 }
 
+.landing_video {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+  height: 100vh; /* Full screen height */
+
+  padding: 100px 20px;
+  background-color: #000; /* Fallback background */
+}
+
+.text-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.video-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .banner {
   background: url("./images/home_banernymc.jpg") no-repeat center center/cover;
   height: 100dvh;
@@ -78,8 +118,11 @@ body {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
-
-.banner a {
+.text-content h2 {
+  color: white;
+  font-weight: 900;
+}
+.acc_btn {
   background: none;
   color: var(--main-text);
   border: 1px solid white;
@@ -90,8 +133,9 @@ body {
   border-radius: 5px;
   display: inline-block;
   font-family: "Lexend";
+  max-width: fit-content;
 }
-.banner a:hover {
+.acc_btn:hover {
   background: var(--main-text);
   color: white;
   border: 1px solid var(--main-text);
@@ -219,6 +263,9 @@ body {
     flex-direction: column;
     align-items: center;
   }
+  .flex {
+    flex-direction: column;
+  }
 }
 .misson_btn {
   margin: 2rem 0;
@@ -272,22 +319,22 @@ body {
 .testimonial-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
 }
 
 .testimonial-image img {
   border-radius: 10px;
   width: 100%;
+  max-width: 450px;
   height: auto;
   object-fit: cover;
 }
 
 .testimonial-text {
-  max-width: 600px;
+  max-width: 700px;
   /* position: relative; */
   padding-left: 20px;
   text-align: left;
@@ -470,6 +517,9 @@ body {
   .activities-section {
     flex-direction: column;
     padding: 40px 20px;
+  }
+  .testimonial-container {
+    justify-content: center;
   }
   .staff_member {
     flex-direction: column;
@@ -1188,6 +1238,7 @@ a {
 .board_direc .our_cc_p {
   margin: 0 auto;
   padding: 2rem 0;
+  max-width: 1000px !important;
 }
 .board_direc .board_directors_section {
   margin: 0 auto;
@@ -2089,4 +2140,147 @@ a {
 
 .inner-tab-content h2 {
   font-size: 16px;
+}
+
+.ajaga_board {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* board cards */
+
+.board_title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.board_title span {
+  font-size: 18px;
+  color: #007acc;
+}
+
+.tree ul {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.tree li {
+  list-style: none;
+  margin: 0 10px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.tree li:only-child {
+  padding-top: 0;
+}
+
+.boardofdirect_card {
+  background: #fff;
+  border: 2px solid var(--main-text);
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 230px;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.boardofdirect_card h3 {
+  font-family: "Lexend";
+}
+.boardofdirect_card p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+}
+
+.boardofdirect_card:hover {
+  background: #e6f4ff;
+  transform: scale(1.05);
+}
+
+.horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Modal Styles */
+.boardofdirect_modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.boardofdirect_modal_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center vertically & horizontally */
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.boardofdirect_close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.tree_board {
+  max-width: 1280px !important;
+}
+.divider.no_left.fullWidth {
+  margin: 1rem auto;
+  width: 80%;
+}
+.center_arrow {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.boardofdirect_card .btn {
+  margin: 10px 0;
+}
+
+#modalName {
+  font-family: "Lexend";
+  font-size: 32px;
+}
+#modalRole {
+  color: var(--main-text);
+  font-size: 14px;
+}
+
+#modalDesc {
+  font-size: 18px;
+}
+
+.flex .icon-row {
+  margin-top: 2rem;
 }

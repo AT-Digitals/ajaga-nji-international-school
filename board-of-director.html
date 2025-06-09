@@ -1,373 +1,473 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courses Section</title>
-    <link rel="stylesheet" href="OurSchool.css" />
-    <link rel="stylesheet" href="header.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <header>
-    <div class="header" id="mainHeader">
-      <div class="header_inner">
-        <div class="logo">
-          <a href="./index.html">
-            <img
-              src="./images/logo.png"
-              alt="Champion School Logo"
-              class="logo"
-            />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses Section</title>
+  <link rel="stylesheet" href="OurSchool.css" />
+  <link rel="stylesheet" href="header.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<header>
+  <div class="header" id="mainHeader">
+    <div class="header_inner">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="Champion School Logo" class="logo" />
+        </a>
+      </div>
+      <nav class="nav web">
+        <div class="dropdown">
+          <a href="./index.html" class="dropdown-toggle">Our School <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./history.html" class="history">History </a>
+            <a href="./board-of-director.html">Board of Directors</a>
+            <a href="./staff.html">Staff</a>
+            <a href="./GroupPage.html">Groups</a>
+          </div>
         </div>
-        <nav class="nav web">
-          <div class="dropdown">
-            <a href="./index.html" class="dropdown-toggle"
-              >Our School <i class="fas fa-caret-down"></i
-            ></a>
-            <div class="dropdown-menu">
+        <a href="./Accademic.html">Academics</a>
+
+        <a href="./Adminssions.html">Admissions</a>
+        <a href="./EventCard.html">News & Events</a>
+        <a href="./MediaGallery.html">Media Gallery</a>
+        <a href="./Support.html">Support Us</a>
+      </nav>
+      <div>
+        <a class="btn" href="./ContactPage.html">Contact Us <i class="hover fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Mobile Slide Menu -->
+      <div class="menu-content" id="menuContent">
+        <div class="close-btn-div">
+          <button class="close-btn" id="menuClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <nav class="nav">
+          <div class="mobile-dropdown">
+            <a href="./index.html" class="active mobile-dropdown-toggle">
+              Our School
+              <i class="fas fa-chevron-down arrow"></i>
+            </a>
+            <div class="mobile-dropdown-menu">
               <a href="./history.html" class="history">History </a>
               <a href="./board-of-director.html">Board of Directors</a>
               <a href="./staff.html">Staff</a>
-                <a href="./GroupPage.html">Groups</a>
+              <a href="./GroupPage.html">Groups</a>
             </div>
           </div>
           <a href="./Accademic.html">Academics</a>
-
           <a href="./Adminssions.html">Admissions</a>
-          <a href="./EventCard.html">News & Events</a>
+          <a href="./EventNews.html">News & Events</a>
           <a href="./MediaGallery.html">Media Gallery</a>
           <a href="./Support.html">Support Us</a>
+          <a href="./ContactPage.html">Contact Us</a>
         </nav>
-        <div>
-          <a class="btn" href="./ContactPage.html"
-            >Contact Us <i class="hover fas fa-arrow-right"></i
-          ></a>
-        </div>
-
-        <!-- Mobile Slide Menu -->
-        <div class="menu-content" id="menuContent">
-          <div class="close-btn-div">
-            <button class="close-btn" id="menuClose">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <nav class="nav">
-            <div class="mobile-dropdown">
-              <a href="./index.html" class="active mobile-dropdown-toggle">
-                Our School
-                <i class="fas fa-chevron-down arrow"></i>
-              </a>
-              <div class="mobile-dropdown-menu">
-                <a href="./history.html" class="history">History </a>
-                <a href="./board-of-director.html">Board of Directors</a>
-                <a href="./staff.html">Staff</a>
-                <a href="./GroupPage.html">Groups</a>
-              </div>
-            </div>
-            <a href="./Accademic.html">Academics</a>
-            <a href="./Adminssions.html">Admissions</a>
-            <a href="./EventNews.html">News & Events</a>
-            <a href="./MediaGallery.html">Media Gallery</a>
-          <a href="./Support.html">Support Us</a>
-            <a href="./ContactPage.html">Contact Us</a>
-          </nav>
-        </div>
-
-        <!-- Hamburger Menu Button -->
-        <button class="menu-toggle" id="menuToggle">
-          <i class="fas fa-bars"></i>
-        </button>
       </div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-  </header>
-  <body>
-    <section>
-      <div
-class="banner_image"      >
-        <img
-          src="https://static.wixstatic.com/media/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg/v1/fill/w_1901,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg"
-          style="height: 100%; width: 100%; object-fit: cover"
-          alt="banner"
-        />
-      </div>
-    </section>
-    <div class="board_direc no_bg">
-      <div class="our_cc_p">
-        <h2>Our Board Of Director</h2>
-        <div class="divider no_left"></div>
+  </div>
+</header>
 
-        <p>
-          We are an English-speaking school in Dschang, Cameroon, W. Africa.
-          <br />
-          We offer kindergarten (nursery school) all the way to class 7. <br />
-          Each class covers the following main curriculum.
-        </p>
-      </div>
-      <section class="testimonial-section">
-        <div class="testimonial-container">
-          <div class="testimonial-image">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_86cf3eef8b4b468e8f34bc79b36135a9~mv2.jpg/v1/fill/w_499,h_361,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/143a9472_edited_edited_edited_edited.jpg"
-              alt="Headmaster"
-            />
-          </div>
-          <div class="testimonial-text">
-            <h2>Ndipen Kelly Pride Forkeng </h2>
-            <p> Ajaga Nji Bilingual International School</p>
-
-            <p class="quote_text">
-              
-I am Ndipen Kelly Pride Forkeng, the Head Mistress of Ajaga Nji Bilingual International School School
-
-.  Welcome to our website. Please take your time to look around, learn out our school, its founder, ifs foundations, mission and vision its philosophies our infrastructure and our awesome staff.
-
-​</p><p class="quote_text">
-
-We are one of a few strictly English (or Anglo-Saxon) based elementary school in the quiet university town of Dschang, Cameroon, W Africa.  We have been been awards various awards on facility, safety and the quality of students we graduate every year
-            </p>
-            
-          </div>
-        </div>
-      </div>
-      <div style="background: #e3e9d8;">
-        <div  class="our_cc_p">
-        <h2 style="margin-top: 2rem;"> Leadership</h2>
-        <div class="divider no_left"></div>
-
-     
-      </div>
-        <div class="board_directors_section">
-          <div class="board_member">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg"
-              alt="Ndifor Loveline Ngufuet"
-              class="staff_avatar"
-            />
-            <div class="board_details">
-              <h3 class="staff_name">Ndifor Loveline Ngufuet</h3>
-              <p>Co-Founder</p>
-
-              <div class="staff_socials">
-                <a
-                  href="#"
-                  class="social_icon instagram"
-                  aria-label="Instagram"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social_icon twitter" aria-label="Twitter">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="board_member">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_8a14556d78844137b5f5319c10a40119~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_308,h_283,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/mirabel%20sheri.jpg"
-              alt="Ndifor Loveline Ngufuet"
-              class="staff_avatar"
-            />
-            <div class="board_details">
-              <h3 class="staff_name">Mirabel Sheri</h3>
-              <p>Co-Founder</p>
-
-              <div class="staff_socials">
-                <a
-                  href="#"
-                  class="social_icon instagram"
-                  aria-label="Instagram"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social_icon twitter" aria-label="Twitter">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="board_member">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_040c396d568a45f591da3ca2ea79c033~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsombo%20valery.jpg"
-              alt="Ndifor Loveline Ngufuet"
-              class="staff_avatar"
-            />
-            <div class="board_details">
-              <h3 class="staff_name">Nsombo Valery</h3>
-              <p>Co-Founder</p>
-
-              <div class="staff_socials">
-                <a
-                  href="#"
-                  class="social_icon instagram"
-                  aria-label="Instagram"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="social_icon twitter" aria-label="Twitter">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="social_icon linkedin" aria-label="LinkedIn">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script>
-      const navLinks = document.querySelectorAll(".nav.web a");
-      const currentPath = window.location.pathname;
-
-      navLinks.forEach((link) => {
-        const linkPath = new URL(link.href).pathname;
-
-        // Compare the link's path to current page's path
-        if (linkPath === currentPath) {
-          link.classList.add("active");
-        }
-      });
-      
-      $(document).ready(function () {
-        $("#menuToggle").on("click", function () {
-          $("#menuContent").addClass("open");
-        });
-
-        $("#menuClose").on("click", function () {
-          $("#menuContent").removeClass("open");
-        });
-
-        // Mobile dropdown accordion toggle
-        $(".mobile-dropdown-toggle").on("click", function (e) {
-          e.preventDefault();
-          $(this).toggleClass("active");
-          $(this).next(".mobile-dropdown-menu").slideToggle(200);
-          $(this).find(".arrow").toggleClass("rotate");
-        });
-      });
-      $(document).ready(function () {
-        $(".count").each(function () {
-          var $this = $(this);
-          var target = +$this.attr("data-target");
-          $({ countNum: $this.text() }).animate(
-            { countNum: target },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function () {
-                $this.text(Math.ceil(this.countNum));
-              },
-              complete: function () {
-                $this.text(target);
-              },
-            }
-          );
-        });
-      });
-    </script>
-  </body>
-  <footer class="footer">
-    <div class="container flex-wrap space-between">
-      <!-- Left Column -->
-      <div class="column">
-        <a href="./index.html">
-          <img
-            src="./images/logo.png"
-            alt="Goodrise Logistics"
-            class="brand-logo"
-          />
-        </a>
-        <p class="text">
-          We are an English-speaking school in Dschang, Cameroon, W. Africa. We
-          offer kindergarten (nursery school) all the way to class 7
-        </p>
-      </div>
-
-      <!-- Center Column -->
-      <div class="column">
-        <h3 class="title">Contact info</h3>
-        <div class="item-row">
-          <i class="fas fa-map-marker-alt icon"></i>
-          <div>
-            <p class="label">Our location:</p>
-            <p class="text">
-              Ajaga Nji Bilingual International School P.O Box 138 Dschang,
-              Cameroon W. Africa
-            </p>
-          </div>
-        </div>
-        <div class="item-row">
-          <i class="fas fa-phone-alt icon"></i>
-          <div>
-            <p class="label">Phones:</p>
-            <p class="text">+237-679259202 <br />+237 691512550</p>
-          </div>
-        </div>
-        <div class="item-row">
-          <i class="fas fa-envelope icon"></i>
-          <div>
-            <p class="label">Email:</p>
-            <p class="text">info@goodriselogistics.com</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Right Column -->
-      <div class="column">
-        <h3 class="title">Subscribe</h3>
-        <div class="input-row">
-          <p class="text">
-            If you are interested in subscribing to newsletters, please enter in
-            your email address and click on Subscribe Now.
-          </p>
-          <div class="subscribe-box">
-            <input type="text" placeholder="Subscribe with us" />
-            <button>
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </div>
-        </div>
-        <label class="checkbox-group">
-          <input type="checkbox" /> I authorize the use of the information
-          entered
-        </label>
-      </div>
+<body>
+  <section>
+    <div class="banner_image">
+      <img
+        src="https://static.wixstatic.com/media/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg/v1/fill/w_1901,h_686,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2e5f27_8da36607003b4333a834ae570e191d09~mv2.jpg"
+        style="height: 100%; width: 100%; object-fit: cover" alt="banner" />
     </div>
-    <div class="copy_rights">
-      <!-- <div class="icon-row"></div> -->
+  </section>
+  <div class="board_direc no_bg">
+    <div class="our_cc_p">
+      <h2>Board Of Director <br />
+      Ajaga Nji Bilingual International School</h2>
+      <div class="divider no_left"></div>
 
-      <div class="footer-bottom">
-        <p>
-          © 2025 by
-          <span class="highlight"> Ajaga Nji Bilingual International School </span>
-        </p>
-      </div>
+      <p>
+        We are an English-speaking school in Dschang, Cameroon, W. Africa.
+        <br />
+        We offer kindergarten (nursery school) all the way to class 7. <br />
+        Each class covers the following main curriculum.
+      </p>
+    </div>
+   
+  </div>
+  
+  </section>
+  <section class="max_width tree_board">
+    <div class="tree">
+    <ul>
+      <li>
+        <div class="horizontal">
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Gerd Nji',
+              'Chair & Administartion to Corporate Strategy',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Akwi Nji leads arts and creative development in our school.')">
+            <h3>Gerd Nji</h3>
+            <p>Executive Director – Arts & Communication</p>
+            <button class="btn">Read more</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    
+    <div class="center_arrow">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+     <ul>
+      <li>
+        <div class="horizontal">
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Afor Nji',
+              'Co-Chair & Executive Director - People & Culture',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Akwi Nji leads arts and creative development in our school.')">
+            <h3>Afor Nji</h3>
+            <p>Executive Director – Arts & Communication</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="center_arrow">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <ul>
+      <li>
+        <div class="horizontal">
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Garby Nji',
+              'Executive Director – Health & Sanitation',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Garby Nji ensures health and sanitation across all facilities.')">
+            <h3>Garby Nji</h3>
+            <p>Executive Director – Health & Sanitation</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Akwi Nji',
+              'Executive Director – Arts & Communication',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Ngum Nji manages all HR-related responsibilities.')">
+            <h3>Akwi Nji</h3>
+            <p>Executive Director – Human Resources</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Klaus Nji',
+              'Executive Director – Technology',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Klaus Nji oversees all technology implementation.')">
+            <h3>Klaus Nji</h3>
+            <p>Executive Director – Technology</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Brian Nji',
+              'Non-Executive Director – IT',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Klaus Nji oversees all technology implementation.')">
+            <h3>Brian Nji</h3>
+            <p>Non- Executive Director – IT</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Katherine  Nji',
+              'Non-Executive Director – Finance',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Klaus Nji oversees all technology implementation.')">
+            <h3>Katherine Nji</h3>
+            <p>Non-Executive Director – Finance</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <div class="center_arrow">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+
+    <ul>
+      <li>
+        <div class="horizontal">
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Ngum Nji',
+              'Executive Director – Physical Education',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Mbah Nji develops our physical education curriculum.')">
+            <h3>Ngum Nji</h3>
+            <p>Executive Director – Human Resourses</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Mbah Nji',
+              'Executive Director – Physical Education',
+              'https://static.wixstatic.com/media/2e5f27_3d3835d611e245a8a042451b52cf31a1~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_288,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/tumba%20jessica%20b.jpg',
+              'Mbah Nji develops our physical education curriculum.')">
+            <h3>Mbah Nji</h3>
+            <p>Executive Director – Physical Education</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+          <div class="boardofdirect_card"
+            onclick="openModal(
+              'Teddy Nji',
+              'Executive Director – Community Developement',
+              'https://static.wixstatic.com/media/2e5f27_040c396d568a45f591da3ca2ea79c033~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nsombo%20valery.jpg',
+              'Teddy Nji develops our physical education curriculum.')">
+            <h3>Teddy Nji</h3>
+            <p>Executive Director – Community Developement</p>
+                        <button class="btn">Read more</button>
+
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Modal -->
+  <div id="boardofdirect_modal" class="boardofdirect_modal">
+    <div class="boardofdirect_modal_content">
+      <span class="boardofdirect_close" onclick="closeModal()">&times;</span>
+      <div class="flex">
+<div>
+          <img id="modalImage" class="boardofdirect_modal_img" src="" alt="Director Image" />
+
+</div>
+<div>
+  <h3 id="modalName"></h3>
+      <p id="modalRole"></p>
+      <p id="modalDesc" class="boardofdirect_modal_desc"></p>
       <div class="icon-row">
-        <a href="https://www.facebook.com/ngumys.fantastic">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a
-          href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"
-        >
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+      <a href="https://www.facebook.com/ngumys.fantastic">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/ngumys-fantastic-international-school/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+</div>  
+    
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+ <section class="testimonial-section">
+      <div class="testimonial-container">
+        <div class="testimonial-image">
+          <img src="./images/head_master.JPG" alt="Headmaster" />
+        </div>
+        <div class="testimonial-text">
+          <h2>Ajaga Nji </h2>
+          <p> Ajaga Nji Bilingual International School</p>
+
+          <p class="quote_text">
+
+            I am Ajaga Nji, the Head Mistress of Ajaga Nji Bilingual International School School
+
+            . Welcome to our website. Please take your time to look around, learn out our school, its founder, ifs
+            foundations, mission and vision its philosophies our infrastructure and our awesome staff.
+
+            ​</p>
+          <p class="quote_text">
+
+            We are one of a few strictly English (or Anglo-Saxon) based elementary school in the quiet university town
+            of Dschang, Cameroon, W Africa. We have been been awards various awards on facility, safety and the quality
+            of students we graduate every year
+          </p>
+
+        </div>
+      </div>
+
+  </section>
+
+  <script>
+
+    function openModal(name, role, imageUrl, description) {
+  document.getElementById("modalName").innerText = name;
+  document.getElementById("modalRole").innerText = role;
+  document.getElementById("modalImage").src = imageUrl || '';
+  document.getElementById("modalDesc").innerText = description || '';
+  document.getElementById("boardofdirect_modal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("boardofdirect_modal").style.display = "none";
+}
+
+window.onclick = function (event) {
+  const modal = document.getElementById("boardofdirect_modal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
+    const navLinks = document.querySelectorAll(".nav.web a");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach((link) => {
+      const linkPath = new URL(link.href).pathname;
+
+      // Compare the link's path to current page's path
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      }
+    });
+
+    $(document).ready(function () {
+      $("#menuToggle").on("click", function () {
+        $("#menuContent").addClass("open");
+      });
+
+      $("#menuClose").on("click", function () {
+        $("#menuContent").removeClass("open");
+      });
+
+      // Mobile dropdown accordion toggle
+      $(".mobile-dropdown-toggle").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(this).next(".mobile-dropdown-menu").slideToggle(200);
+        $(this).find(".arrow").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $(".count").each(function () {
+        var $this = $(this);
+        var target = +$this.attr("data-target");
+        $({ countNum: $this.text() }).animate(
+          { countNum: target },
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function () {
+              $this.text(Math.ceil(this.countNum));
+            },
+            complete: function () {
+              $this.text(target);
+            },
+          }
+        );
+      });
+    });
+  </script>
+</body>
+<footer class="footer">
+  <div class="container flex-wrap space-between">
+    <!-- Left Column -->
+    <div class="column">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="Goodrise Logistics" class="brand-logo" />
+      </a>
+      <p class="text">
+        We are an English-speaking school in Dschang, Cameroon, W. Africa. We
+        offer kindergarten (nursery school) all the way to class 7
+      </p>
+    </div>
+
+    <!-- Center Column -->
+    <div class="column">
+      <h3 class="title">Contact info</h3>
+      <div class="item-row">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <div>
+          <p class="label">Our location:</p>
+          <p class="text">
+            Ajaga Nji Bilingual International School P.O Box 138 Dschang,
+            Cameroon W. Africa
+          </p>
+        </div>
+      </div>
+      <div class="item-row">
+        <i class="fas fa-phone-alt icon"></i>
+        <div>
+          <p class="label">Phones:</p>
+          <p class="text">+237-679259202 <br />+237 691512550</p>
+        </div>
+      </div>
+      <div class="item-row">
+        <i class="fas fa-envelope icon"></i>
+        <div>
+          <p class="label">Email:</p>
+          <p class="text">info@goodriselogistics.com</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="column">
+      <h3 class="title">Subscribe</h3>
+      <div class="input-row">
+        <p class="text">
+          If you are interested in subscribing to newsletters, please enter in
+          your email address and click on Subscribe Now.
+        </p>
+        <div class="subscribe-box">
+          <input type="text" placeholder="Subscribe with us" />
+          <button>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
+      </div>
+      <label class="checkbox-group">
+        <input type="checkbox" /> I authorize the use of the information
+        entered
+      </label>
+    </div>
+  </div>
+  <div class="copy_rights">
+    <!-- <div class="icon-row"></div> -->
+
+    <div class="footer-bottom">
+      <p>
+        © 2025 by
+        <span class="highlight"> Ajaga Nji Bilingual International School </span>
+      </p>
+    </div>
+    <div class="icon-row">
+      <a href="https://www.facebook.com/ngumys.fantastic">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/ngumys-fantastic-international-school/">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+    </div>
+  </div>
+</footer>
+
 </html>
