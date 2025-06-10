@@ -18,6 +18,8 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  height: 80vh; /* Full viewport height */
+  overflow: hidden; /* Prevent double scrollbars */
 }
 
 /* Sidebar */
@@ -27,6 +29,11 @@
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  height: 80vh; /* Ensure it sticks the full height */
+  overflow-y: auto; /* Optional: if you want the sidebar to scroll independently */
 }
 
 .staff_sidebar h3 {
@@ -36,6 +43,13 @@
   margin: 0 0 20px 0;
   font-weight: bold;
   font-family: "Lexend";
+}
+
+.staffs_role {
+  font-family: "Lexend";
+  color: #800000;
+  margin: 20px;
+  font-size: 18px;
 }
 
 .service-item {
@@ -78,6 +92,8 @@
 .content {
   flex: 1;
   margin-left: 20px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .sidebar_card-container {
@@ -201,6 +217,20 @@
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
+}
+
+.staffs_member {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.staffs_member.reverse {
+  display: flex;
+  gap: 19px;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 @media (max-width: 768px) {
