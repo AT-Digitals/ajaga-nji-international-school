@@ -2307,3 +2307,14 @@ a {
   margin: auto;
   padding: 2rem 0;
 }
+.gallery-item {
+  display: none;
+}
+.gallery-item.visible {
+  display: block;
+}
+
+.max_width .button {
+  display: flex;
+  justify-content: center;
+}
