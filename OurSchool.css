@@ -125,7 +125,7 @@ body {
 .acc_btn {
   background: none;
   color: var(--main-text);
-  border: 1px solid white;
+  border: 1px solid var(--main-text);
   background: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -513,7 +513,7 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .activities-section {
     flex-direction: column;
     padding: 40px 20px;
@@ -2284,4 +2284,26 @@ a {
 
 .flex .icon-row {
   margin-top: 2rem;
+}
+
+.landing_acc_section h2 {
+  text-align: center;
+}
+
+.landing_acc_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+  text-align: center;
+}
+
+.landing_acc_section .acc_btn {
+  margin: 2rem 0;
+}
+.landing_acc_section_whole {
+  background: #f6f7fd;
+  /* max-width: 1240px; */
+  margin: auto;
+  padding: 2rem 0;
 }
