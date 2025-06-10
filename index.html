@@ -1,470 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Champion School Header</title>
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="OurSchool.css" />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-        <link rel="stylesheet" href="NewsCard.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Champion School Header</title>
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="OurSchool.css" />
 
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <header>
-      <div class="header" id="mainHeader">
-        <div class="header_inner">
-          <div class="logo">
-            <a href="./index.html">
-            <img
-            src="./images/logo.png"
-              alt="Champion School Logo"
-              class="logo "
-            />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="NewsCard.css" />
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="header" id="mainHeader">
+      <div class="header_inner">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/logo.png" alt="Champion School Logo" class="logo " />
           </a>
-          
+
+        </div>
+        <nav class="nav web">
+          <div class="dropdown">
+            <a href="./index.html" class="dropdown-toggle">Our School <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="./history.html" class="history">History </a>
+              <a href="./board-of-director.html">Board of Directors</a>
+              <a href="./staff.html">Staff</a>
+              <a href="./GroupPage.html">Groups</a>
+            </div>
           </div>
-          <nav class="nav web">
-            <div class="dropdown">
-              <a href="./index.html" class="dropdown-toggle"
-                >Our School <i class="fas fa-caret-down"></i
-              ></a>
-              <div class="dropdown-menu">
-                <a href="./history.html" class="history">History </a>
+          <a href="./Accademic.html">Academics</a>
+
+          <a href="./Adminssions.html">Admissions</a>
+          <a href="./EventCard.html">News & Events</a>
+          <a href="./MediaGallery.html">Media Gallery</a>
+          <a href="./Support.html">Support Us</a>
+        </nav>
+        <div>
+          <a class="btn" href="./ContactPage.html">Contact Us <i class="hover fas fa-arrow-right"></i></a>
+        </div>
+
+
+        <!-- Mobile Slide Menu -->
+        <div class="menu-content" id="menuContent">
+          <div class="close-btn-div">
+            <button class="close-btn" id="menuClose">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <nav class="nav">
+            <div class="mobile-dropdown">
+              <a href="./index.html" class="active mobile-dropdown-toggle">
+                Our School
+                <i class="fas fa-chevron-down arrow"></i>
+              </a>
+              <div class="mobile-dropdown-menu">
+                <a href="./history.html" class="history">History
+                </a>
                 <a href="./board-of-director.html">Board of Directors</a>
                 <a href="./staff.html">Staff</a>
-                <a href="./GroupPage.html">Groups</a>
+                <a href="#">Groups</a>
               </div>
             </div>
             <a href="./Accademic.html">Academics</a>
-
-          <a href="./Adminssions.html">Admissions</a>
-            <a href="./EventCard.html">News & Events</a>
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventNews.html">News & Events</a>
             <a href="./MediaGallery.html">Media Gallery</a>
             <a href="./Support.html">Support Us</a>
+            <a href="./ContactPage.html">Contact Us</a>
           </nav>
-          <div>
-            <a class="btn" href="./ContactPage.html"
-              >Contact Us <i class="hover fas fa-arrow-right"></i
-            ></a>
+
+
+        </div>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <!-- Banner Section -->
+    <section class="landing_video">
+      <!-- <div class="text-content">
+        <div class="divider no_left_banner"></div>
+        <h2>Ajaga Nji Bilingual International <br />School</h2>
+        <p>
+          This is where we teach students skills they need to transform
+          themselves, others, and our global communities.
+        </p>
+        <a class="acc_btn" href="./Accademic.html">
+          Our Academies <i class="fas fa-arrow-right"></i>
+        </a>
+      </div> -->
+
+      <div class="video-background">
+        <video autoplay muted loop playsinline>
+          <source src="./images/WhatsApp Video 2025-06-07 at 9.45.43 AM.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section class="landing_acc_section_whole">
+<div class="landing_acc_section">
+        <h2>Ajaga Nji Bilingual International School</h2>
+          <div class="divider no_left"></div>
+
+        <p>
+          This is where we teach students skills they need to transform
+          themselves, others, and our global communities.
+        </p>
+        <a class="acc_btn" href="./Accademic.html">
+          Our Academies <i class="fas fa-arrow-right"></i>
+        </a>
+
+</div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="testimonial-container">
+        <div class="testimonial-image">
+          <img src="./images/head_master.JPG" alt="Headmaster" />
+        </div>
+        <div class="testimonial-text">
+          <span class="quote-mark">❝</span>
+          <p class="quote_text">
+            HONORING A LEGACY THROUGH EDUCATION
+            Legacies are not just preserved - they are lived, grown, and reimagined by each new generation we help
+            shape.
+            Few things in life are as fulfilling as building communities that guide, inspire, and empower young minds.
+            Whether through education, mentorship, or simply leading by example, the investments we make in children
+            today create ripples that extend far beyond the classroom - shaping futures and strengthening the fabric of
+            society itself.
+            The universe moves forward through the hands and hearts of those who come after us. By supporting them - as
+            parents, educators, leaders, or simply as caring individuals - we contribute to something greater than
+            ourselves. And in that purpose, we find meaning that outlasts time.
+          </p>
+
+          <p class="author">Ajaga Nji
+
+
+
+
+
+            — Headmaster</p>
+          <div class="content">
+            <a href="./board-of-director.html" class="read_more">
+              Read more <i class="fas fa-arrow-right"></i></a>
           </div>
-
-          
-          <!-- Mobile Slide Menu -->
-          <div class="menu-content" id="menuContent">
-            <div class="close-btn-div">
-              <button class="close-btn" id="menuClose">
-                <i class="fas fa-times"></i>
-              </button>
-            </div>
-            <nav class="nav">
-              <div class="mobile-dropdown">
-                <a href="./index.html" class="active mobile-dropdown-toggle">
-                  Our School
-                  <i class="fas fa-chevron-down arrow"></i>
-                </a>
-                <div class="mobile-dropdown-menu">
-                  <a href="./history.html" class="history"
-                    >History
-                    </a
-                  >
-                  <a href="./board-of-director.html">Board of Directors</a>
-                  <a href="./staff.html">Staff</a>
-                  <a href="#">Groups</a>
-                </div>
-              </div>
-              <a href="./Accademic.html">Academics</a>
-              <a href="./Adminssions.html">Admissions</a>
-              <a href="./EventNews.html">News & Events</a>
-              <a href="./MediaGallery.html">Media Gallery</a>
-            <a href="./Support.html">Support Us</a>
-              <a href="./ContactPage.html">Contact Us</a>
-            </nav>
-
-            
-          </div>
-
-          <!-- Hamburger Menu Button -->
-          <button class="menu-toggle" id="menuToggle">
-            <i class="fas fa-bars"></i>
-          </button>
         </div>
       </div>
-    </header>
-
-    <body>
-      <!-- Banner Section -->
-      <section class="landing_video">
-    <div class="text-content">
-      <div class="divider no_left_banner"></div>
-      <h2>Ajaga Nji Bilingual International <br />School</h2>
-      <p>
-        This is where we teach students skills they need to transform
-        themselves, others, and our global communities.
-      </p>
-      <a class="acc_btn" href="./Accademic.html">
-        Our Academies <i class="fas fa-arrow-right"></i>
-      </a>
-    </div>
-
-    <div class="video-background">
-      <video autoplay muted loop playsinline>
-        <source src="./images/WhatsApp Video 2025-06-07 at 9.45.43 AM.mp4" type="video/mp4">
-      </video>
-    </div>
-  </section>
-
-      <section class="testimonial-section">
-        <div class="testimonial-container">
-          <div class="testimonial-image">
-            <img
-src="./images/head_master.JPG"              alt="Headmaster"
-            />
-          </div>
-          <div class="testimonial-text">
-            <span class="quote-mark">❝</span>
-            <p class="quote_text">
-              HONORING A LEGACY THROUGH EDUCATION
-Legacies are not just preserved - they are lived, grown, and reimagined by each new generation we help shape.
-Few things in life are as fulfilling as building communities that guide, inspire, and empower young minds. Whether through education, mentorship, or simply leading by example, the investments we make in children today create ripples that extend far beyond the classroom - shaping futures and strengthening the fabric of society itself.
-The universe moves forward through the hands and hearts of those who come after us. By supporting them - as parents, educators, leaders, or simply as caring individuals - we contribute to something greater than ourselves. And in that purpose, we find meaning that outlasts time.
-            </p>
-            
-            <p class="author">Ajaga Nji
+    </section>
 
 
+    <section class="school-stats">
+      <div class="title_div">
+        <h2>Ajaga Nji Bilingual International School at a Glance</h2>
+        <div class="divider no_left"></div>
+      </div>
 
-
-
- — Headmaster</p>
-            <div class="content">
-              <a href="./board-of-director.html" class="read_more">
-                Read more <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
+      <div class="stats-container">
+        <div class="stat-box">
+          <span class="count" data-target="300">0</span><span class="plus">+</span>
+          <p>Current Enrollments</p>
         </div>
-      </section>
-
-     
-      <section class="school-stats">
-        <div class="title_div">
-          <h2>Ajaga Nji Bilingual International School at a Glance</h2>
-                            <div class="divider no_left"></div>
+        <div class="stat-box">
+          <span class="count" data-target="30">0</span><span class="plus">+</span>
+          <p>Qualified Staff</p>
         </div>
-
-        <div class="stats-container">
-          <div class="stat-box">
-            <span class="count" data-target="300">0</span
-            ><span class="plus">+</span>
-            <p>Current Enrollments</p>
-          </div>
-          <div class="stat-box">
-            <span class="count" data-target="30">0</span
-            ><span class="plus">+</span>
-            <p>Qualified Staff</p>
-          </div>
-          <div class="stat-box">
-            <span class="count" data-target="10">0</span
-            ><span class="plus">+</span>
-            <p>Clubs & Activities</p>
-          </div>
-          <div class="stat-box">
-            <span class="count" data-target="20">0</span
-            ><span class="plus">+</span>
-            <p>Active PTFA Members</p>
-          </div>
+        <div class="stat-box">
+          <span class="count" data-target="10">0</span><span class="plus">+</span>
+          <p>Clubs & Activities</p>
         </div>
-      </section>
-      
+        <div class="stat-box">
+          <span class="count" data-target="20">0</span><span class="plus">+</span>
+          <p>Active PTFA Members</p>
+        </div>
+      </div>
+    </section>
 
-     <section style="background-color:#f4f6fc ;">
-       <div class="max_width">
+
+    <section style="background-color:#f4f6fc ;">
+      <div class="max_width">
         <div class="blogs_section">
           <h2>Our Latest News</h2>
-                    <div class="divider no_left"></div>
+          <div class="divider no_left"></div>
 
         </div>
       </div>
-        <div class="news_container">
-      <div class="news_card">
-        <div
-          class="bg-image"
-          style="
+      <div class="news_container">
+        <div class="news_card">
+          <div class="bg-image" style="
             background-image: url('https://images.pexels.com/photos/5211446/pexels-photo-5211446.jpeg');
-          "
-        ></div>
-        <div class="overlay">
-          <div class="meta">Klaus Nji • Jan 3, 2022</div>
-        </div>
-        <div class="hover-meta">
-          <div style="line-height: 1.5;">
-            It was a rough here for </br>
-Ajaga Nji Bilingual International School        
-            and lost our father.
-          </div>
-<a href="Card.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a> 
-        </div>
-      </div>
-
-      <!-- Repeat for other cards -->
-      <div class="news_card">
-        <div
-          class="bg-image"
-          style="
-            background-image: url('https://images.pexels.com/photos/4144101/pexels-photo-4144101.jpeg');
-          "
-        ></div>
-        <div class="overlay">
-          <div class="meta">Klaus Nji • Jan 3, 2022 </div>
-        </div>
-        <div class="hover-meta">
-            <div style="line-height: 1.5;">
-                It was a rough here for </br>
-Ajaga Nji Bilingual International School            
-                and lost our father.
-              </div>
-<a href="Card1.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="news_card">
-        <div
-          class="bg-image"
-          style="
-            background-image: url('https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-          "
-        ></div>
-        <div class="overlay">
-          <div class="meta">Klaus Nji • Jan 3, 2022 </div>
-        </div>
-        <div class="hover-meta">
-            <div style="line-height: 1.5;">
-                It was a rough here for </br>
-Ajaga Nji Bilingual International School            
-                and lost our father.
-              </div>
-<a href="Card2.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-
-      <div class="news_card">
-        <div
-          class="bg-image"
-          style="
-            background-image: url('https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg');
-          "
-        ></div>
-        <div class="overlay">
+          "></div>
+          <div class="overlay">
             <div class="meta">Klaus Nji • Jan 3, 2022</div>
-        </div>
-        <div class="hover-meta">
+          </div>
+          <div class="hover-meta">
             <div style="line-height: 1.5;">
-                It was a rough here for </br>
-Ajaga Nji Bilingual International School            
-                and lost our father.
-              </div>
-<a href="Card3.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
+              It was a rough here for </br>
+              Ajaga Nji Bilingual International School
+              and lost our father.
+            </div>
+            <a href="Card.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <!-- Repeat for other cards -->
+        <div class="news_card">
+          <div class="bg-image" style="
+            background-image: url('https://images.pexels.com/photos/4144101/pexels-photo-4144101.jpeg');
+          "></div>
+          <div class="overlay">
+            <div class="meta">Klaus Nji • Jan 3, 2022 </div>
+          </div>
+          <div class="hover-meta">
+            <div style="line-height: 1.5;">
+              It was a rough here for </br>
+              Ajaga Nji Bilingual International School
+              and lost our father.
+            </div>
+            <a href="Card1.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news_card">
+          <div class="bg-image" style="
+            background-image: url('https://images.pexels.com/photos/5428003/pexels-photo-5428003.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+          "></div>
+          <div class="overlay">
+            <div class="meta">Klaus Nji • Jan 3, 2022 </div>
+          </div>
+          <div class="hover-meta">
+            <div style="line-height: 1.5;">
+              It was a rough here for </br>
+              Ajaga Nji Bilingual International School
+              and lost our father.
+            </div>
+            <a href="Card2.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="news_card">
+          <div class="bg-image" style="
+            background-image: url('https://images.pexels.com/photos/2393789/pexels-photo-2393789.jpeg');
+          "></div>
+          <div class="overlay">
+            <div class="meta">Klaus Nji • Jan 3, 2022</div>
+          </div>
+          <div class="hover-meta">
+            <div style="line-height: 1.5;">
+              It was a rough here for </br>
+              Ajaga Nji Bilingual International School
+              and lost our father.
+            </div>
+            <a href="Card3.html" class="read_more">Read more <i class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="view_more">
-                              <a href="./EventCard.html" class="download_btn"  > View more  <i class="hover fas fa-arrow-right"></i> </a>
+      <div class="view_more">
+        <a href="./EventCard.html" class="download_btn"> View more <i class="hover fas fa-arrow-right"></i> </a>
 
-    </div>
-     </section>
-
-    
-
-
-
-      <section style="padding: 20px">
-        <div class="download_container_Box">
-          <div class="download_container">
-            <h2>Download Our School Calendar</h2>
-            <p>
-              You can download our school calendar of events from the link
-              below.
-            </p>
-            <a class="download_btn" href="./calender.pdf" download target="_blank"> Download </a>
-          </div>
-        </div>
-      </section>
-
-
-    </body>
-    <footer class="footer">
-      <div class="container flex-wrap space-between">
-        <!-- Left Column -->
-        <div class="column">
-         <a href="./index.html">
-          <img
-            src="./images/logo.png"
-            alt="Goodrise Logistics"
-            class="brand-logo"
-          />
-        </a>
-          <p class="text negative_text">
-            We are an English-speaking school in Dschang, Cameroon, W. Africa.
-            We offer kindergarten (nursery school) all the way to class 7
-          </p>
-          
-        </div>
-
-        <!-- Center Column -->
-        <div class="column">
-          <h3 class="title">Contact info</h3>
-          <div class="item-row">
-            <i class="fas fa-map-marker-alt icon"></i>
-            <div>
-              <p class="label">Our location:</p>
-              <p class="text">
-                Ajaga Nji Bilingual International School P.O Box 138 Dschang,
-                Cameroon W. Africa
-              </p>
-            </div>
-          </div>
-          <div class="item-row">
-            <i class="fas fa-phone-alt icon"               style="transform: rotate(90deg)"
-></i>
-            <div>
-              <p class="label">Phones:</p>
-              <a
-                style="
-                  text-decoration: none;
-                  color: black;
-                  font-family: Lexend;
-                "
-                href="tel:+237-679259202"
-                >+237-679259202
-              </a>
-              <br />
-              <a
-                style="
-                  text-decoration: none;
-                  color: black;
-                  font-family: Lexend;
-                "
-                href="tel:+237-679259202"
-                >+237 691512550
-              </a>
-            </div>
-          </div>
-          <div class="item-row">
-            <i class="fas fa-envelope icon"></i>
-            <div>
-              <p class="label">Email:</p>
-              <a
-                style="
-                  text-decoration: none;
-                  color: black;
-                  font-family: Lexend;
-                "
-                href="mailto:ngumysnpschool@gmail.com"
-                >ngumysnpschool@gmail.com
-              </a>
-              <p class="text"></p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="column">
-          <h3 class="title">Subscribe</h3>
-          <div class="input-row">
-            <p class="text">
-              If you are interested in subscribing to newsletters, please enter
-              in your email address and click on Subscribe Now.
-            </p>
-            <div class="subscribe-box">
-              <input type="text" placeholder="Subscribe with us" />
-              <button>
-                <i class="fas fa-paper-plane"></i>
-              </button>
-            </div>
-          </div>
-          <label class="checkbox-group">
-            <input type="checkbox" /> I authorize the use of the information
-            entered
-          </label>
-        </div>
       </div>
-      <div class="copy_rights">
-        <!-- <div class="icon-row"></div> -->
+    </section>
 
-        <div class="footer-bottom">
+
+
+
+
+    <section style="padding: 20px">
+      <div class="download_container_Box">
+        <div class="download_container">
+          <h2>Download Our School Calendar</h2>
           <p>
-            © 2025 by
-            <span class="highlight">
-Ajaga Nji Bilingual International School            </span>
+            You can download our school calendar of events from the link
+            below.
           </p>
-        </div>
-        <div class="icon-row">
-         <a target="_blank" href="https://www.facebook.com/ngumys.fantastic"> <i class="fab fa-facebook-f"></i> </a>
-         <a target="_blank" href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"> <i class="fab fa-instagram"></i> </a>
-         <a target="_blank" href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"> <i class="fab fa-linkedin-in"></i> </a>
+          <a class="download_btn" href="./calender.pdf" download target="_blank"> Download </a>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <script>
-      const navLinks = document.querySelectorAll(".nav.web a");
-  const currentPath = window.location.pathname;
 
-  navLinks.forEach(link => {
-    const linkPath = new URL(link.href).pathname;
-
-    // Compare the link's path to current page's path
-    if (linkPath === currentPath) {
-      link.classList.add("active");
-    }
-  });
-      
-      $(document).ready(function () {
-        $("#menuToggle").on("click", function () {
-          $("#menuContent").addClass("open");
-        });
-
-        $("#menuClose").on("click", function () {
-          $("#menuContent").removeClass("open");
-        });
-
-        // Mobile dropdown accordion toggle
-        $(".mobile-dropdown-toggle").on("click", function (e) {
-          e.preventDefault();
-          $(this).toggleClass("active");
-          $(this).next(".mobile-dropdown-menu").slideToggle(200);
-          $(this).find(".arrow").toggleClass("rotate");
-        });
-      });
-      $(document).ready(function () {
-        $(".count").each(function () {
-          var $this = $(this);
-          var target = +$this.attr("data-target");
-          $({ countNum: $this.text() }).animate(
-            { countNum: target },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function () {
-                $this.text(Math.ceil(this.countNum));
-              },
-              complete: function () {
-                $this.text(target);
-              },
-            }
-          );
-        });
-      });
-    </script>
   </body>
+  <footer class="footer">
+    <div class="container flex-wrap space-between">
+      <!-- Left Column -->
+      <div class="column">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="Goodrise Logistics" class="brand-logo" />
+        </a>
+        <p class="text negative_text">
+          We are an English-speaking school in Dschang, Cameroon, W. Africa.
+          We offer kindergarten (nursery school) all the way to class 7
+        </p>
+
+      </div>
+
+      <!-- Center Column -->
+      <div class="column">
+        <h3 class="title">Contact info</h3>
+        <div class="item-row">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <div>
+            <p class="label">Our location:</p>
+            <p class="text">
+              Ajaga Nji Bilingual International School P.O Box 138 Dschang,
+              Cameroon W. Africa
+            </p>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-phone-alt icon" style="transform: rotate(90deg)"></i>
+          <div>
+            <p class="label">Phones:</p>
+            <a style="
+                  text-decoration: none;
+                  color: black;
+                  font-family: Lexend;
+                " href="tel:+237-679259202">+237-679259202
+            </a>
+            <br />
+            <a style="
+                  text-decoration: none;
+                  color: black;
+                  font-family: Lexend;
+                " href="tel:+237-679259202">+237 691512550
+            </a>
+          </div>
+        </div>
+        <div class="item-row">
+          <i class="fas fa-envelope icon"></i>
+          <div>
+            <p class="label">Email:</p>
+            <a style="
+                  text-decoration: none;
+                  color: black;
+                  font-family: Lexend;
+                " href="mailto:ngumysnpschool@gmail.com">ngumysnpschool@gmail.com
+            </a>
+            <p class="text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column">
+        <h3 class="title">Subscribe</h3>
+        <div class="input-row">
+          <p class="text">
+            If you are interested in subscribing to newsletters, please enter
+            in your email address and click on Subscribe Now.
+          </p>
+          <div class="subscribe-box">
+            <input type="text" placeholder="Subscribe with us" />
+            <button>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </div>
+        </div>
+        <label class="checkbox-group">
+          <input type="checkbox" /> I authorize the use of the information
+          entered
+        </label>
+      </div>
+    </div>
+    <div class="copy_rights">
+      <!-- <div class="icon-row"></div> -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2025 by
+          <span class="highlight">
+            Ajaga Nji Bilingual International School </span>
+        </p>
+      </div>
+      <div class="icon-row">
+        <a target="_blank" href="https://www.facebook.com/ngumys.fantastic"> <i class="fab fa-facebook-f"></i> </a>
+        <a target="_blank" href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"> <i
+            class="fab fa-instagram"></i> </a>
+        <a target="_blank" href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"> <i
+            class="fab fa-linkedin-in"></i> </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navLinks = document.querySelectorAll(".nav.web a");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach(link => {
+      const linkPath = new URL(link.href).pathname;
+
+      // Compare the link's path to current page's path
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      }
+    });
+
+    $(document).ready(function () {
+      $("#menuToggle").on("click", function () {
+        $("#menuContent").addClass("open");
+      });
+
+      $("#menuClose").on("click", function () {
+        $("#menuContent").removeClass("open");
+      });
+
+      // Mobile dropdown accordion toggle
+      $(".mobile-dropdown-toggle").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(this).next(".mobile-dropdown-menu").slideToggle(200);
+        $(this).find(".arrow").toggleClass("rotate");
+      });
+    });
+    $(document).ready(function () {
+      $(".count").each(function () {
+        var $this = $(this);
+        var target = +$this.attr("data-target");
+        $({ countNum: $this.text() }).animate(
+          { countNum: target },
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function () {
+              $this.text(Math.ceil(this.countNum));
+            },
+            complete: function () {
+              $this.text(target);
+            },
+          }
+        );
+      });
+    });
+  </script>
+</body>
+
 </html>
