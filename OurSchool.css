@@ -2318,3 +2318,6 @@ a {
   display: flex;
   justify-content: center;
 }
+.media_container h1 {
+  font-family: "Lexend";
+}
