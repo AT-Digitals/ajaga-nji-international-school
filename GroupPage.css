@@ -171,7 +171,7 @@
   color: #800000;
 }
 .group_banner {
-  background: url("./images/143A9405.JPG") no-repeat center center/cover;
+  background: url("./images/143A9385.JPG") no-repeat center center/cover;
   height: 550px;
   display: flex;
   align-items: center;
@@ -186,7 +186,6 @@
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgb(0 0 0 / 40%); /* dark overlay */
   z-index: 1;
 }
 
