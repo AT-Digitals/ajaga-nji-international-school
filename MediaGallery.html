@@ -342,9 +342,6 @@
           </div>
         </div>
       </div>
-      <div class="max_width button">
-        <button id="loadMoreBtn" class="btn">Load more</button>
-      </div>
     </div>
 
     <!-- events -->
@@ -434,15 +431,12 @@
           </div>
         </div>
       </div>
-      <div class="max_width button">
-        <button id="eventLoadMoreBtn" class="btn">Load more</button>
-      </div>
     </div>
 
     <!-- activites -->
 
     <div class="max_width">
-      <h1 class="media_h1" style="text-align: left">Our Activitie's</h1>
+      <h1 class="media_h1" style="text-align: left">Our Activitie</h1>
       <p class="line_quote"></p>
       <div class="gallery event">
         <div class="gallery-item activity">
@@ -526,9 +520,6 @@
           </div>
         </div>
       </div>
-      <div class="max_width button">
-        <button id="activtyLoadMoreBtn" class="btn">Load more</button>
-      </div>
     </div>
 
     <div id="imageModal" class="modal">
@@ -539,88 +530,6 @@
     </div>
 
     <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const items = Array.from(document.querySelectorAll(".gallery-item"));
-        const loadMoreBtn = document.getElementById("loadMoreBtn");
-        const batch = 3; // number of items to show per click
-        let visibleCount = 0;
-
-        function showNextBatch() {
-          const nextCount = visibleCount + batch;
-          items.slice(visibleCount, nextCount).forEach((item) => {
-            item.classList.add("visible");
-          });
-          visibleCount = nextCount;
-
-          // Hide button if all are shown
-          if (visibleCount >= items.length) {
-            loadMoreBtn.style.display = "none";
-          }
-        }
-
-        // Show initial batch
-        showNextBatch();
-
-        loadMoreBtn.addEventListener("click", showNextBatch);
-      });
-
-      // events
-      document.addEventListener("DOMContentLoaded", () => {
-        const items = Array.from(
-          document.querySelectorAll(".gallery-item.event")
-        );
-        const loadMoreBtn = document.getElementById("eventLoadMoreBtn");
-        const batch = 3; // number of items to show per click
-        let visibleCount = 0;
-
-        function showNextBatch() {
-          const nextCount = visibleCount + batch;
-          items.slice(visibleCount, nextCount).forEach((item) => {
-            item.classList.add("visible");
-          });
-          visibleCount = nextCount;
-
-          // Hide button if all are shown
-          if (visibleCount >= items.length) {
-            loadMoreBtn.style.display = "none";
-          }
-        }
-
-        // Show initial batch
-        showNextBatch();
-
-        loadMoreBtn.addEventListener("click", showNextBatch);
-      });
-
-      // activity
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const items = Array.from(
-          document.querySelectorAll(".gallery-item.activity")
-        );
-        const loadMoreBtn = document.getElementById("activtyLoadMoreBtn");
-        const batch = 3; // number of items to show per click
-        let visibleCount = 0;
-
-        function showNextBatch() {
-          const nextCount = visibleCount + batch;
-          items.slice(visibleCount, nextCount).forEach((item) => {
-            item.classList.add("visible");
-          });
-          visibleCount = nextCount;
-
-          // Hide button if all are shown
-          if (visibleCount >= items.length) {
-            loadMoreBtn.style.display = "none";
-          }
-        }
-
-        // Show initial batch
-        showNextBatch();
-
-        loadMoreBtn.addEventListener("click", showNextBatch);
-      });
-
       const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;
 

@@ -90,6 +90,7 @@ body {
   height: 550px;
   width: 100%;
   overflow: hidden;
+  padding-top: 100px;
 }
 .banner::after {
   content: "";
@@ -2307,11 +2308,11 @@ a {
   margin: auto;
   padding: 2rem 0;
 }
-.gallery-item {
-  display: none;
-}
-.gallery-item.visible {
-  display: block;
+
+.gallery {
+  max-height: 450px;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .max_width .button {
