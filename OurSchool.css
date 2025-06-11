@@ -87,7 +87,7 @@ body {
 }
 .banner_image {
   position: relative;
-  height: 500px;
+  height: 600px;
   width: 100%;
   overflow: hidden;
 }
@@ -583,6 +583,7 @@ body {
 .acc_section img {
   max-width: 600px;
   width: 100%;
+  min-height: 250px;
   object-fit: cover;
   transition: transform 0.4s ease-in-out;
 }
@@ -1342,8 +1343,7 @@ a {
 
 .supportpage {
   position: relative;
-  background: url(https://harity.templatekit.co/wp-content/uploads/sites/49/2022/07/cute-african-boy-blowing-dandelion-outdoor-at-city-park-e1657720778729.jpg)
-    center / cover no-repeat;
+  background: url(./images/geo.jpeg) center / cover no-repeat;
   color: white;
   padding: 60px 20px;
   min-height: 100vh;
@@ -1785,7 +1785,7 @@ a {
 }
 
 .donat_section {
-  background-image: url("./images/afr-education-card-780.jpg"); /* Replace with your background */
+  background-image: url("./images/donate_bg.png"); /* Replace with your background */
   background-size: cover;
   background-position: center;
   padding: 60px 30px;
