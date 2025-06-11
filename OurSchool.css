@@ -538,6 +538,9 @@ body {
     justify-content: center !important;
     gap: 20px;
   }
+  .banner_image {
+    height: auto;
+  }
 }
 
 .acc_section_box {
