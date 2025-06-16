@@ -32,7 +32,7 @@
   flex-shrink: 0;
   position: sticky;
   top: 0;
-  height: 80vh; /* Ensure it sticks the full height */
+  height: fit-content; /* Ensure it sticks the full height */
   overflow-y: auto; /* Optional: if you want the sidebar to scroll independently */
 }
 
@@ -248,5 +248,24 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
+  }
+  .staff_member.visible {
+    flex-direction: column;
+  }
+  .staff_sidebar {
+    height: auto;
+  }
+  .staffs_member,
+  .staffs_member.reverse {
+    flex-direction: column;
+  }
+  .staff_sidebar {
+    height: auto !important;
+  }
+  .sidebar_container {
+    height: auto !important;
+  }
+  .sidebar_container .content {
+    max-height: 700px;
   }
 }
