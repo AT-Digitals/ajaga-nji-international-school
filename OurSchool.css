@@ -356,13 +356,17 @@ body {
   line-height: 1.6;
 }
 .quote_text {
-  font-size: 18px;
+  font-size: 16px;
   color: black !important;
   font-style: italic;
   margin: 0 !important;
   font-family: "Nunito Sans", sans-serif;
 
   line-height: 1.6;
+}
+
+.hover-meta div {
+  font-size: 16px;
 }
 .bg_clr {
   background: linear-gradient(180deg, #d4e7ff 0%, #e8ffff 100%);
@@ -613,7 +617,7 @@ body {
 
 .acc_section .content p {
   font-size: 16px;
-  color: var(--main-text);
+  color: black;
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -883,7 +887,7 @@ a {
 
 .step-card p {
   color: black;
-  font-size: 0.95rem;
+  font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
   margin-bottom: 2rem;
   line-height: 1.6;
@@ -948,6 +952,7 @@ a {
 .staff_avatar {
   width: 120px;
   height: 120px;
+  min-height: 180px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -982,7 +987,7 @@ a {
 
 .staff_name {
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: 0.2rem 0 0.6rem;
   font-family: "Lexend";
   font-size: 22px;
@@ -1196,7 +1201,7 @@ a {
 }
 
 .learn-description {
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   line-height: 1.6;
 }
@@ -1677,7 +1682,7 @@ a {
 }
 
 .card_desc {
-  font-size: 14px;
+  font-size: 16px;
   margin: 10px 0;
 }
 
