@@ -944,6 +944,12 @@ a {
 .staff_member:hover .staff_avatar {
   transform: scale(1.1); /* Zoom in */
 }
+.staffs_member:hover .staff_avatar {
+  transform: scale(1.1);
+}
+.staffs_member {
+  width: 98%;
+}
 
 .staff_member.reverse {
   flex-direction: row-reverse;
