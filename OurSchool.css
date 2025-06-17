@@ -801,7 +801,7 @@ a {
   border: 1px solid;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .download_container {
     padding: 40px 0;
   }

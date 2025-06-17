@@ -1,883 +1,675 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Courses Section</title>
-    <link rel="stylesheet" href="OurSchool.css" />
-    <link rel="stylesheet" href="header.css" />
-    <link rel="stylesheet" href="staff.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
-  <header>
-    <div class="header" id="mainHeader">
-      <div class="header_inner">
-        <div class="logo">
-          <a href="./index.html">
-            <img
-              src="./images/logo.png"
-              alt="Champion School Logo"
-              class="logo"
-            />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Courses Section</title>
+  <link rel="stylesheet" href="OurSchool.css" />
+  <link rel="stylesheet" href="header.css" />
+  <link rel="stylesheet" href="staff.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<header>
+  <div class="header" id="mainHeader">
+    <div class="header_inner">
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./images/logo.png" alt="Champion School Logo" class="logo" />
+        </a>
+      </div>
+      <nav class="nav web">
+        <div class="dropdown">
+          <a href="./index.html" class="dropdown-toggle">Our School <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="./history.html" class="history">History </a>
+            <a href="./board-of-director.html">Board of Directors</a>
+            <a href="./staff.html">Staff</a>
+            <a href="./GroupPage.html">Groups</a>
+          </div>
         </div>
-        <nav class="nav web">
-          <div class="dropdown">
-            <a href="./index.html" class="dropdown-toggle"
-              >Our School <i class="fas fa-caret-down"></i
-            ></a>
-            <div class="dropdown-menu">
+        <a href="./Accademic.html">Academics</a>
+
+        <a href="./Adminssions.html">Admissions</a>
+        <a href="./EventCard.html">News & Events</a>
+        <a href="./MediaGallery.html">Media Gallery</a>
+        <a href="./Support.html">Support Us</a>
+      </nav>
+      <div>
+        <a class="btn" href="./ContactPage.html">Contact Us <i class="hover fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Mobile Slide Menu -->
+      <div class="menu-content" id="menuContent">
+        <div class="close-btn-div">
+          <button class="close-btn" id="menuClose">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <nav class="nav">
+          <div class="mobile-dropdown">
+            <a href="./index.html" class="active mobile-dropdown-toggle">
+              Our School
+              <i class="fas fa-chevron-down arrow"></i>
+            </a>
+            <div class="mobile-dropdown-menu">
               <a href="./history.html" class="history">History </a>
               <a href="./board-of-director.html">Board of Directors</a>
               <a href="./staff.html">Staff</a>
-              <a href="./GroupPage.html">Groups</a>
+              <a href="#">Groups</a>
             </div>
           </div>
           <a href="./Accademic.html">Academics</a>
-
           <a href="./Adminssions.html">Admissions</a>
-          <a href="./EventCard.html">News & Events</a>
+          <a href="./EventNews.html">News & Events</a>
           <a href="./MediaGallery.html">Media Gallery</a>
           <a href="./Support.html">Support Us</a>
+          <a href="./ContactPage.html">Contact Us</a>
         </nav>
-        <div>
-          <a class="btn" href="./ContactPage.html"
-            >Contact Us <i class="hover fas fa-arrow-right"></i
-          ></a>
-        </div>
-
-        <!-- Mobile Slide Menu -->
-        <div class="menu-content" id="menuContent">
-          <div class="close-btn-div">
-            <button class="close-btn" id="menuClose">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <nav class="nav">
-            <div class="mobile-dropdown">
-              <a href="./index.html" class="active mobile-dropdown-toggle">
-                Our School
-                <i class="fas fa-chevron-down arrow"></i>
-              </a>
-              <div class="mobile-dropdown-menu">
-                <a href="./history.html" class="history">History </a>
-                <a href="./board-of-director.html">Board of Directors</a>
-                <a href="./staff.html">Staff</a>
-                <a href="#">Groups</a>
-              </div>
-            </div>
-            <a href="./Accademic.html">Academics</a>
-            <a href="./Adminssions.html">Admissions</a>
-            <a href="./EventNews.html">News & Events</a>
-            <a href="./MediaGallery.html">Media Gallery</a>
-            <a href="./Support.html">Support Us</a>
-            <a href="./ContactPage.html">Contact Us</a>
-          </nav>
-        </div>
-
-        <!-- Hamburger Menu Button -->
-        <button class="menu-toggle" id="menuToggle">
-          <i class="fas fa-bars"></i>
-        </button>
       </div>
+
+      <!-- Hamburger Menu Button -->
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
-  </header>
-  <body>
-    <section>
-      <div class="banner_image">
-        <img
-          src="./staff_banner.JPG"
-          style="height: 100%; width: 100%; object-fit: cover"
-          alt="banner"
-        />
-      </div>
-    </section>
-    <div class="our_cc_p">
-      <h2>Our Staff</h2>
-      <div class="divider no_left"></div>
+  </div>
+</header>
 
-      <p>
-        We pride ourselves in the fact that Ngumys is a home away from home for
-        our students, a place where they can learn and grow both in and outside
-        of the classroom. <br /> </br>
-        Whether in the residence halls or on the sports fields, students build
-        strong bonds with peers, learn valuable leadership lessons, and develop
-        themselves through a wide variety of clubs, sports, and leadership
-        roles.
-      </p>
+<body>
+  <section>
+    <div class="banner_image">
+      <img src="./staff_banner.JPG" style="height: 100%; width: 100%; object-fit: cover" alt="banner" />
     </div>
-    <div class="sidebar_container">
-      <div class="staff_sidebar">
-        <h3>OUR STAFF</h3>
-        <div class="service-item active">Administrative <span>→</span></div>
-        <div class="service-item">Teachers <span>→</span></div>
-        <div class="service-item">Cafeteriate & Sanitation <span>→</span></div>
-        <div class="service-item">Drivers <span>→</span></div>
-      </div>
+  </section>
+  <div class="our_cc_p">
+    <h2>Our Staff</h2>
+    <div class="divider no_left"></div>
 
-      <div class="content">
-        <div
-          class="sidebar_card-container tab-content active"
-          data-tab="Administrative"
-        >
-           
-            <div class="staffs_member ">
-              <img
-src="./images/teachers/GEORGE SHU WAA CHE.jpeg"                alt="Ajuamendem Prudencia"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">GEORGE SHU WAA CHE</h3>
-                <h3 class="staffs_role">Admin</h3>
-                <p class="staff_message">
-                  Introducing structured learning with a focus on basic
-                  literacy, numeracy, and creativity.
-                </p>
-              </div>
-            </div>
-            <div class="staffs_member reverse">
-              <img
-src="./images/teachers/JUDE FORKALA FONCHAM.jpeg"                alt="Nkemasong Berline"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">NDIPEN KELLY PRIDE FORKENG </h3>
-                <h3 class="staffs_role">Admin</h3>
-                <p class="staff_message">
-                  Fostering early childhood development through play-based
-                  learning and social interaction.
-                </p>
-              </div>
-            </div>
-            <div class="staffs_member">
-              <img
-src="./images/teachers/NDIPEN KELLY PRIDE FORKENG.jpeg"                alt="Nkemasong Berline"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">JUDE FORKALA FONCHAM</h3>
-                <h3 class="staffs_role">Admin</h3>
-                <p class="staff_message">
-                  Fostering early childhood development through play-based
-                  learning and social interaction.
-                </p>
-              </div>
-            </div>
-        </div>
+    <p>
+      We pride ourselves in the fact that Ngumys is a home away from home for
+      our students, a place where they can learn and grow both in and outside
+      of the classroom. <br /> </br>
+      Whether in the residence halls or on the sports fields, students build
+      strong bonds with peers, learn valuable leadership lessons, and develop
+      themselves through a wide variety of clubs, sports, and leadership
+      roles.
+    </p>
+  </div>
+  <div class="sidebar_container">
+    <div class="staff_sidebar">
+      <h3>OUR STAFF</h3>
+      <div class="service-item active">Administrative <span>→</span></div>
+      <div class="service-item">Teachers <span>→</span></div>
+      <div class="service-item">Cafeteriate & Sanitation <span>→</span></div>
+      <div class="service-item">Drivers <span>→</span></div>
+    </div>
 
-        <div class="sidebar_card-container tab-content" data-tab="Teachers">
-          <div class="staff_members">
-            <!-- Row 1 -->
-            <div class="staff_member">
-              <img
-src="./images//teachers/KIARIBO PRUDENCE MAJOLIE.jpeg"                alt="Kiaribo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Kiaribo Prudence Majolie</h3>
-                <h3 class="staffs_role">PRE-NURSERY</h3>
-                <p class="staff_message">
-                  Fostering early childhood development through play-based
-                  learning and social interaction.
-                </p>
-              </div>
-            </div>
-
-            <div class="staff_member reverse">
-              <img
-src="./images//teachers/SONNA FLORIANE CARELLE.jpeg"                alt="Ajuamendem Prudencia"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Sona Floriane Carelle</h3>
-                <h3 class="staffs_role">NURSERY 1</h3>
-                <p class="staff_message">
-                  Introducing structured learning with a focus on basic
-                  literacy, numeracy, and creativity.
-                </p>
-              </div>
-            </div>
-
-            <div class="staff_member">
-              <img
-src="./images//teachers/ACHAMOH GIZEL.jpeg"                alt="Ngimanju Gilda"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Achamoh Gizel</h3>
-                <h3 class="staffs_role">NURSERY 2</h3>
-                <p class="staff_message">
-                  Preparing students for primary education through hands-on
-                  activities and foundational skills.
-                </p>
-              </div>
-            </div>
-
-            <!-- Row 2 -->
-            <div class="staff_member reverse">
-              <img
-src="./images/teachers/MUKI HELEN NDAH.jpeg"                alt="Mirabel Sheri"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Muki Helen Ndah</h3>
-                <h3 class="staffs_role">CLASS ONE</h3>
-                <p class="staff_message">
-                  Building reading and writing fluency, and introducing early
-                  math concepts in a nurturing setting.
-                </p>
-              </div>
-            </div>
-
-            <div class="staff_member">
-              <img
-src="./images/teachers/IMELE MAWAMBA MARCEDE.jpeg"                alt="Ndifor Loveline Ngufuet"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Imele Mawamba Marcede</h3>
-                <h3 class="staffs_role">CLASS TWO</h3>
-                <p class="staff_message">
-                  Strengthening core academic skills and encouraging curiosity
-                  through interactive lessons.
-                </p>
-              </div>
-            </div>
-
-            <div class="staff_member reverse">
-              <img
-src="./images/teachers/FORYAH MARY MANYI.jpeg"                alt="Nsombo Valery"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Floryah Mary Manyi</h3>
-                <h3 class="staffs_role">CLASS THREE</h3>
-                <p class="staff_message">
-                  Developing independent thinking, critical problem-solving, and
-                  team collaboration.
-                </p>
-              </div>
-            </div>
-
-            <!-- Row 3 -->
-            <div class="staff_member">
-              <img
-src="./images/teachers/NGIMANJU GILDA NKENGAFAC.jpeg"                alt="Ndifor Loveline Ngufuet"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Ngimanju Glida Nkengafac</h3>
-                <h3 class="staffs_role">CLASS FOUR</h3>
-                <p class="staff_message">
-                  Expanding knowledge in core subjects while emphasizing
-                  analytical and research skills.
-                </p>
-              </div>
-            </div>
-
-            <div class="staff_member reverse">
-              <img
-src="./images/teachers/NCHUBA SOLANGE ANUMENDEM.jpeg"                                alt="Sofa Collins Kingo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Nchuba Solange Anumendem</h3>
-                <h3 class="staffs_role">CLASS FIVE</h3>
-                <p class="staff_message">
-                  Promoting academic responsibility, leadership skills, and
-                  preparation for upper primary.
-                </p>
-              </div>
-            </div>
-
-            <div class="staff_member">
-              <img
-src="./images/teachers/TAMHIEZEM MARCUS.jpeg"                alt="Ndemboh Agnes"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Tamhiezem Marcus</h3>
-                <h3 class="staffs_role">CLASS SIX</h3>
-                <p class="staff_message">
-                  Ensuring readiness for secondary education with a strong
-                  foundation in all subject areas.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member reverse">
-              <img
-src="./images//teachers/NDIFOR LOVELINE NGUFUET.jpeg" 
-                alt="Sofa Collins Kingo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Ndifor Loveline Ngufuet</h3>
-                <h3 class="staffs_role">M1</h3>
-                <p class="staff_message">
-                  Promoting academic responsibility, leadership skills, and
-                  preparation for upper primary.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member">
-              <img
-src="./images//teachers/ABEWO ELIE.jpeg" 
-                alt="Ndemboh Agnes"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Abewo Elie</h3>
-                <h3 class="staffs_role">M2</h3>
-                <p class="staff_message">
-                  Ensuring readiness for secondary education with a strong
-                  foundation in all subject areas.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member reverse">
-              <img
-src="./images//teachers/AZWE BLESSING FON.jpeg" 
-                alt="Sofa Collins Kingo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Azwe Blessing Fon</h3>
-                <h3 class="staffs_role">SIL</h3>
-                <p class="staff_message">
-                  Promoting academic responsibility, leadership skills, and
-                  preparation for upper primary.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member">
-              <img
-src="./images//teachers/NDIPEN KELLY PRIDE FORKENG.jpeg" 
-               alt="Ndemboh Agnes"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Ndipen Kelly Pride Forkeng
-
-</h3>
-                <h3 class="staffs_role">CP</h3>
-                <p class="staff_message">
-                  Ensuring readiness for secondary education with a strong
-                  foundation in all subject areas.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member reverse">
-              <img
-src="./images/teachers/TENDONGAFAC ANITA.jpeg"
-                alt="Sofa Collins Kingo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Tendongafac Anita
-
-</h3>
-                <h3 class="staffs_role">CE1&CE2</h3>
-                <p class="staff_message">
-                  Promoting academic responsibility, leadership skills, and
-                  preparation for upper primary.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member">
-              <img
-src="./images/teachers/NGUEFACK NAGO NATHAEL PERICLECE.jpeg"
-                alt="Ndemboh Agnes"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Nguefack Nago Nathael Periclece
-
-</h3>
-                <h3 class="staffs_role">CM1</h3>
-                <p class="staff_message">
-                  Ensuring readiness for secondary education with a strong
-                  foundation in all subject areas.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member reverse">
-              <img
-src="./images/teachers/GEORGE SHU WAA CHE.jpeg"
-                alt="Sofa Collins Kingo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">George Shu Waa Che
-
-</h3>
-                <h3 class="staffs_role">CM2</h3>
-                <p class="staff_message">
-                  Promoting academic responsibility, leadership skills, and
-                  preparation for upper primary.
-                </p>
-              </div>
-            </div>
-            <div class="staff_member ">
-              <img
-src="./images/teachers/TSAMO JIOTSA SILVIA CORDY.jpeg"
-                alt="Sofa Collins Kingo"
-                class="staff_avatar"
-              />
-              <div class="staff_details">
-                <h3 class="staff_name">Tsamo Jiotsa Silvia Cordy
-
-</h3>
-                <h3 class="staffs_role">ICT</h3>
-                <p class="staff_message">
-                  Promoting academic responsibility, leadership skills, and
-                  preparation for upper primary.
-                </p>
-              </div>
-            </div>
-            
-        <div class="staffs_member reverse">
-          <img
-src="./images/teachers/JUDE FORKALA FONCHAM.jpeg"
-            alt="Nkemasong Berline"
-            class="staff_avatar"
-          />
+    <div class="content">
+      <div class="sidebar_card-container tab-content active" data-tab="Administrative">
+        <div class="staffs_member ">
+          <img src="./images/teachers/NDIPEN KELLY PRIDE FORKENG.jpeg" alt="Nkemasong Berline" class="staff_avatar" />
           <div class="staff_details">
-            <h3 class="staff_name">Jude Forkala Foncham
-
- </h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
+            <h3 class="staff_name">NDIPEN KELLY PRIDE FORKENG </h3>
+            <h3 class="staffs_role">Admin</h3>
             <p class="staff_message">
               Fostering early childhood development through play-based
               learning and social interaction.
             </p>
           </div>
         </div>
-         <div class="staffs_member ">
-          <img
-src="./images/teachers/TCHIO JONAS DOREX.jpeg"            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
-          <div class="staff_details">
-            <h3 class="staff_name">Tchio Jonas Dorex
-
-</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
-            <p class="staff_message">
-              Introducing structured learning with a focus on basic
-              literacy, numeracy, and creativity.
-            </p>
-          </div>
-        </div>
         <div class="staffs_member reverse ">
-          <img
-src="./images/teachers/SANGYE LEA ENDAH.jpeg"
-            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
+          <img src="./images/teachers/GEORGE SHU WAA CHE.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
           <div class="staff_details">
-            <h3 class="staff_name">Sangye Lea Endah
-
-</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
+            <h3 class="staff_name">GEORGE SHU WAA CHE</h3>
+            <h3 class="staffs_role">Admin</h3>
             <p class="staff_message">
               Introducing structured learning with a focus on basic
               literacy, numeracy, and creativity.
             </p>
           </div>
         </div>
-        <div class="staffs_member ">
-          <img
-src="./images/teachers/NGOUNE SONFACK YVES ETIENNE.jpeg"
-            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
+
+        <div class="staffs_member">
+          <img src="./images/teachers/JUDE FORKALA FONCHAM.jpeg" alt="Nkemasong Berline" class="staff_avatar" />
           <div class="staff_details">
-            <h3 class="staff_name">Ngoune Sonfack Yves Etienne
-
-</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
-            <p class="staff_message">
-              Introducing structured learning with a focus on basic
-              literacy, numeracy, and creativity.
-            </p>
-          </div>
-        </div>
-        <div class="staffs_member reverse ">
-          <img
-src="./images/teachers/YVONNE INDAH TENCOR.jpeg"
-            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
-          <div class="staff_details">
-            <h3 class="staff_name">Yvonne Indah Tencor
-
-</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
-            <p class="staff_message">
-              Introducing structured learning with a focus on basic
-              literacy, numeracy, and creativity.
-            </p>
-          </div>
-        </div>
-        <div class="staffs_member ">
-          <img
-src="./images/teachers/KENFACK STALONE.jpeg"
-            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
-          <div class="staff_details">
-            <h3 class="staff_name">Kenfack Stalone</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
-            <p class="staff_message">
-              Introducing structured learning with a focus on basic
-              literacy, numeracy, and creativity.
-            </p>
-          </div>
-        </div>
-        <div class="staffs_member  reverse">
-          <img
-src="./images/teachers/TSAFACK PIERRE.jpeg"
-            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
-          <div class="staff_details">
-            <h3 class="staff_name">Tsafack Pierre
-
-
-
-</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
-            <p class="staff_message">
-              Introducing structured learning with a focus on basic
-              literacy, numeracy, and creativity.
-            </p>
-          </div>
-        </div>
-        <div class="staffs_member ">
-          <img
-src="./images/teachers/MIRABEL SHERI.jpeg"
-            alt="Ajuamendem Prudencia"
-            class="staff_avatar"
-          />
-          <div class="staff_details">
-            <h3 class="staff_name">
-Mirabel Sheri
-
-
-</h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
-            <p class="staff_message">
-              Introducing structured learning with a focus on basic
-              literacy, numeracy, and creativity.
-            </p>
-          </div>
-        </div>
-          </div>
-          <div class="staff_toggle">
-            <button id="toggleStaffBtn">Load More</button>
-          </div>
-        </div>
-
-        <div
-          class="sidebar_card-container tab-content"
-          data-tab="Cafeteriate & Sanitation"
-        >
-        <div class="staffs_member reverse">
-          <img
-            src="https://static.wixstatic.com/media/2e5f27_097afa8a65e145ae8f6fa8fdfb7f0c21~mv2.jpg/v1/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nkemasong%20berlin.jpg"
-            alt="Nkemasong Berline"
-            class="staff_avatar"
-          />
-          <div class="staff_details">
-            <h3 class="staff_name">Jude Forkala Foncham
-
- </h3>
-            <h3 class="staffs_role">Cafeteriate & Sanitation</h3>
+            <h3 class="staff_name">JUDE FORKALA FONCHAM</h3>
+            <h3 class="staffs_role">Admin</h3>
             <p class="staff_message">
               Fostering early childhood development through play-based
               learning and social interaction.
             </p>
           </div>
         </div>
-       
-        <!-- 55 -->
-         
-        <!-- / -->
-        </div>
+      </div>
 
-        <div class="sidebar_card-container tab-content" data-tab="Drivers">
-          <div class="staffs_member">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_097afa8a65e145ae8f6fa8fdfb7f0c21~mv2.jpg/v1/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nkemasong%20berlin.jpg"
-              alt="Nkemasong Berline"
-              class="staff_avatar"
-            />
+      <div class="sidebar_card-container tab-content" data-tab="Teachers">
+        <div class="staff_members">
+          <!--  1 -->
+          <div class="staff_member ">
+            <img src="./images/teachers/FORYAH MARY MANYI.jpeg" alt="Nsombo Valery" class="staff_avatar" />
             <div class="staff_details">
-              <h3 class="staff_name">TAMHIEZEM MARCUS</h3>
-              <h3 class="staffs_role">Driver</h3>
+              <h3 class="staff_name">Floryah Mary Manyi</h3>
+              <h3 class="staffs_role">PRE-NURSERY</h3>
               <p class="staff_message">
-                Fostering early childhood development through play-based
-                learning and social interaction.
+                Developing independent thinking, critical problem-solving, and
+                team collaboration.
               </p>
             </div>
           </div>
-          <div class="staffs_member reverse">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_4d764761920446ad978f3d1c42bc8afd~mv2.jpg/v1/crop/x_823,y_0,w_4354,h_4000/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ajuamendem%20prudencia.jpg"
-              alt="Ajuamendem Prudencia"
-              class="staff_avatar"
-            />
+          <!-- 1 -->
+          <!-- 2 -->
+          <div class="staff_member reverse">
+            <img src="./images/teachers/TENDONGAFAC ANITA.jpeg" alt="Sofa Collins Kingo" class="staff_avatar" />
             <div class="staff_details">
-              <h3 class="staff_name">ABEWO ELIE</h3>
-              <h3 class="staffs_role">Driver</h3>
+              <h3 class="staff_name">Tendongafac Anita
+
+              </h3>
+              <h3 class="staffs_role">NURSERY 1</h3>
+              <p class="staff_message">
+                Promoting academic responsibility, leadership skills, and
+                preparation for upper primary.
+              </p>
+            </div>
+          </div>
+          <!-- 2 -->
+          <!-- 3 -->
+          <div class="staff_member ">
+            <img src="./images/teachers/NGIMANJU GILDA NKENGAFAC.jpeg" alt="t" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Ngimanju Glida Nkengafac</h3>
+              <h3 class="staffs_role">NURSERY 2</h3>
+              <p class="staff_message">
+                Expanding knowledge in core subjects while emphasizing
+                analytical and research skills.
+              </p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <!-- 4 -->
+          <div class="staff_member reverse">
+            <img src="./images//teachers/ACHAMOH GIZEL.jpeg" alt="Ngimanju Gilda" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Achamoh Gizel</h3>
+              <h3 class="staffs_role">CLASS ONE</h3>
+              <p class="staff_message">
+                Preparing students for primary education through hands-on
+                activities and foundational skills.
+              </p>
+            </div>
+          </div>
+          <!-- 4 -->
+          <!-- 5 -->
+          <div class="staff_member ">
+            <img src="./images/teachers/NCHUBA SOLANGE ANUMENDEM.jpeg" alt="Sofa Collins Kingo" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Nchuba Solange Anumendem</h3>
+              <h3 class="staffs_role">CLASS TWO </h3>
+              <p class="staff_message">
+                Promoting academic responsibility, leadership skills, and
+                preparation for upper primary.
+              </p>
+            </div>
+          </div>
+          <!-- 5 -->
+
+          <!-- 6 -->
+          <div class="staff_member reverse ">
+            <img src="./images/teachers/MIRABEL SHERI.jpeg" alt="Mirabel Sheri" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name"> Mirabel Sheri</h3>
+              <h3 class="staffs_role">CLASS THREE</h3>
+              <p class="staff_message">
+                Building reading and writing fluency, and introducing early
+                math concepts in a nurturing setting.
+              </p>
+            </div>
+          </div>
+          <!-- 6 -->
+          <!-- 7 -->
+          <div class="staff_member ">
+            <img src="./images//teachers/NDIFOR LOVELINE NGUFUET.jpeg" alt="Sofa Collins Kingo" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Ndifor Loveline Ngufuet</h3>
+              <h3 class="staffs_role">CLASS FOUR </h3>
+              <p class="staff_message">
+                Promoting academic responsibility, leadership skills, and
+                preparation for upper primary.
+              </p>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <!-- 8 -->
+          <div class="staff_member reverse ">
+            <img src="./images/teachers/YVONNE INDAH TENCOR.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Yvonne Indah Tencor
+
+              </h3>
+              <h3 class="staffs_role">CLASS FIVE</h3>
               <p class="staff_message">
                 Introducing structured learning with a focus on basic
                 literacy, numeracy, and creativity.
               </p>
             </div>
           </div>
-          <div class="staffs_member">
-            <img
-              src="https://static.wixstatic.com/media/2e5f27_097afa8a65e145ae8f6fa8fdfb7f0c21~mv2.jpg/v1/fill/w_311,h_286,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/nkemasong%20berlin.jpg"
-              alt="Nkemasong Berline"
-              class="staff_avatar"
-            />
+          <!-- 8 -->
+          <!-- 9 -->
+
+          <div class="staff_member  ">
+            <img src="./images/teachers/SANGYE LEA ENDAH.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
             <div class="staff_details">
-              <h3 class="staff_name">NGOUNE SONFACK YVES ETIENNE</h3>
-              <h3 class="staffs_role">Driver</h3>
+              <h3 class="staff_name">Sangye Lea Endah
+
+              </h3>
+              <h3 class="staffs_role">CLASS SIX</h3>
+              <p class="staff_message">
+                Introducing structured learning with a focus on basic
+                literacy, numeracy, and creativity.
+              </p>
+            </div>
+          </div>
+          <!-- 9 -->
+          <!-- 10 -->
+          <div class="staff_member reverse ">
+            <img src="./images/teachers/KENFACK STALONE.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Kenfack Stalone</h3>
+              <h3 class="staffs_role">M1</h3>
+              <p class="staff_message">
+                Introducing structured learning with a focus on basic
+                literacy, numeracy, and creativity.
+              </p>
+            </div>
+          </div>
+          <!-- 10 -->
+          <!-- 11 -->
+          <div class="staff_member ">
+            <img src="./images/teachers/TSAMO JIOTSA SILVIA CORDY.jpeg" alt="Sofa Collins Kingo" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Tsamo Jiotsa Silvia Cordy
+
+              </h3>
+              <h3 class="staffs_role">M2</h3>
+              <p class="staff_message">
+                Promoting academic responsibility, leadership skills, and
+                preparation for upper primary.
+              </p>
+            </div>
+          </div>
+          <!-- 11 -->
+          <!-- 12 -->
+          <div class="staff_member reverse">
+            <img src="./images//teachers/don" alt="Kiaribo" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name"> Dongmo Tawa Adelaide</h3>
+              <h3 class="staffs_role">SIL</h3>
               <p class="staff_message">
                 Fostering early childhood development through play-based
                 learning and social interaction.
               </p>
             </div>
           </div>
+
+          <!-- 12 -->
+          <!-- 13 -->
+          <div class="staff_member ">
+            <img src="./images//teachers/SONNA FLORIANE CARELLE.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Sona Floriane Carelle</h3>
+              <h3 class="staffs_role">CP</h3>
+              <p class="staff_message">
+                Introducing structured learning with a focus on basic
+                literacy, numeracy, and creativity.
+              </p>
+            </div>
+          </div>
+          <!-- 13 -->
+          <!-- 14 -->
+          <div class="staff_member reverse">
+            <img src="./images//teachers/KIARIBO PRUDENCE MAJOLIE.jpeg" alt="Kiaribo" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Kiaribo Prudence Majolie</h3>
+              <h3 class="staffs_role">CE1 & CE2</h3>
+              <p class="staff_message">
+                Fostering early childhood development through play-based
+                learning and social interaction.
+              </p>
+            </div>
+          </div>
+
+          <!-- 14 -->
+          <!-- 15 -->
+          <div class="staff_member ">
+            <img src="./images/teachers/IMELE MAWAMBA MARCEDE.jpeg" alt="" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Imele Mawamba Marcede</h3>
+              <h3 class="staffs_role">CM1</h3>
+              <p class="staff_message">
+                Strengthening core academic skills and encouraging curiosity
+                through interactive lessons.
+              </p>
+            </div>
+          </div>
+          <!-- 15 -->
+          <!-- 16 -->
+          <div class="staff_member reverse ">
+            <img src="./images/teachers/TCHIO JONAS DOREX.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Tchio Jonas Dorex
+
+              </h3>
+              <h3 class="staffs_role">CM2</h3>
+              <p class="staff_message">
+                Introducing structured learning with a focus on basic
+                literacy, numeracy, and creativity.
+              </p>
+            </div>
+          </div>
+          <!-- 16 -->
+          <!-- 17 -->
+          <div class="staff_member ">
+            <img src="./images/teachers/NGUEFACK NAGO NATHAEL PERICLECE.jpeg" alt="Ndemboh Agnes"
+              class="staff_avatar" />
+            <div class="staff_details">
+              <h3 class="staff_name">Nguefack Nago Nathael Periclece
+
+              </h3>
+              <h3 class="staffs_role">ICT</h3>
+              <p class="staff_message">
+                Ensuring readiness for secondary education with a strong
+                foundation in all subject areas.
+              </p>
+            </div>
+          </div>
+          <!-- 17 -->
+        </div>
+        <div class="staff_toggle">
+          <button id="toggleStaffBtn">Load More</button>
         </div>
       </div>
-    </div>
-    <section class="staff_section">
-      <div class="staff_members">
-        
-      </div>
-    </section>
-    <script>
-      const navLinks = document.querySelectorAll(".nav.web a");
-      const currentPath = window.location.pathname;
 
-      navLinks.forEach((link) => {
-        const linkPath = new URL(link.href).pathname;
+      <div class="sidebar_card-container tab-content" data-tab="Cafeteriate & Sanitation">
+        <div class="staffs_member ">
+          <img src="./images/teachers/AZWE BLESSING FON.jpeg" alt="Nkemasong Berline" class="staff_avatar" />
+          <div class="staff_details">
+            <h3 class="staff_name">Azwe Blessing Fon
 
-        // Compare the link's path to current page's path
-        if (linkPath === currentPath) {
-          link.classList.add("active");
-        }
-      });
-
-      $(document).ready(function () {
-        $("#menuToggle").on("click", function () {
-          $("#menuContent").addClass("open");
-        });
-
-        $("#menuClose").on("click", function () {
-          $("#menuContent").removeClass("open");
-        });
-
-        // Mobile dropdown accordion toggle
-        $(".mobile-dropdown-toggle").on("click", function (e) {
-          e.preventDefault();
-          $(this).toggleClass("active");
-          $(this).next(".mobile-dropdown-menu").slideToggle(200);
-          $(this).find(".arrow").toggleClass("rotate");
-        });
-      });
-
-      $(document).ready(function () {
-        $(".count").each(function () {
-          var $this = $(this);
-          var target = +$this.attr("data-target");
-          $({ countNum: $this.text() }).animate(
-            { countNum: target },
-            {
-              duration: 2000,
-              easing: "swing",
-              step: function () {
-                $this.text(Math.ceil(this.countNum));
-              },
-              complete: function () {
-                $this.text(target);
-              },
-            }
-          );
-        });
-      });
-
-      const serviceItems = document.querySelectorAll(".service-item");
-      const tabContents = document.querySelectorAll(".tab-content");
-
-      serviceItems.forEach((item) => {
-        item.addEventListener("click", () => {
-          // Remove 'active' from all service items and contents
-          serviceItems.forEach((el) => el.classList.remove("active"));
-          tabContents.forEach((tab) => tab.classList.remove("active"));
-
-          // Add 'active' to clicked item
-          item.classList.add("active");
-
-          // Get the text to match the data-tab attribute
-          const selectedTab = item.textContent.trim().replace("→", "").trim();
-
-          // Show matching tab content
-          const activeContent = document.querySelector(
-            `.tab-content[data-tab="${selectedTab}"]`
-          );
-          if (activeContent) {
-            activeContent.classList.add("active");
-          }
-        });
-      });
-
-      const staffMembers = document.querySelectorAll(".staff_member");
-const toggleBtn = document.getElementById("toggleStaffBtn");
-
-let expanded = false;
-
-function showInitialStaff() {
-  staffMembers.forEach((member, index) => {
-    member.classList.toggle("visible", index < 5);
-  });
-}
-
-function showAllStaff() {
-  staffMembers.forEach((member) => member.classList.add("visible"));
-}
-
-toggleBtn.addEventListener("click", () => {
-  if (!expanded) {
-    expanded = true;
-    showAllStaff();
-    toggleBtn.style.display = "none"; // Hide the button
-  }
-});
-
-// Initial state
-showInitialStaff();
-    </script>
-  </body>
-  <footer class="footer">
-    <div class="container flex-wrap space-between">
-      <!-- Left Column -->
-      <div class="column">
-       <a href="./index.html">
-        <img
-          src="./images/logo.png"
-          alt="Goodrise Logistics"
-          class="brand-logo"
-        />
-      </a>
-        <p class="text negative_text">
-          We are an English-speaking school in Dschang, Cameroon, W. Africa.
-          We offer kindergarten (nursery school) all the way to class 7
-        </p>
-        
-      </div>
-
-      <!-- Center Column -->
-      <div class="column">
-        <h3 class="title">Contact info</h3>
-        <div class="item-row">
-          <i class="fas fa-map-marker-alt icon"></i>
-          <div>
-            <p class="label">Our location:</p>
-            <p class="text">
-              Ajaga Nji Bilingual International School P.O Box 138 Dschang,
-              Cameroon W. Africa
+            </h3>
+            <h3 class="staffs_role">Cafeteriate</h3>
+            <p class="staff_message">
+              Fostering early childhood development through play-based
+              learning and social interaction.
             </p>
           </div>
         </div>
-        <div class="item-row">
-          <i class="fas fa-phone-alt icon"               style="transform: rotate(90deg)"
-></i>
-          <div>
-            <p class="label">Phones:</p>
-            <a
-              style="
-                text-decoration: none;
-                color: black;
-                font-family: Lexend;
-              "
-              href="tel:+237-679259202"
-              >+237-679259202
-            </a>
-            <br />
-            <a
-              style="
-                text-decoration: none;
-                color: black;
-                font-family: Lexend;
-              "
-              href="tel:+237-679259202"
-              >+237 691512550
-            </a>
+        <div class="staffs_member reverse ">
+          <img src="./images/teachers/MUKI HELEN NDAH.jpeg" alt="Nkemasong Berline" class="staff_avatar" />
+          <div class="staff_details">
+            <h3 class="staff_name"> Muki Helen Ndah
+
+            </h3>
+            <h3 class="staffs_role">Sanitation </h3>
+            <p class="staff_message">
+              Fostering early childhood development through play-based
+              learning and social interaction.
+            </p>
           </div>
         </div>
-        <div class="item-row">
-          <i class="fas fa-envelope icon"></i>
-          <div>
-            <p class="label">Email:</p>
-            <a
-              style="
-                text-decoration: none;
-                color: black;
-                font-family: Lexend;
-              "
-              href="mailto:ngumysnpschool@gmail.com"
-              >ngumysnpschool@gmail.com
-            </a>
-            <p class="text"></p>
+
+        <!-- 55 -->
+
+        <!-- / -->
+      </div>
+
+      <div class="sidebar_card-container tab-content" data-tab="Drivers">
+        <div class="staffs_member">
+          <img src="./images/teachers/TAMHIEZEM MARCUS.jpeg" alt="Nkemasong Berline" class="staff_avatar" />
+          <div class="staff_details">
+            <h3 class="staff_name">TAMHIEZEM MARCUS</h3>
+            <h3 class="staffs_role">Driver</h3>
+            <p class="staff_message">
+              Fostering early childhood development through play-based
+              learning and social interaction.
+            </p>
+          </div>
+        </div>
+        <div class="staffs_member reverse">
+          <img src="./images/teachers/ABEWO ELIE.jpeg" alt="Ajuamendem Prudencia" class="staff_avatar" />
+          <div class="staff_details">
+            <h3 class="staff_name">ABEWO ELIE</h3>
+            <h3 class="staffs_role">Driver</h3>
+            <p class="staff_message">
+              Introducing structured learning with a focus on basic
+              literacy, numeracy, and creativity.
+            </p>
+          </div>
+        </div>
+        <div class="staffs_member">
+          <img src="./images/teachers/NGOUNE SONFACK YVES ETIENNE.jpeg" alt="Nkemasong Berline" class="staff_avatar" />
+          <div class="staff_details">
+            <h3 class="staff_name">NGOUNE SONFACK YVES ETIENNE</h3>
+            <h3 class="staffs_role">Driver</h3>
+            <p class="staff_message">
+              Fostering early childhood development through play-based
+              learning and social interaction.
+            </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <section class="staff_section">
+    <div class="staff_members">
 
-      <!-- Right Column -->
-      <div class="column">
-        <h3 class="title">Subscribe</h3>
-        <div class="input-row">
+    </div>
+  </section>
+  <script>
+    const navLinks = document.querySelectorAll(".nav.web a");
+    const currentPath = window.location.pathname;
+
+    navLinks.forEach((link) => {
+      const linkPath = new URL(link.href).pathname;
+
+      // Compare the link's path to current page's path
+      if (linkPath === currentPath) {
+        link.classList.add("active");
+      }
+    });
+
+    $(document).ready(function () {
+      $("#menuToggle").on("click", function () {
+        $("#menuContent").addClass("open");
+      });
+
+      $("#menuClose").on("click", function () {
+        $("#menuContent").removeClass("open");
+      });
+
+      // Mobile dropdown accordion toggle
+      $(".mobile-dropdown-toggle").on("click", function (e) {
+        e.preventDefault();
+        $(this).toggleClass("active");
+        $(this).next(".mobile-dropdown-menu").slideToggle(200);
+        $(this).find(".arrow").toggleClass("rotate");
+      });
+    });
+
+    $(document).ready(function () {
+      $(".count").each(function () {
+        var $this = $(this);
+        var target = +$this.attr("data-target");
+        $({ countNum: $this.text() }).animate(
+          { countNum: target },
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function () {
+              $this.text(Math.ceil(this.countNum));
+            },
+            complete: function () {
+              $this.text(target);
+            },
+          }
+        );
+      });
+    });
+
+    const serviceItems = document.querySelectorAll(".service-item");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    serviceItems.forEach((item) => {
+      item.addEventListener("click", () => {
+        // Remove 'active' from all service items and contents
+        serviceItems.forEach((el) => el.classList.remove("active"));
+        tabContents.forEach((tab) => tab.classList.remove("active"));
+
+        // Add 'active' to clicked item
+        item.classList.add("active");
+
+        // Get the text to match the data-tab attribute
+        const selectedTab = item.textContent.trim().replace("→", "").trim();
+
+        // Show matching tab content
+        const activeContent = document.querySelector(
+          `.tab-content[data-tab="${selectedTab}"]`
+        );
+        if (activeContent) {
+          activeContent.classList.add("active");
+        }
+      });
+    });
+
+    const staffMembers = document.querySelectorAll(".staff_member");
+    const toggleBtn = document.getElementById("toggleStaffBtn");
+
+    let expanded = false;
+
+    function showInitialStaff() {
+      staffMembers.forEach((member, index) => {
+        member.classList.toggle("visible", index < 5);
+      });
+    }
+
+    function showAllStaff() {
+      staffMembers.forEach((member) => member.classList.add("visible"));
+    }
+
+    toggleBtn.addEventListener("click", () => {
+      if (!expanded) {
+        expanded = true;
+        showAllStaff();
+        toggleBtn.style.display = "none"; // Hide the button
+      }
+    });
+
+    // Initial state
+    showInitialStaff();
+  </script>
+</body>
+<footer class="footer">
+  <div class="container flex-wrap space-between">
+    <!-- Left Column -->
+    <div class="column">
+      <a href="./index.html">
+        <img src="./images/logo.png" alt="Goodrise Logistics" class="brand-logo" />
+      </a>
+      <p class="text negative_text">
+        We are an English-speaking school in Dschang, Cameroon, W. Africa.
+        We offer kindergarten (nursery school) all the way to class 7
+      </p>
+
+    </div>
+
+    <!-- Center Column -->
+    <div class="column">
+      <h3 class="title">Contact info</h3>
+      <div class="item-row">
+        <i class="fas fa-map-marker-alt icon"></i>
+        <div>
+          <p class="label">Our location:</p>
           <p class="text">
-            If you are interested in subscribing to newsletters, please enter
-            in your email address and click on Subscribe Now.
+            Ajaga Nji Bilingual International School P.O Box 138 Dschang,
+            Cameroon W. Africa
           </p>
-          <div class="subscribe-box">
-            <input type="text" placeholder="Subscribe with us" />
-            <button>
-              <i class="fas fa-paper-plane"></i>
-            </button>
-          </div>
         </div>
-        <label class="checkbox-group">
-          <input type="checkbox" /> I authorize the use of the information
-          entered
-        </label>
+      </div>
+      <div class="item-row">
+        <i class="fas fa-phone-alt icon" style="transform: rotate(90deg)"></i>
+        <div>
+          <p class="label">Phones:</p>
+          <a style="
+                text-decoration: none;
+                color: black;
+                font-family: Lexend;
+              " href="tel:+237-679259202">+237-679259202
+          </a>
+          <br />
+          <a style="
+                text-decoration: none;
+                color: black;
+                font-family: Lexend;
+              " href="tel:+237-679259202">+237 691512550
+          </a>
+        </div>
+      </div>
+      <div class="item-row">
+        <i class="fas fa-envelope icon"></i>
+        <div>
+          <p class="label">Email:</p>
+          <a style="
+                text-decoration: none;
+                color: black;
+                font-family: Lexend;
+              " href="mailto:ngumysnpschool@gmail.com">ngumysnpschool@gmail.com
+          </a>
+          <p class="text"></p>
+        </div>
       </div>
     </div>
-    <div class="copy_rights">
-      <!-- <div class="icon-row"></div> -->
 
-      <div class="footer-bottom">
-        <p>
-          © 2025 by
-          <span class="highlight">
-Ajaga Nji Bilingual International School            </span>
+    <!-- Right Column -->
+    <div class="column">
+      <h3 class="title">Subscribe</h3>
+      <div class="input-row">
+        <p class="text">
+          If you are interested in subscribing to newsletters, please enter
+          in your email address and click on Subscribe Now.
         </p>
+        <div class="subscribe-box">
+          <input type="text" placeholder="Subscribe with us" />
+          <button>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </div>
       </div>
-      <div class="icon-row">
-       <a target="_blank" href="https://www.facebook.com/ngumys.fantastic"> <i class="fab fa-facebook-f"></i> </a>
-       <a target="_blank" href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"> <i class="fab fa-instagram"></i> </a>
-       <a target="_blank" href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"> <i class="fab fa-linkedin-in"></i> </a>
-      </div>
+      <label class="checkbox-group">
+        <input type="checkbox" /> I authorize the use of the information
+        entered
+      </label>
     </div>
-  </footer>
+  </div>
+  <div class="copy_rights">
+    <!-- <div class="icon-row"></div> -->
+
+    <div class="footer-bottom">
+      <p>
+        © 2025 by
+        <span class="highlight">
+          Ajaga Nji Bilingual International School </span>
+      </p>
+    </div>
+    <div class="icon-row">
+      <a target="_blank" href="https://www.facebook.com/ngumys.fantastic"> <i class="fab fa-facebook-f"></i> </a>
+      <a target="_blank" href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"> <i
+          class="fab fa-instagram"></i> </a>
+      <a target="_blank" href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"> <i
+          class="fab fa-linkedin-in"></i> </a>
+    </div>
+  </div>
+</footer>
+
 </html>

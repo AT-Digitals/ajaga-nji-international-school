@@ -232,8 +232,17 @@
   align-items: center;
   flex-direction: row-reverse;
 }
-
 @media (max-width: 768px) {
+  .staff_member.visible {
+    flex-direction: column;
+  }
+  .staffs_member,
+  .staffs_member.reverse {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1023px) {
   .sidebar_container {
     display: flex;
     max-width: 1200px;
@@ -243,22 +252,17 @@
   }
   .staff_sidebar {
     width: 100%;
-    max-width: 350px;
+    max-width: 100%;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin-bottom: 20px;
   }
-  .staff_member.visible {
-    flex-direction: column;
-  }
+
   .staff_sidebar {
     height: auto;
   }
-  .staffs_member,
-  .staffs_member.reverse {
-    flex-direction: column;
-  }
+
   .staff_sidebar {
     height: auto !important;
   }

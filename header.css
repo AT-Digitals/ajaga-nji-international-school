@@ -268,7 +268,7 @@ header {
   text-decoration: none;
 }
 .menu-content .nav a.active {
-  color: var(--main-subTitle);
+  color: white !important;
   font-weight: bold;
 }
 
