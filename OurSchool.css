@@ -601,24 +601,36 @@ body {
 }
 
 .acc_section .content {
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
+  height: 280px;
+  overflow: auto;
+  scrollbar-width: none;
+}
+.acc_section .content ul {
+  padding: 0 20px;
+}
+.acc_section .content ul li::marker {
+  color: var(--main-text);
 }
 
 .acc_section .content h2 {
-  font-size: 28px;
-  margin-bottom: 16px;
+  font-size: 24px;
+  margin-bottom: 10px;
   color: var(--main-text);
   font-weight: 600 !important;
+}
+.sub_card_heading {
+  color: var(--main-text) !important;
 }
 
 .acc_section .content p {
   font-size: 16px;
   color: black;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   line-height: 1.6;
 }
 .acc_section .content .read_more {
@@ -2335,4 +2347,23 @@ a {
 }
 .media_container h1 {
   font-family: "Lexend";
+}
+.acc_bootom_section {
+  color: var(--main-text);
+  font-size: 24px;
+  font-family: "Lexend";
+}
+.acc_bootom {
+  max-width: 1200px;
+  margin: auto;
+}
+.acc_bootom ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+.acc_bootom ul li::marker {
+  color: var(--main-text);
 }
