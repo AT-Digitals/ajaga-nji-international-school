@@ -178,10 +178,6 @@
   color: white; /* arrow color also white */
 }
 
-.staff_member {
-  display: none;
-}
-
 .staff_member.visible {
   display: flex;
   flex-direction: row;
