@@ -369,9 +369,7 @@ Miss Ndipen Kelly Pride was recruited in the school in 2018. She serves very dev
           </div>
           <!-- 17 -->
         </div>
-        <div class="staff_toggle">
-          <button id="toggleStaffBtn">Load More</button>
-        </div>
+        
       </div>
 
       <div class="sidebar_card-container tab-content" data-tab="Cafeteriate & Sanitation">
@@ -467,108 +465,87 @@ Tsafack Pierre is a good example of case that depicts the social outreach of the
 
     </div>
   </section>
-  <script>
-    const navLinks = document.querySelectorAll(".nav.web a");
-    const currentPath = window.location.pathname;
+ <script>
+  const navLinks = document.querySelectorAll(".nav.web a");
+  const currentPath = window.location.pathname;
 
-    navLinks.forEach((link) => {
-      const linkPath = new URL(link.href).pathname;
+  navLinks.forEach((link) => {
+    const linkPath = new URL(link.href).pathname;
+    if (linkPath === currentPath) {
+      link.classList.add("active");
+    }
+  });
 
-      // Compare the link's path to current page's path
-      if (linkPath === currentPath) {
-        link.classList.add("active");
-      }
+  $(document).ready(function () {
+    $("#menuToggle").on("click", function () {
+      $("#menuContent").addClass("open");
     });
 
-    $(document).ready(function () {
-      $("#menuToggle").on("click", function () {
-        $("#menuContent").addClass("open");
-      });
-
-      $("#menuClose").on("click", function () {
-        $("#menuContent").removeClass("open");
-      });
-
-      // Mobile dropdown accordion toggle
-      $(".mobile-dropdown-toggle").on("click", function (e) {
-        e.preventDefault();
-        $(this).toggleClass("active");
-        $(this).next(".mobile-dropdown-menu").slideToggle(200);
-        $(this).find(".arrow").toggleClass("rotate");
-      });
+    $("#menuClose").on("click", function () {
+      $("#menuContent").removeClass("open");
     });
 
-    $(document).ready(function () {
-      $(".count").each(function () {
-        var $this = $(this);
-        var target = +$this.attr("data-target");
-        $({ countNum: $this.text() }).animate(
-          { countNum: target },
-          {
-            duration: 2000,
-            easing: "swing",
-            step: function () {
-              $this.text(Math.ceil(this.countNum));
-            },
-            complete: function () {
-              $this.text(target);
-            },
-          }
-        );
-      });
+    $(".mobile-dropdown-toggle").on("click", function (e) {
+      e.preventDefault();
+      $(this).toggleClass("active");
+      $(this).next(".mobile-dropdown-menu").slideToggle(200);
+      $(this).find(".arrow").toggleClass("rotate");
     });
 
-    const serviceItems = document.querySelectorAll(".service-item");
-    const tabContents = document.querySelectorAll(".tab-content");
-
-    serviceItems.forEach((item) => {
-      item.addEventListener("click", () => {
-        // Remove 'active' from all service items and contents
-        serviceItems.forEach((el) => el.classList.remove("active"));
-        tabContents.forEach((tab) => tab.classList.remove("active"));
-
-        // Add 'active' to clicked item
-        item.classList.add("active");
-
-        // Get the text to match the data-tab attribute
-        const selectedTab = item.textContent.trim().replace("→", "").trim();
-
-        // Show matching tab content
-        const activeContent = document.querySelector(
-          `.tab-content[data-tab="${selectedTab}"]`
-        );
-        if (activeContent) {
-          activeContent.classList.add("active");
+    $(".count").each(function () {
+      var $this = $(this);
+      var target = +$this.attr("data-target");
+      $({ countNum: $this.text() }).animate(
+        { countNum: target },
+        {
+          duration: 2000,
+          easing: "swing",
+          step: function () {
+            $this.text(Math.ceil(this.countNum));
+          },
+          complete: function () {
+            $this.text(target);
+          },
         }
-      });
+      );
     });
+  });
 
-    const staffMembers = document.querySelectorAll(".staff_member");
-    const toggleBtn = document.getElementById("toggleStaffBtn");
+  const serviceItems = document.querySelectorAll(".service-item");
+  const tabContents = document.querySelectorAll(".tab-content");
 
-    let expanded = false;
+  serviceItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Remove 'active' from all service items and tab contents
+      serviceItems.forEach((el) => el.classList.remove("active"));
+      tabContents.forEach((tab) => tab.classList.remove("active"));
 
-    function showInitialStaff() {
-      staffMembers.forEach((member, index) => {
-        member.classList.toggle("visible", index < 5);
-      });
-    }
+      // Add 'active' to clicked item
+      item.classList.add("active");
 
-    function showAllStaff() {
-      staffMembers.forEach((member) => member.classList.add("visible"));
-    }
+      // Get the corresponding tab
+      const selectedTab = item.textContent.trim().replace("→", "").trim();
+      const activeContent = document.querySelector(
+        `.tab-content[data-tab="${selectedTab}"]`
+      );
 
-    toggleBtn.addEventListener("click", () => {
-      if (!expanded) {
-        expanded = true;
-        showAllStaff();
-        toggleBtn.style.display = "none"; // Hide the button
+      if (activeContent) {
+        activeContent.classList.add("active");
+
+        // ✅ Scroll to top of the tab content
+        activeContent.scrollIntoView({ behavior: "smooth", block: "start" });
+
+        // ✅ Reset scroll of card container if applicable
+        const cardContainer = activeContent.querySelector(".cards-container");
+        if (cardContainer) {
+          cardContainer.scrollTop = 0;
+          cardContainer.scrollLeft = 0; // For horizontal layouts
+        }
       }
     });
+  });
+</script>
 
-    // Initial state
-    showInitialStaff();
-  </script>
 </body>
 
  <footer class="footer">
@@ -579,8 +556,8 @@ Tsafack Pierre is a good example of case that depicts the social outreach of the
           <img src="./Ajaga_Nji_International_School-removebg-preview.png" alt="Goodrise Logistics" class="brand-logo" />
         </a>
         <p class="text negative_text">
-          We are a Bilingual Nursery and Elementary School in Dschang, Cameroon, W. Africa.
-          We offer kindergarten (nursery school) all the way to class 7
+          We are a Bilingual Nursery and Elementary School in Dschang, Cameroon, W. Africa. <br />
+         We offer kindergarten (nursery school) and classes 1 - 6 (elementary school).
         </p>
 
       </div>

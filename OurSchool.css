@@ -553,7 +553,6 @@ body {
   max-width: 1200px;
   margin: auto;
   gap: 20px;
-  justify-content: center;
 }
 
 .acc_section {
@@ -561,13 +560,15 @@ body {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
+  box-shadow: rgba(1, 6, 12, 0.14) 0px 4px 25px 0px;
+  border-radius: 16px;
   background: white;
   gap: 10px;
   margin-bottom: 30px;
   width: 100%;
   max-width: 380px;
   flex: 1 1 calc(33.333% - 20px); /* 3 cards on large screens */
+  padding-bottom: 20px;
 }
 
 /* Medium screens (tablets): 2 cards per row */
@@ -601,7 +602,7 @@ body {
 }
 
 .acc_section .content {
-  padding: 20px 0;
+  padding: 20px;
   display: flex;
   /* justify-content: space-between; */
   flex-direction: column;
@@ -2338,7 +2339,7 @@ a {
 .gallery {
   max-height: 450px;
   overflow-y: auto;
-  scrollbar-width: none;
+  scrollbar-width: thin;
 }
 
 .max_width .button {
