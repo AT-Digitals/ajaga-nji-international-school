@@ -2445,7 +2445,7 @@ a {
   height: 0;
   border-style: solid;
   border-width: 0 15px 15px 15px;
-  border-color: transparent transparent #fabd3c transparent;
+  border-color: transparent transparent var(--main-subTitle) transparent;
   z-index: 1;
   top: -14px;
   left: 42px;
