@@ -336,7 +336,7 @@ body {
   border-radius: 10px;
   width: 100%;
   max-width: 450px;
-  height: auto;
+  height: 550px;
   object-fit: cover;
 }
 
@@ -2468,9 +2468,12 @@ a {
   align-items: center;
   padding: 20px;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
   color: white;
   z-index: 2;
+}
+.home_service_card-back .uppercase-text {
+  color: var(--main-text) !important;
 }
 .home_service_card-back img {
   position: absolute;
@@ -2482,21 +2485,25 @@ a {
   opacity: 0.3;
   z-index: -1;
 }
-
+.colored_text {
+  color: var(--main-text);
+  font-style: italic;
+  font-size: 22px;
+}
 .home_service_card-back p {
   font-size: 16px;
   font-family: "Lexend";
   font-weight: bold;
   z-index: 2;
-  color: var(--main-text);
+  color: black;
 }
 .home_service_card-back .read-more {
-  color: var(--main-text);
+  color: white;
   border: 1px solid var(--main-text);
-  background: none;
+  background: var(--main-text);
   font-family: "Lexend";
   margin: 20px 0px;
-  font-size: 16px;
+  font-size: 14px;
   min-width: 110px;
   padding: 12px;
 }
