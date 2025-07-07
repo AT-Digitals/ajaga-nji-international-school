@@ -40,8 +40,12 @@
               ></a>
               <div class="dropdown-menu">
                 <a href="./history.html" class="history">History </a>
+                <a href="./About.html" class="history">About Us </a>
+
                 <a href="./board-of-director.html">Board of Directors</a>
                 <a href="./staff.html">Staff</a>
+                <a href="./Facilities.html" class="history">Facilities </a>
+
                 <a href="./GroupPage.html">Groups</a>
               </div>
             </div>
@@ -73,8 +77,12 @@
                 </a>
                 <div class="mobile-dropdown-menu">
                   <a href="./history.html" class="history">History </a>
+                  <a href="./About.html" class="history">About Us </a>
+
                   <a href="./board-of-director.html">Board of Directors</a>
                   <a href="./staff.html">Staff</a>
+                  <a href="./Facilities.html" class="history">Facilities </a>
+
                   <a href="./GroupPage.html">Groups</a>
                 </div>
               </div>
@@ -124,7 +132,7 @@
           </div>
           <div class="testimonial-text">
             <span class="quote-mark">❝</span>
-            <p class="quote_text">
+            <p class="quote_text full" id="full-paragraph">
               Our school is the culmination of a vision sparked in 1978 by
               Professor Ajaga Nji during his studies in the United States. His
               lifelong commitment to transformative education led to
@@ -137,36 +145,40 @@
               envisioned a solid foundation through elementary and kindergarten
               education, which became the cornerstone of our school’s mission.
             </p>
-            <br />
-
-            <p class="quote_text">
-              We honor the enduring legacy of our beloved founder, whose spirit
-              continues to inspire our mission to educate, empower, and uplift
-              future generations. His extensive writings, including Why Poor
-              People Remain Poor, The Triumph of Social Democracy, Understanding
-              the Politics of Jesus, and As I Saw It, encapsulate his vision for
-              inclusive, equitable, and progressive societies. In As I Saw It,
-              Professor Nji inspires the youth, particularly in resource-poor
-              settings, to persevere and recognize their potential to shape and
-              be shaped by society. By purchasing these books, you directly
-              support our mission, as each sale funds the education of at least
-              one child, fostering community development and sustainable
-              progress.
-            </p>
-            <br />
-            <p class="quote_text">
-              Our school is not a fleeting idea but a journey rooted in nearly
-              five decades of dedication to education and social change. Through
-              each child’s success, we carry forward Professor Nji’s legacy with
-              integrity, compassion, and purpose, ensuring his dream of a
-              brighter future endures.
-            </p>
+            <div id="more-content" class="hidden">
+              <br />
+              <p class="quote_text">
+                We honor the enduring legacy of our beloved founder, whose
+                spirit continues to inspire our mission to educate, empower, and
+                uplift future generations. His extensive writings, including Why
+                Poor People Remain Poor, The Triumph of Social Democracy,
+                Understanding the Politics of Jesus, and As I Saw It,
+                encapsulate his vision for inclusive, equitable, and progressive
+                societies. In As I Saw It, Professor Nji inspires the youth,
+                particularly in resource-poor settings, to persevere and
+                recognize their potential to shape and be shaped by society. By
+                purchasing these books, you directly support our mission, as
+                each sale funds the education of at least one child, fostering
+                community development and sustainable progress.
+              </p>
+              <br />
+              <p class="quote_text">
+                Our school is not a fleeting idea but a journey rooted in nearly
+                five decades of dedication to education and social change.
+                Through each child’s success, we carry forward Professor Nji’s
+                legacy with integrity, compassion, and purpose, ensuring his
+                dream of a brighter future endures.
+              </p>
+            </div>
 
             <p class="author">
-              Gerd Nji — Chair & Administartion to Corporate Strategy
+              Support Our Mission Through Professor Nji’s
+              <a href="#books-section" style="text-decoration: underline"
+                >Books</a
+              >
             </p>
             <div class="content">
-              <a href="./board-of-director.html" class="read_more">
+              <a id="readMoreBtn" class="read_more">
                 Read more <i class="fas fa-arrow-right"></i
               ></a>
             </div>
@@ -204,7 +216,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="books-section">
         <div class="max_width">
           <div class="blogs_section">
             <h2>Support our School's mission...</h2>
@@ -239,8 +251,8 @@
                   and practitioners.
                 </p>
                 <a href="./Support.html" class="read-more"
-                  >Purchase to Sponsor a Child</a
-                >
+                  >Purchase to Sponsor
+                </a>
               </div>
             </div>
           </div>
@@ -271,7 +283,7 @@
                   policy and fostering social change.
                 </p>
                 <a href="./Support.html" class="read-more"
-                  >Purchase to Sponsor a Child</a
+                  >Purchase to Sponsor</a
                 >
               </div>
             </div>
@@ -305,7 +317,7 @@
                   community development.
                 </p>
                 <a href="./Support.html" class="read-more"
-                  >Purchase to Sponsor a Child</a
+                  >Purchase to Sponsor</a
                 >
               </div>
             </div>
@@ -337,13 +349,22 @@
                   empowerment.
                 </p>
                 <a href="./Support.html" class="read-more"
-                  >Purchase to Sponsor a Child</a
+                  >Purchase to Sponsor</a
                 >
               </div>
             </div>
           </div>
           <!-- Card 1 - PETROLEUM AND CHEMICAL PRODUCTS INSPECTION -->
         </div>
+      </section>
+
+      <section class="book_bottom_section">
+        <h2 class="book_bottom_text">
+          Every book purchase helps educate a child, advancing Professor Nji’s
+          vision of community empowerment and sustainable development. Join us
+          in shaping a brighter future.
+        </h2>
+        <a href="./Support.html" class="btn">Contribute Today</a>
       </section>
 
       <section style="padding: 20px">
@@ -380,8 +401,7 @@
           <p class="text negative_text">
             We are a Bilingual Nursery and Elementary School in Dschang,
             Cameroon, W. Africa. <br />
-            We offer kindergarten (nursery school) and classes 1 - 6 (elementary
-            school).
+            <b>Facts - Truth - Reason</b>
           </p>
         </div>
 
@@ -485,6 +505,12 @@
     </footer>
 
     <script>
+      document
+        .getElementById("readMoreBtn")
+        .addEventListener("click", function () {
+          document.getElementById("more-content").classList.remove("hidden");
+          this.style.display = "none";
+        });
       const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;
 

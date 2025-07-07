@@ -18,6 +18,9 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --main-bg: #095d40;
   --main-text: #800000;
@@ -123,6 +126,18 @@ body {
   color: white;
   font-weight: 900;
 }
+.book_bottom_text {
+  font-size: 22px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  text-align: center;
+}
+.book_bottom_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .acc_btn {
   background: none;
   color: var(--main-text);
@@ -210,6 +225,12 @@ body {
 @media (max-width: 768px) {
   .learning_section h2 {
     font-size: 2rem;
+  }
+  .groups {
+    justify-content: center !important;
+  }
+  .home_service_cards {
+    justify-content: center !important;
   }
 
   .learning_section-content {
@@ -608,7 +629,7 @@ body {
 }
 
 .acc_section .content {
-  padding: 20px;
+  padding: 10px 20px;
   display: flex;
   /* justify-content: space-between; */
   flex-direction: column;
@@ -1120,8 +1141,44 @@ a {
   box-shadow: 0 10px 30px rgb(0 0 0 / 17%);
   transition: transform 0.3s ease;
   width: 100%;
-  padding: 30px;
+  height: 420px;
+  overflow-y: auto;
+  padding: 24px; /* good internal spacing */
   border-radius: 16px;
+  background-color: #fff;
+  box-sizing: border-box;
+  scrollbar-gutter: stable; /* Keeps space for scrollbar */
+}
+.history-text {
+  /* margin-bottom: 16px; */
+  line-height: 1.6;
+}
+.history-card::-webkit-scrollbar {
+  width: 8px;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.history-card::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+.hidden {
+  display: none;
+}
+
+.read_more {
+  background: none;
+  border: none;
+  color: #c00;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
 }
 
 .history-icon {
@@ -2514,7 +2571,7 @@ a {
 /* support */
 
 .book_donation_section {
-  max-width: 400px;
+  /* max-width: 400px; */
   width: 100%;
 }
 
@@ -2571,4 +2628,95 @@ a {
 
 .uppercase-text {
   font-family: "Lexend";
+}
+
+.container_facilites {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 15px;
+  margin: 2rem auto;
+}
+
+.facilities_page_card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+.facilities_page_card .face {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facilities_page_card .face.face1 {
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.facilities_page_card .face.face1 h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.facilities_page_card .face.face1 .content {
+  font-size: 1.2em;
+  margin: 0;
+  padding: 0 0 1em 0;
+  font-weight: 500;
+}
+
+.facilities_page_card .face.face2 {
+  background: #111;
+  transition: 0.5s;
+}
+
+.facilities_page_card:hover .face.face2 {
+  height: 60px;
+  border-radius: 0 0 15px 15px;
+}
+
+.facilities_page_card .face.face2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px 0 0 15px;
+}
+
+.facilities_page_card .face.face2 h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  text-align: center;
+  color: var(--main-text);
+  transition: 0.5s;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.facilities_page_card:hover .face.face2 h2 {
+  font-size: 18px;
+}
+
+/* Individual card gradient backgrounds */
+.facilities_page_card_one .face.face2 {
+  background: linear-gradient(45deg, var(--bg-light), var(--main-subTitle));
+  border-radius: 15px;
+}
+
+.face h2 {
+  font-size: 22px;
 }

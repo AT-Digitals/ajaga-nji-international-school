@@ -265,7 +265,7 @@ header {
   padding: 15px 0;
   width: 100%;
   color: white;
-  display: block;
+  display: flex;
   text-decoration: none;
 }
 .menu-content .nav a.active {

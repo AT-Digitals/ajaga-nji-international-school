@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champion School Header</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="OurSchool.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="NewsCard.css" />
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header" id="mainHeader">
+        <div class="header_inner">
+          <div class="logo">
+            <a href="./index.html">
+              <img
+                src="./Ajaga_Nji_International_School-removebg-preview.png"
+                alt="Champion School Logo"
+                class="logo"
+              />
+            </a>
+          </div>
+          <nav class="nav web">
+            <div class="dropdown">
+              <a href="./index.html" class="dropdown-toggle"
+                >Our School <i class="fas fa-caret-down"></i
+              ></a>
+              <div class="dropdown-menu">
+                <a href="./history.html" class="history">History </a>
+                <a href="./About.html" class="history">About Us </a>
+
+                <a href="./board-of-director.html">Board of Directors</a>
+                <a href="./staff.html">Staff</a>
+                <a href="./Facilities.html" class="history">Facilities </a>
+
+                <a href="./GroupPage.html">Groups</a>
+              </div>
+            </div>
+            <a href="./Accademic.html">Academics</a>
+
+            <a href="./Adminssions.html">Admissions</a>
+            <a href="./EventCard.html">News & Events</a>
+            <a href="./MediaGallery.html">Media Gallery</a>
+            <a href="./Support.html">Support Us</a>
+          </nav>
+          <div>
+            <a class="btn" href="./ContactPage.html"
+              >Contact Us <i class="hover fas fa-arrow-right"></i
+            ></a>
+          </div>
+
+          <!-- Mobile Slide Menu -->
+          <div class="menu-content" id="menuContent">
+            <div class="close-btn-div">
+              <button class="close-btn" id="menuClose">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <nav class="nav">
+              <div class="mobile-dropdown">
+                <a href="./index.html" class="active mobile-dropdown-toggle">
+                  Our School
+                  <i class="fas fa-chevron-down arrow"></i>
+                </a>
+                <div class="mobile-dropdown-menu">
+                  <a href="./history.html" class="history">History </a>
+                  <a href="./About.html" class="history">About Us </a>
+
+                  <a href="./board-of-director.html">Board of Directors</a>
+                  <a href="./staff.html">Staff</a>
+                  <a href="./Facilities.html" class="history">Facilities </a>
+
+                  <a href="./GroupPage.html">Groups</a>
+                </div>
+              </div>
+              <a href="./Accademic.html">Academics</a>
+              <a href="./Adminssions.html">Admissions</a>
+              <a href="./EventNews.html">News & Events</a>
+              <a href="./MediaGallery.html">Media Gallery</a>
+              <a href="./Support.html">Support Us</a>
+              <a href="./ContactPage.html">Contact Us</a>
+            </nav>
+          </div>
+
+          <!-- Hamburger Menu Button -->
+          <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <body>
+      <section>
+        <div class="banner_image">
+          <img
+            src="./images/facelity1.JPG"
+            style="width: 100%; object-fit: cover"
+            alt="banner"
+          />
+        </div>
+      </section>
+      <section class="supportpage_card_section">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <h2 class="supportpage-title" style="margin-bottom: 10px">
+            Our Facilities
+          </h2>
+          <div class="divider no_left"></div>
+        </div>
+
+        <div class="cards_like_this">
+          <!-- Classrooms -->
+          <div class="card_item">
+            <img src="./assets/school_class.JPG" alt="Classrooms" />
+            <div class="support_card_padding">
+              <h3 class="card_title">Classrooms</h3>
+              <p class="card_desc">
+                Our classrooms are world class and designed to ignite cognitive
+                and creative senses while enabling effective parent-teacher
+                interaction.
+              </p>
+            </div>
+          </div>
+
+          <!-- Library and Computer Center -->
+          <div class="card_item">
+            <img src="./images/information_Communication.JPG" alt="Library" />
+            <div class="support_card_padding">
+              <h3 class="card_title">Library & Computer Center</h3>
+              <p class="card_desc">
+                The Afor Judith ICT center hosts hundreds of books and 30+
+                laptops to introduce children to computing fundamentals.
+              </p>
+            </div>
+          </div>
+
+          <!-- Cafeteria -->
+          <div class="card_item">
+            <img
+              src="https://res.cloudinary.com/valrhona/image/upload/c_limit,f_auto,fl_progressive,q_auto,w_460/dam/150beb347b88aa85"
+              alt="Cafeteria"
+            />
+            <div class="support_card_padding">
+              <h3 class="card_title">Cafeteria / Dining Room</h3>
+              <p class="card_desc">
+                Our cafeteria accommodates 300 people and features a
+                fully-equipped kitchen with modern audio-visual facilities.
+              </p>
+            </div>
+          </div>
+
+          <!-- Sporting Complex -->
+          <div class="card_item">
+            <img src="./images/sport.jpg" alt="Health" />
+            <div class="support_card_padding">
+              <h3 class="card_title">Sporting / Playground Complex</h3>
+              <p class="card_desc">
+                Our complex includes handball, volleyball, basketball,
+                racketball, and vast open spaces for active play and exercise.
+              </p>
+            </div>
+          </div>
+
+          <!-- Water System -->
+          <div class="card_item">
+            <img
+              src="https://www.africanwaterfacility.org/sites/default/files/styles/image_slider/public/2024-02/5_0.jpg?itok=cGw5cJN1"
+              alt="Water System"
+            />
+            <div class="support_card_padding">
+              <h3 class="card_title">Water System</h3>
+              <p class="card_desc">
+                A high-capacity rainwater storage system supports critical
+                school functions including toilets and sinks.
+              </p>
+            </div>
+          </div>
+
+          <!-- Well Water -->
+          <div class="card_item">
+            <img
+              src="https://res.cloudinary.com/the-water-project/image/upload/w_auto/c_fill,dpr_auto,q_auto:eco,f_auto,w_800/site/students-at-donated-well-kenya.jpg"
+              alt="Well Water"
+            />
+            <div class="support_card_padding">
+              <h3 class="card_title">Well Water</h3>
+              <p class="card_desc">
+                Our deep-drilled well provides clean and safe drinking water for
+                the school and the surrounding community.
+              </p>
+            </div>
+          </div>
+
+          <!-- Backup Electricity -->
+          <div class="card_item">
+            <img src="./assets/school_el2.png" alt="Electricity" />
+            <div class="support_card_padding">
+              <h3 class="card_title">Backup Electricity</h3>
+              <p class="card_desc">
+                Solar panel systems generate sufficient backup power to run ICT
+                labs and other facilities during power outages.
+              </p>
+            </div>
+          </div>
+
+          <!-- Transportation -->
+          <div class="card_item">
+            <img src="./assets/school_bus2.jpg" alt="School Bus" />
+            <div class="support_card_padding">
+              <h3 class="card_title">Transportation</h3>
+              <p class="card_desc">
+                A fleet of 4 Toyota vans ensures reliable pick-up and drop-off
+                services for students across designated routes.
+              </p>
+            </div>
+          </div>
+
+          <!-- Health -->
+          <div class="card_item">
+            <img src="./images/sport.jpg" alt="Health" />
+            <div class="support_card_padding">
+              <h3 class="card_title">Health & Medical</h3>
+              <p class="card_desc">
+                Our on-site dispensary offers basic first-aid, with full medical
+                support from Dr. Demaze’s Clinic for staff and students.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+    <footer class="footer">
+      <div class="container flex-wrap space-between">
+        <!-- Left Column -->
+        <div class="column">
+          <a href="./index.html">
+            <img
+              src="./Ajaga_Nji_International_School-removebg-preview.png"
+              alt="Goodrise Logistics"
+              class="brand-logo"
+            />
+          </a>
+          <p class="text negative_text">
+            We are a Bilingual Nursery and Elementary School in Dschang,
+            Cameroon, W. Africa. <br />
+            <b>Facts - Truth - Reason</b>
+          </p>
+        </div>
+
+        <!-- Center Column -->
+        <div class="column">
+          <h3 class="title">Contact info</h3>
+          <div class="item-row">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <div>
+              <p class="label">Our location:</p>
+              <p class="text">
+                Ajaga Nji Bilingual International School <br />
+                P.O Box 138 Dschang, Cameroon, West Africa
+              </p>
+            </div>
+          </div>
+          <div class="item-row">
+            <i
+              class="fas fa-phone-alt icon"
+              style="transform: rotate(90deg)"
+            ></i>
+            <div>
+              <p class="label">Phones:</p>
+              <a
+                style="text-decoration: none; color: black; font-family: Lexend"
+                href="tel:+237-679259202"
+                >+237-679259202
+              </a>
+              <br />
+              <a
+                style="text-decoration: none; color: black; font-family: Lexend"
+                href="tel:+237-679259202"
+                >+237 691512550
+              </a>
+            </div>
+          </div>
+          <div class="item-row">
+            <i class="fas fa-envelope icon"></i>
+            <div>
+              <p class="label">Email:</p>
+              <a
+                style="text-decoration: none; color: black; font-family: Lexend"
+                href="mailto:ngumysnpschool@gmail.com"
+                >ngumysnpschool@gmail.com
+              </a>
+              <p class="text"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="column">
+          <h3 class="title">Subscribe</h3>
+          <div class="input-row">
+            <p class="text">
+              If you are interested in subscribing to newsletters, please enter
+              in your email address and click on Subscribe Now.
+            </p>
+            <div class="subscribe-box">
+              <input type="text" placeholder="Subscribe with us" />
+              <button>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+          <label class="checkbox-group">
+            <input type="checkbox" /> I authorize the use of the information
+            entered
+          </label>
+        </div>
+      </div>
+      <div class="copy_rights">
+        <!-- <div class="icon-row"></div> -->
+
+        <div class="footer-bottom">
+          <p>
+            © 2025 by
+            <span class="highlight">
+              Ajaga Nji Bilingual International School
+            </span>
+          </p>
+        </div>
+        <div class="icon-row">
+          <a target="_blank" href="https://www.facebook.com/ngumys.fantastic">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/p/CTZE5TLr8jR/?utm_medium=copy_link"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/ngumys-fantastic-international-school/"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const tabs = document.querySelectorAll(".facilitiesTabs .tab");
+      const cards = document.querySelectorAll(".facility-card");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((t) => t.classList.remove("active"));
+          tab.classList.add("active");
+
+          const category = tab.getAttribute("data-category");
+          cards.forEach((card) => {
+            card.style.display =
+              category === "all" || card.dataset.category === category
+                ? "block"
+                : "none";
+          });
+        });
+      });
+      document
+        .getElementById("readMoreBtn")
+        .addEventListener("click", function () {
+          document.getElementById("more-content").classList.remove("hidden");
+          this.style.display = "none";
+        });
+      const navLinks = document.querySelectorAll(".nav.web a");
+      const currentPath = window.location.pathname;
+
+      navLinks.forEach((link) => {
+        const linkPath = new URL(link.href).pathname;
+
+        // Compare the link's path to current page's path
+        if (linkPath === currentPath) {
+          link.classList.add("active");
+        }
+      });
+
+      $(document).ready(function () {
+        $("#menuToggle").on("click", function () {
+          $("#menuContent").addClass("open");
+        });
+
+        $("#menuClose").on("click", function () {
+          $("#menuContent").removeClass("open");
+        });
+
+        // Mobile dropdown accordion toggle
+        $(".mobile-dropdown-toggle").on("click", function (e) {
+          e.preventDefault();
+          $(this).toggleClass("active");
+          $(this).next(".mobile-dropdown-menu").slideToggle(200);
+          $(this).find(".arrow").toggleClass("rotate");
+        });
+      });
+      $(document).ready(function () {
+        $(".count").each(function () {
+          var $this = $(this);
+          var target = +$this.attr("data-target");
+          $({ countNum: $this.text() }).animate(
+            { countNum: target },
+            {
+              duration: 2000,
+              easing: "swing",
+              step: function () {
+                $this.text(Math.ceil(this.countNum));
+              },
+              complete: function () {
+                $this.text(target);
+              },
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
