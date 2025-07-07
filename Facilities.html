@@ -365,38 +365,12 @@
         </div>
       </div>
     </footer>
-
     <script>
-      const tabs = document.querySelectorAll(".facilitiesTabs .tab");
-      const cards = document.querySelectorAll(".facility-card");
-
-      tabs.forEach((tab) => {
-        tab.addEventListener("click", () => {
-          tabs.forEach((t) => t.classList.remove("active"));
-          tab.classList.add("active");
-
-          const category = tab.getAttribute("data-category");
-          cards.forEach((card) => {
-            card.style.display =
-              category === "all" || card.dataset.category === category
-                ? "block"
-                : "none";
-          });
-        });
-      });
-      document
-        .getElementById("readMoreBtn")
-        .addEventListener("click", function () {
-          document.getElementById("more-content").classList.remove("hidden");
-          this.style.display = "none";
-        });
       const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;
 
       navLinks.forEach((link) => {
         const linkPath = new URL(link.href).pathname;
-
-        // Compare the link's path to current page's path
         if (linkPath === currentPath) {
           link.classList.add("active");
         }
@@ -411,15 +385,13 @@
           $("#menuContent").removeClass("open");
         });
 
-        // Mobile dropdown accordion toggle
         $(".mobile-dropdown-toggle").on("click", function (e) {
           e.preventDefault();
           $(this).toggleClass("active");
           $(this).next(".mobile-dropdown-menu").slideToggle(200);
           $(this).find(".arrow").toggleClass("rotate");
         });
-      });
-      $(document).ready(function () {
+
         $(".count").each(function () {
           var $this = $(this);
           var target = +$this.attr("data-target");
@@ -436,6 +408,44 @@
               },
             }
           );
+        });
+      });
+
+      const serviceItems = document.querySelectorAll(".service-item");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      serviceItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          // Remove 'active' from all service items and tab contents
+          serviceItems.forEach((el) => el.classList.remove("active"));
+          tabContents.forEach((tab) => tab.classList.remove("active"));
+
+          // Add 'active' to clicked item
+          item.classList.add("active");
+
+          // Get the corresponding tab
+          const selectedTab = item.textContent.trim().replace("→", "").trim();
+          const activeContent = document.querySelector(
+            `.tab-content[data-tab="${selectedTab}"]`
+          );
+
+          if (activeContent) {
+            activeContent.classList.add("active");
+
+            // ✅ Scroll to top of the tab content
+            activeContent.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+
+            // ✅ Reset scroll of card container if applicable
+            const cardContainer =
+              activeContent.querySelector(".cards-container");
+            if (cardContainer) {
+              cardContainer.scrollTop = 0;
+              cardContainer.scrollLeft = 0; // For horizontal layouts
+            }
+          }
         });
       });
     </script>
