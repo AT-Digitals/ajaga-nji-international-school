@@ -2322,16 +2322,25 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /* Center vertically & horizontally */
+  transform: translate(-50%, -40%); /* Center vertically & horizontally */
   background-color: white;
   padding: 30px;
   border-radius: 10px;
   width: 90%;
-  max-width: 700px;
+  max-width: 1000px;
   text-align: center;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1023px) {
+  .boardofdirect_modal_content {
+    height: 590px;
+    overflow: auto;
+  }
+}
+.boardofdirect_modal_desc {
+  font-size: 14px;
+}
 .boardofdirect_close {
   position: absolute;
   right: 20px;
@@ -2371,9 +2380,12 @@ a {
   color: var(--main-text);
   font-size: 14px;
 }
-
+.boardofdirect_modal_img {
+  max-width: 300px;
+}
 #modalDesc {
-  font-size: 18px;
+  font-size: 16px;
+  text-align: start;
 }
 
 .flex .icon-row {
