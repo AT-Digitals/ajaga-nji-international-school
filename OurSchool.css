@@ -895,7 +895,7 @@ a {
 
 .steps {
   display: flex;
-  gap: 24px;
+  gap: 35px;
   flex-wrap: wrap;
 }
 
