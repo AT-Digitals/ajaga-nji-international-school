@@ -103,12 +103,10 @@
             With Educated Minds
           </h1>
           <p class="supportpage-description">
-            Every child deserves the chance to learn, grow, and lead. When you
-            engage with our books, you’re not offering charity—you’re planting
-            seeds of opportunity. Your contribution empowers confident, capable
-            individuals who will shape their communities from within. This isn’t
-            about aid. It’s about building a future through
-            education—sustainable, local, and lasting.
+            Every child deserves the chance to learn and lead. Your support
+            isn’t charity—it’s an investment in potential. Our books empower
+            confident minds and strong communities. Together, we’re building a
+            future through lasting education.
           </p>
         </div>
 
@@ -132,7 +130,15 @@
               >
                 <button class="btn">Buy a Book</button>
               </a>
-              <button class="btn">OSAT</button>
+              <a href="#bookDonation">
+                <button
+                  class="btn"
+                  onclick="scrollToBookDonation()"
+                  id="donation"
+                >
+                  OSAT
+                </button></a
+              >
             </div>
           </div>
         </div>
@@ -257,28 +263,8 @@
         </div>
       </div>
 
-      <div class="mission_goals">
-        <!-- <div class="mission_left">
-          <h4 class="goals_subtitle">Our Mission & Goals</h4>
-          <div class="donat_underline"></div>
-          <h2 class="goals_title">Protect People, Pets, and the Planet</h2>
-          <p class="goals_desc">
-            Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.
-            Nisi est sit amet facilisis magna.
-          </p>
-          <button class="btn misson_btn">
-            Donate Now <i class="fas fa-heart"></i>
-          </button>
-        </div>
-
-        <div class="mission_center">
-          <img
-            src="https://harity.templatekit.co/wp-content/uploads/sites/49/2022/07/cropped-view-of-homeless-african-american-kids-holding-cup-and-metal-plate-while-begging-alms-on.jpg"
-            alt="Mission Image"
-          />
-        </div> -->
-
-        <div class="book_donation_section">
+      <div id="bookDonation" class="mission_goals">
+        <div id="bookDonation" class="book_donation_section">
           <div
             style="
               display: flex;
@@ -295,26 +281,34 @@
           <div class="book_entry">
             <span class="book_name">Why Poor People Remain Poor</span>
             <button class="btn misson_btn">
-              Donate Now <i class="fas fa-heart"></i>
+              Sponsor Now <i class="fas fa-heart"></i>
             </button>
           </div>
           <div class="book_entry">
             <span class="book_name">The Triumph of Social Democracy</span>
             <button class="btn misson_btn">
-              Donate Now <i class="fas fa-heart"></i>
+              Sponsor Now <i class="fas fa-heart"></i>
             </button>
           </div>
           <div class="book_entry">
             <span class="book_name">Understanding the Politics of Jesus</span>
-            <button class="btn misson_btn">
-              Donate Now <i class="fas fa-heart"></i>
-            </button>
+            <a
+              href="https://books.friesenpress.com/store/title/119734000056066350/Ajaga-Nji-The-Triumph-of-Social-Democracy"
+            >
+              <button class="btn misson_btn">
+                Sponsor Now <i class="fas fa-heart"></i>
+              </button>
+            </a>
           </div>
           <div class="book_entry">
             <span class="book_name">As I Saw It</span>
-            <button class="btn misson_btn">
-              Donate Now <i class="fas fa-heart"></i>
-            </button>
+            <a
+              href="https://books.friesenpress.com/store/title/119734000065849186"
+            >
+              <button class="btn misson_btn">
+                Sponsor Now <i class="fas fa-heart"></i>
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -336,6 +330,18 @@
     </section>
 
     <script>
+      function scrollToBookDonation() {
+        const section = document.getElementById("bookDonation");
+
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          // Add offset after scroll completes (only if you have a fixed header or need spacing)
+          setTimeout(() => {
+            window.scrollBy(0, -250); // adjust -80 as needed
+          }, 680); // delay matches the scroll animation
+        }
+      }
       const navLinks = document.querySelectorAll(".nav.web a");
       const currentPath = window.location.pathname;
 
